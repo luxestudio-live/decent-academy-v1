@@ -22,7 +22,7 @@ const resultsData = {
         standard: "10th Standard",
         score: "99.8%",
         rank: "School Topper",
-        image: "/student-10th-topper.jpg",
+        image: "/decent-academy-v1/student-10th-topper.jpg",
         subjects: ["Math: 100", "Science: 100", "English: 99"],
       },
       {
@@ -30,7 +30,7 @@ const resultsData = {
         standard: "12th Science",
         score: "AIR 245",
         rank: "JEE Mains",
-        image: "/student-jee-topper.jpg",
+        image: "/decent-academy-v1/student-jee-topper.jpg",
         subjects: ["Physics: 98", "Chemistry: 97", "Math: 99"],
       },
       {
@@ -38,7 +38,7 @@ const resultsData = {
         standard: "12th Science",
         score: "State Rank 12",
         rank: "MHT-CET",
-        image: "/student-cet-topper.jpg",
+        image: "/decent-academy-v1/student-cet-topper.jpg",
         subjects: ["PCM: 189/200"],
       },
       {
@@ -46,7 +46,7 @@ const resultsData = {
         standard: "12th Science",
         score: "AIR 1250",
         rank: "NEET",
-        image: "/student-neet-success.jpg",
+        image: "/decent-academy-v1/student-neet-success.jpg",
         subjects: ["Biology: 340", "Chemistry: 115", "Physics: 110"],
       },
       {
@@ -54,7 +54,7 @@ const resultsData = {
         standard: "12th Commerce",
         score: "95.6%",
         rank: "Board Topper",
-        image: "/student-commerce-topper.jpg",
+        image: "/decent-academy-v1/student-commerce-topper.jpg",
         subjects: ["Accounts: 98", "Economics: 96", "Maths: 94"],
       },
       {
@@ -62,7 +62,7 @@ const resultsData = {
         standard: "10th Standard",
         score: "98.4%",
         rank: "District Rank 5",
-        image: "/student-10th-ranker.jpg",
+        image: "/decent-academy-v1/student-10th-ranker.jpg",
         subjects: ["All subjects above 95%"],
       },
     ],
@@ -84,7 +84,7 @@ const resultsData = {
         standard: "10th Standard",
         score: "99.2%",
         rank: "School Topper",
-        image: "/student-2023-10th.jpg",
+        image: "/decent-academy-v1/student-2023-10th.jpg",
         subjects: ["Science: 100", "Math: 100", "Social: 98"],
       },
       {
@@ -92,7 +92,7 @@ const resultsData = {
         standard: "12th Science",
         score: "AIR 389",
         rank: "JEE Mains",
-        image: "/student-2023-jee.jpg",
+        image: "/decent-academy-v1/student-2023-jee.jpg",
         subjects: ["Math: 97", "Physics: 96", "Chemistry: 95"],
       },
       {
@@ -100,7 +100,7 @@ const resultsData = {
         standard: "12th Science",
         score: "State Rank 28",
         rank: "MHT-CET",
-        image: "/student-2023-cet.jpg",
+        image: "/decent-academy-v1/student-2023-cet.jpg",
         subjects: ["PCM: 185/200"],
       },
       {
@@ -108,7 +108,7 @@ const resultsData = {
         standard: "12th Commerce",
         score: "96.2%",
         rank: "Board Distinction",
-        image: "/student-2023-commerce.jpg",
+        image: "/decent-academy-v1/student-2023-commerce.jpg",
         subjects: ["Economics: 99", "Accounts: 97", "BST: 94"],
       },
     ],
@@ -130,7 +130,7 @@ const resultsData = {
         standard: "10th Standard",
         score: "98.8%",
         rank: "School Topper",
-        image: "/student-2022-10th.jpg",
+        image: "/decent-academy-v1/student-2022-10th.jpg",
         subjects: ["Math: 100", "Science: 99", "English: 98"],
       },
       {
@@ -138,7 +138,7 @@ const resultsData = {
         standard: "12th Science",
         score: "AIR 512",
         rank: "JEE Mains",
-        image: "/student-2022-jee.jpg",
+        image: "/decent-academy-v1/student-2022-jee.jpg",
         subjects: ["Chemistry: 98", "Math: 96", "Physics: 94"],
       },
       {
@@ -146,7 +146,7 @@ const resultsData = {
         standard: "12th Science",
         score: "State Rank 35",
         rank: "MHT-CET",
-        image: "/student-2022-cet.jpg",
+        image: "/decent-academy-v1/student-2022-cet.jpg",
         subjects: ["Overall: 182/200"],
       },
     ],

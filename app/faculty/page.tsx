@@ -16,7 +16,7 @@ const facultyData = {
       experience: "18 Years",
       specialization: "Vedic Maths, Problem Solving",
       achievements: ["Best Teacher Award 2023", "100+ Students scored 95%+"],
-      image: "/male-teacher-math.jpg",
+      image: "/decent-academy-v1/male-teacher-math.jpg",
       color: "from-primary to-accent",
     },
     {
@@ -26,7 +26,7 @@ const facultyData = {
       experience: "15 Years",
       specialization: "Creative Writing, Literature",
       achievements: ["Published Author", "Language Excellence Award"],
-      image: "/female-teacher-english.jpg",
+      image: "/decent-academy-v1/female-teacher-english.jpg",
       color: "from-accent to-secondary",
     },
     {
@@ -36,7 +36,7 @@ const facultyData = {
       experience: "12 Years",
       specialization: "Practical Science, Experiments",
       achievements: ["Science Innovator Award", "STEM Education Expert"],
-      image: "/male-teacher-science.jpg",
+      image: "/decent-academy-v1/male-teacher-science.jpg",
       color: "from-secondary to-primary",
     },
     {
@@ -46,7 +46,7 @@ const facultyData = {
       experience: "14 Years",
       specialization: "Algebra, Geometry",
       achievements: ["Mathematics Olympiad Trainer", "Regional Rank Holder Creator"],
-      image: "/female-teacher-math.jpg",
+      image: "/decent-academy-v1/female-teacher-math.jpg",
       color: "from-primary to-accent",
     },
     {
@@ -56,7 +56,7 @@ const facultyData = {
       experience: "16 Years",
       specialization: "Maharashtra Board Expert",
       achievements: ["Cultural Heritage Award", "State Board Excellence"],
-      image: "/male-teacher-marathi.jpg",
+      image: "/decent-academy-v1/male-teacher-marathi.jpg",
       color: "from-accent to-secondary",
     },
     {
@@ -66,7 +66,7 @@ const facultyData = {
       experience: "13 Years",
       specialization: "Life Sciences, Botany",
       achievements: ["Research Publications", "Environmental Science Expert"],
-      image: "/female-teacher-biology.jpg",
+      image: "/decent-academy-v1/female-teacher-biology.jpg",
       color: "from-secondary to-primary",
     },
   ],
@@ -78,7 +78,7 @@ const facultyData = {
       experience: "20 Years",
       specialization: "JEE Advanced, Mechanics",
       achievements: ["AIR Under 100 Producers", "20+ IIT Selections"],
-      image: "/male-teacher-physics.jpg",
+      image: "/decent-academy-v1/male-teacher-physics.jpg",
       color: "from-primary to-accent",
     },
     {
@@ -88,7 +88,7 @@ const facultyData = {
       experience: "17 Years",
       specialization: "Organic Chemistry, CET Expert",
       achievements: ["Top CET Ranks Producer", "Chemistry Olympiad Coach"],
-      image: "/female-teacher-chemistry.jpg",
+      image: "/decent-academy-v1/female-teacher-chemistry.jpg",
       color: "from-accent to-secondary",
     },
     {
@@ -98,7 +98,7 @@ const facultyData = {
       experience: "22 Years",
       specialization: "Calculus, Coordinate Geometry",
       achievements: ["JEE Mains 100 Percentile Makers", "Author of 5 Books"],
-      image: "/male-teacher-advanced-math.jpg",
+      image: "/decent-academy-v1/male-teacher-advanced-math.jpg",
       color: "from-secondary to-primary",
     },
     {
@@ -108,7 +108,7 @@ const facultyData = {
       experience: "16 Years",
       specialization: "NEET Preparation, Zoology",
       achievements: ["Government Medical Selections", "NEET AIR Under 500"],
-      image: "/female-teacher-neet.jpg",
+      image: "/decent-academy-v1/female-teacher-neet.jpg",
       color: "from-primary to-accent",
     },
     {
@@ -118,7 +118,7 @@ const facultyData = {
       experience: "19 Years",
       specialization: "Financial Accounting, Macro Economics",
       achievements: ["CA Foundation Success Rate 92%", "Commerce Board Toppers"],
-      image: "/male-teacher-commerce.jpg",
+      image: "/decent-academy-v1/male-teacher-commerce.jpg",
       color: "from-accent to-secondary",
     },
     {
@@ -128,7 +128,7 @@ const facultyData = {
       experience: "14 Years",
       specialization: "Business Management, Marketing",
       achievements: ["University Rank Holders", "Entrepreneurship Mentor"],
-      image: "/female-teacher-business.jpg",
+      image: "/decent-academy-v1/female-teacher-business.jpg",
       color: "from-secondary to-primary",
     },
   ],
