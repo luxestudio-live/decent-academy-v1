@@ -7,8 +7,16 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10">
+        {/* Logo Background */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-10">
+          <img 
+            src="/decent-academy-v1/DecentLogo.png" 
+            alt="" 
+            className="w-[800px] h-auto object-contain"
+          />
+        </div>
         <div className="absolute inset-0 opacity-5">
-          <img src="/hero-students.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="/decent-academy-v1/hero-students.jpg" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
         <div
