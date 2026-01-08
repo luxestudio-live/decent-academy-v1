@@ -16,7 +16,7 @@ export function FloatingEnquireButton() {
         {/* Main button */}
         <div className="relative flex items-center gap-3 bg-gradient-to-r from-primary via-secondary to-primary bg-size-200 animate-gradient px-6 py-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110">
           <MessageCircle className="w-6 h-6 text-background transition-transform duration-300 group-hover:rotate-12" />
-          <span className="text-background font-bold text-lg hidden md:block">
+          <span className="text-background font-bold text-lg">
             Enquire Now
           </span>
         </div>
