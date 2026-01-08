@@ -24,12 +24,16 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="relative bg-gradient-to-br from-foreground via-foreground to-primary/20 text-background overflow-hidden">
-      {/* Gradient Overlay Effects */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/30 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/20 rounded-full blur-3xl" />
+    <footer className="relative bg-gradient-to-br from-background via-background to-primary/5 text-foreground overflow-hidden border-t border-border/50">
+      {/* Glassmorphism Background Effects */}
+      <div className="absolute inset-0">
+        {/* Gradient Orbs */}
+        <div className="absolute top-0 right-0 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-br from-primary/20 via-secondary/20 to-transparent rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-0 left-0 w-[250px] h-[250px] md:w-[400px] md:h-[400px] bg-gradient-to-tr from-accent/20 via-secondary/15 to-transparent rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-1/2 left-1/3 w-[200px] h-[200px] md:w-[350px] md:h-[350px] bg-gradient-to-br from-primary/15 to-transparent rounded-full blur-3xl animate-float" style={{ animationDelay: "4s" }} />
+        
+        {/* Glassmorphism Overlay */}
+        <div className="absolute inset-0 backdrop-blur-[1px] bg-gradient-to-b from-background/50 via-background/70 to-background/90" />
       </div>
       
       <div className="container mx-auto px-4 lg:px-8 py-16 lg:py-20 relative z-10">
@@ -42,7 +46,7 @@ export function Footer() {
               </span>
               <span className="text-primary ml-2">ACADEMY</span>
             </h3>
-            <p className="text-background/70 leading-relaxed mb-6 max-w-md">
+            <p className="text-foreground/70 leading-relaxed mb-6 max-w-md">
               Empowering students to achieve academic excellence through innovative teaching methods and personalized
               attention.
             </p>
@@ -55,7 +59,7 @@ export function Footer() {
                 <a
                   key={index}
                   href={social.href}
-                  className="w-10 h-10 bg-background/10 hover:bg-secondary rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                  className="w-10 h-10 bg-primary/10 backdrop-blur-sm border border-primary/20 hover:bg-primary hover:text-background rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
@@ -71,7 +75,7 @@ export function Footer() {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-background/70 hover:text-secondary transition-colors duration-300 hover:translate-x-1 inline-block"
+                    className="text-foreground/70 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -88,7 +92,7 @@ export function Footer() {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-background/70 hover:text-secondary transition-colors duration-300 hover:translate-x-1 inline-block"
+                    className="text-foreground/70 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -105,7 +109,7 @@ export function Footer() {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-background/70 hover:text-secondary transition-colors duration-300 hover:translate-x-1 inline-block"
+                    className="text-foreground/70 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -116,44 +120,44 @@ export function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div className="border-t border-background/20 pt-8 mb-8">
+        <div className="border-t border-border/50 pt-8 mb-8">
           <div className="grid md:grid-cols-3 gap-6">
             <div className="flex items-start gap-3">
-              <MapPin className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
+              <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
               <div>
                 <div className="font-medium mb-1">Visit Us</div>
-                <div className="text-background/70 text-sm leading-relaxed">
+                <div className="text-foreground/70 text-sm leading-relaxed">
                   Shop no 1, Bus Stop, Tembipada Road, near Shiv Darshan Path, Bhandup West, Mumbai, Maharashtra 400078
                 </div>
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <Phone className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
+              <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
               <div>
                 <div className="font-medium mb-1">Call Us</div>
-                <div className="text-background/70 text-sm">+91 99673 97919</div>
+                <div className="text-foreground/70 text-sm">+91 99673 97919</div>
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <Mail className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
+              <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
               <div>
                 <div className="font-medium mb-1">Email Us</div>
-                <div className="text-background/70 text-sm">info@decentacademy.com</div>
+                <div className="text-foreground/70 text-sm">info@decentacademy.com</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-background/70 text-sm text-center md:text-left">
+        <div className="border-t border-border/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-foreground/70 text-sm text-center md:text-left">
             © 2025 Decent Academy. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <Link href="#" className="text-background/70 hover:text-secondary transition-colors duration-300">
+            <Link href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-background/70 hover:text-secondary transition-colors duration-300">
+            <Link href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">
               Terms of Service
             </Link>
           </div>
