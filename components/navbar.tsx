@@ -54,8 +54,8 @@ export function Navbar() {
               className="h-12 w-auto"
             />
             <span className="text-2xl lg:text-3xl font-bold tracking-tight">
-              <span className="text-primary">Decent</span>{" "}
-              <span className="text-primary">Academy</span>
+              <span className="text-primary">DECENT</span>{" "}
+              <span className="text-primary">ACADEMY</span>
             </span>
           </Link>
 
