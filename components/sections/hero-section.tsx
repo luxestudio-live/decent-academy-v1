@@ -34,7 +34,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium animate-scale-in border border-primary/20 backdrop-blur-sm">
             <Sparkles className="w-4 h-4" />
-            <span>Leading Coaching Institute Since 2010</span>
+            <span>Leading Coaching Institute Since 2006</span>
           </div>
 
           {/* Main Heading */}
@@ -77,7 +77,7 @@ export function HeroSection() {
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 max-w-4xl mx-auto">
             {[
-              { value: "15+", label: "Years Experience" },
+              { value: "19+", label: "Years Experience" },
               { value: "5000+", label: "Students Taught" },
               { value: "50+", label: "Expert Faculty" },
               { value: "95%", label: "Success Rate" },

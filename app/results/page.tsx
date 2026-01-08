@@ -179,7 +179,7 @@ export default function ResultsPage() {
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium border border-primary/20">
               <Trophy className="w-4 h-4" />
-              <span>Celebrating Excellence Since 2010</span>
+              <span>Celebrating Excellence Since 2006</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-tight">
