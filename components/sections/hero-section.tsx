@@ -18,18 +18,6 @@ export function HeroSection() {
             className="w-[400px] md:w-[600px] h-auto object-contain"
           />
         </div>
-        <div className="absolute inset-0 opacity-5">
-          <img src="/decent-academy-v1/hero-students.jpg" alt="" className="w-full h-full object-cover" />
-        </div>
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div
-          className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float"
-          style={{ animationDelay: "2s" }}
-        />
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-3xl animate-float"
-          style={{ animationDelay: "4s" }}
-        />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 py-20">

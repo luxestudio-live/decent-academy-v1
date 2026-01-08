@@ -24,7 +24,19 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="relative bg-gradient-to-br from-background/60 via-background/70 to-primary/10 backdrop-blur-xl text-foreground overflow-hidden border-t border-primary/20">
+    <footer className="relative text-foreground overflow-hidden border-t border-primary/20">
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <img 
+          src="/decent-academy-v1/footerbg.png" 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      {/* Glassmorphism Overlay */}
+      <div className="absolute inset-0 bg-background/80 backdrop-blur-md" />
+      
       {/* Large Logo Watermark */}
       <div className="absolute inset-0 flex items-center justify-center py-8 opacity-5">
         <img 
@@ -36,9 +48,9 @@ export function Footer() {
       
       {/* Dynamic Gradient Overlay */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-gradient-radial from-primary/20 via-secondary/10 to-transparent blur-3xl animate-float" />
-        <div className="absolute bottom-0 left-0 w-[350px] h-[350px] md:w-[550px] md:h-[550px] bg-gradient-radial from-accent/20 via-primary/10 to-transparent blur-3xl animate-float" style={{ animationDelay: "3s" }} />
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-radial from-secondary/15 to-transparent blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-gradient-radial from-primary/15 via-secondary/8 to-transparent blur-3xl animate-float" />
+        <div className="absolute bottom-0 left-0 w-[350px] h-[350px] md:w-[550px] md:h-[550px] bg-gradient-radial from-accent/15 via-primary/8 to-transparent blur-3xl animate-float" style={{ animationDelay: "3s" }} />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-radial from-secondary/12 to-transparent blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
       </div>
       
       <div className="container mx-auto px-4 lg:px-8 py-16 lg:py-20 relative z-10">
