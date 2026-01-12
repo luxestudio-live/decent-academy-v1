@@ -5,110 +5,71 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Camera, X } from "lucide-react"
 
-type GalleryCategory = "all" | "classroom" | "events" | "achievements" | "cultural" | "sports"
-
 const galleryImages = [
   {
     id: 1,
-    src: "/decent-academy-v1/gallery-classroom-1.jpg",
-    category: "classroom",
-    title: "Interactive Learning Session",
-    description: "Students engaged in collaborative problem-solving",
+    src: "/decent-academy-v1/da.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
   {
     id: 2,
-    src: "/decent-academy-v1/gallery-achievement-1.jpg",
-    category: "achievements",
-    title: "JEE Toppers Celebration",
-    description: "Congratulating our AIR achievers",
+    src: "/decent-academy-v1/da1.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
   {
     id: 3,
-    src: "/decent-academy-v1/gallery-cultural-1.jpg",
-    category: "cultural",
-    title: "Annual Day Performance",
-    description: "Students showcasing their talents",
+    src: "/decent-academy-v1/da2.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
   {
     id: 4,
-    src: "/decent-academy-v1/gallery-sports-1.jpg",
-    category: "sports",
-    title: "Sports Day Events",
-    description: "Inter-batch sports competition",
+    src: "/decent-academy-v1/da3.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
   {
     id: 5,
-    src: "/decent-academy-v1/gallery-event-1.jpg",
-    category: "events",
-    title: "Science Exhibition",
-    description: "Student projects on display",
+    src: "/decent-academy-v1/da4.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
   {
     id: 6,
-    src: "/decent-academy-v1/gallery-classroom-2.jpg",
-    category: "classroom",
-    title: "Laboratory Experiments",
-    description: "Hands-on practical sessions",
+    src: "/decent-academy-v1/da5.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
   {
     id: 7,
-    src: "/decent-academy-v1/gallery-achievement-2.jpg",
-    category: "achievements",
-    title: "Board Exam Toppers",
-    description: "10th standard distinction holders",
+    src: "/decent-academy-v1/da6.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
   {
     id: 8,
-    src: "/decent-academy-v1/gallery-cultural-2.jpg",
-    category: "cultural",
-    title: "Traditional Day Celebration",
-    description: "Celebrating our cultural heritage",
+    src: "/decent-academy-v1/da7.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
   {
     id: 9,
-    src: "/decent-academy-v1/gallery-event-2.jpg",
-    category: "events",
-    title: "Parent-Teacher Meet",
-    description: "Collaborative discussion on student progress",
+    src: "/decent-academy-v1/da8.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
   {
     id: 10,
-    src: "/decent-academy-v1/gallery-classroom-3.jpg",
-    category: "classroom",
-    title: "Smart Classroom Technology",
-    description: "Digital learning environment",
+    src: "/decent-academy-v1/da9.jpeg",
+    title: "Decent Academy",
+    description: "Moments from Decent Academy",
   },
-  {
-    id: 11,
-    src: "/decent-academy-v1/gallery-achievement-3.jpg",
-    category: "achievements",
-    title: "CET State Rankers",
-    description: "Celebrating top CET performers",
-  },
-  {
-    id: 12,
-    src: "/decent-academy-v1/gallery-sports-2.jpg",
-    category: "sports",
-    title: "Cricket Tournament",
-    description: "Annual inter-academy match",
-  },
-]
-
-const categories = [
-  { id: "all", label: "All Photos" },
-  { id: "classroom", label: "Classroom" },
-  { id: "events", label: "Events" },
-  { id: "achievements", label: "Achievements" },
-  { id: "cultural", label: "Cultural" },
-  { id: "sports", label: "Sports" },
 ]
 
 export default function GalleryPage() {
-  const [activeCategory, setActiveCategory] = useState<GalleryCategory>("all")
   const [selectedImage, setSelectedImage] = useState<(typeof galleryImages)[0] | null>(null)
-
-  const filteredImages =
-    activeCategory === "all" ? galleryImages : galleryImages.filter((img) => img.category === activeCategory)
 
   return (
     <main className="min-h-screen">
@@ -143,32 +104,11 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Category Filter */}
-      <section className="py-8 bg-background/95 backdrop-blur-lg border-y border-border/50">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-3 max-w-4xl mx-auto">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id as GalleryCategory)}
-                className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
-                  activeCategory === category.id
-                    ? "bg-gradient-to-r from-primary to-accent text-white shadow-xl scale-105"
-                    : "bg-card border border-border/50 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1"
-                }`}
-              >
-                {category.label}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Gallery Grid */}
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredImages.map((image, index) => (
+            {galleryImages.map((image, index) => (
               <div
                 key={image.id}
                 onClick={() => setSelectedImage(image)}
