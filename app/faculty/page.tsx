@@ -24,7 +24,7 @@ const facultyList: FacultyMember[] = [
 		experience: "",
 		specialization: "",
 		achievements: [],
-		image: "/ramkrishna-badgujar.jpg",
+		image: "/Ramkrishna Badgujar.jpeg",
 		color: "from-secondary to-primary",
 	},
 	{
@@ -34,7 +34,7 @@ const facultyList: FacultyMember[] = [
 		experience: "",
 		specialization: "",
 		achievements: [],
-		image: "/sujeet-patil.jpg",
+		image: "/Sujeet Patil.png",
 		color: "from-accent to-secondary",
 	},
 	{
@@ -44,7 +44,7 @@ const facultyList: FacultyMember[] = [
 		experience: "",
 		specialization: "",
 		achievements: [],
-		image: "/pratik-sawant.jpg",
+		image: "/Pratik Sawant.jpeg",
 		color: "from-accent to-secondary",
 	},
 	{
@@ -54,7 +54,7 @@ const facultyList: FacultyMember[] = [
 		experience: "16 Years",
 		specialization: "O.CM. / S.P",
 		achievements: [],
-		image: "/pravin-thorat.jpg",
+		image: "/PRAVIN DEVIDAS THORAT.jpeg",
 		color: "from-primary to-accent",
 	},
 	{
@@ -64,7 +64,7 @@ const facultyList: FacultyMember[] = [
 		experience: "",
 		specialization: "",
 		achievements: [],
-		image: "/santosh-sawant.jpg",
+		image: "/Santosh Gopal Sawant.jpeg",
 		color: "from-secondary to-primary",
 	},
 	{
@@ -74,7 +74,7 @@ const facultyList: FacultyMember[] = [
 		experience: "11 Years",
 		specialization: "",
 		achievements: [],
-		image: "/arun-gauda.jpg",
+		image: "/Arun Saheb Gauda.jpg",
 		color: "from-primary to-accent",
 	},
 ]
