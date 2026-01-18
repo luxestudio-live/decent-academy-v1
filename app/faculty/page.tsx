@@ -33,7 +33,57 @@ const facultyData = {
       name: "Mr. Santosh Patil",
       subject: "Science (Physics, Chemistry)",
       qualification: "M.Sc. Physics, B.Ed.",
-      experience: "12 Years",
+      const facultyList = [
+                          {
+                            name: "Arun Saheb Gauda",
+                            subject: "Accounts, Financial Studies, Economics",
+                            qualification: "B.Com (Account & Finance), M.Com (Accounts & Finance), M.Com (Management)",
+                            experience: "11 Years",
+                            specialization: "",
+                            achievements: [],
+                            image: "/decent-academy-v1/arun-gauda.jpg",
+                            color: "from-primary to-accent",
+                          },
+                      {
+                        name: "Santosh Gopal Sawant",
+                        subject: "",
+                        qualification: "",
+                        experience: "",
+                        specialization: "",
+                        achievements: [],
+                        image: "/decent-academy-v1/santosh-sawant.jpg",
+                        color: "from-secondary to-primary",
+                      },
+                  {
+                    name: "Pravin Devidas Thorat",
+                    subject: "Commerce Teacher",
+                    qualification: "M.Com, B.Ed, MBA, LLB",
+                    experience: "16 Years",
+                    specialization: "O.CM. / S.P",
+                    achievements: [],
+                    image: "/decent-academy-v1/pravin-thorat.jpg",
+                    color: "from-primary to-accent",
+                  },
+              {
+                name: "Pratik Sawant",
+                subject: "English, S.S",
+                qualification: "D.Ed",
+                experience: "",
+                specialization: "",
+                achievements: [],
+                image: "/decent-academy-v1/pratik-sawant.jpg",
+                color: "from-accent to-secondary",
+              },
+          {
+            name: "Sujeet Patil",
+            subject: "Marathi, Hindi",
+            qualification: "MA B.Ed Marathi Hindi",
+            experience: "",
+            specialization: "",
+            achievements: [],
+            image: "/decent-academy-v1/sujeet-patil.jpg",
+            color: "from-accent to-secondary",
+          },
       specialization: "Practical Science, Experiments",
       achievements: ["Science Innovator Award", "STEM Education Expert"],
       image: "/decent-academy-v1/male-teacher-science.jpg",
@@ -71,16 +121,16 @@ const facultyData = {
     },
   ],
   "11-12": [
-    {
-      name: "Dr. Arun Mehta",
-      subject: "Physics (JEE/CET)",
-      qualification: "Ph.D. Physics, IIT Alumni",
-      experience: "20 Years",
-      specialization: "JEE Advanced, Mechanics",
-      achievements: ["AIR Under 100 Producers", "20+ IIT Selections"],
-      image: "/decent-academy-v1/male-teacher-physics.jpg",
-      color: "from-primary to-accent",
-    },
+      {
+        name: "Virendra Kumar Badgujar",
+        subject: "Science Teacher",
+        qualification: "M.A. & B.Ed",
+        experience: "",
+        specialization: "Owner / Partner",
+        achievements: [],
+        image: "/decent-academy-v1/virendra-badgujar.jpg",
+        color: "from-primary to-accent",
+      },
     {
       name: "Prof. Kavita Rao",
       subject: "Chemistry (JEE/CET)",
@@ -166,44 +216,13 @@ export default function FacultyPage() {
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
               Experienced educators dedicated to nurturing excellence and shaping futures
-            </p>
-          </div>
-        </div>
+      export default function FacultyPage() {
+        // No filter, show all faculty
+        const faculty = facultyList
       </section>
 
       {/* Faculty Toggle */}
-      <section className="py-8 bg-background/95 backdrop-blur-lg border-y border-border/50">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex items-center justify-center gap-4 max-w-2xl mx-auto">
-            <button
-              onClick={() => setActiveCategory("5-10")}
-              className={`group relative px-8 py-4 rounded-xl font-medium transition-all duration-300 flex-1 ${
-                activeCategory === "5-10"
-                  ? "bg-gradient-to-r from-primary to-accent text-white shadow-xl scale-105"
-                  : "bg-card border border-border/50 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1"
-              }`}
-            >
-              <span className="flex items-center justify-center gap-2">
-                <BookOpen className="w-5 h-5" />
-                <span>5th to 10th Faculty</span>
-              </span>
-            </button>
-            <button
-              onClick={() => setActiveCategory("11-12")}
-              className={`group relative px-8 py-4 rounded-xl font-medium transition-all duration-300 flex-1 ${
-                activeCategory === "11-12"
-                  ? "bg-gradient-to-r from-primary to-accent text-white shadow-xl scale-105"
-                  : "bg-card border border-border/50 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1"
-              }`}
-            >
-              <span className="flex items-center justify-center gap-2">
-                <GraduationCap className="w-5 h-5" />
-                <span>11th & 12th Faculty</span>
-              </span>
-            </button>
-          </div>
-        </div>
-      </section>
+      {/* Removed filter section, all faculty shown below */}
 
       {/* Faculty Grid */}
       <section className="py-16 lg:py-20">
