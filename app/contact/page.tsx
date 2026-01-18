@@ -54,24 +54,23 @@ export default function ContactPage() {
     name: "",
     email: "",
     phone: "",
-    course: "",
     message: "",
   })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("[v0] Form submitted:", formData)
-    // Handle form submission
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
-
-  return (
-    <main className="min-h-screen">
-
-
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                      Phone Number *
+                    </label>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="Enter your phone number"
+                      required
+                      className="border-2 focus:border-primary transition-colors duration-300"
+                    />
+                  </div>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
               Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
             </p>
