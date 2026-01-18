@@ -132,7 +132,6 @@ const facultyData = {
     },
   ],
 }
-
 export default function FacultyPage() {
   const [activeCategory, setActiveCategory] = useState<FacultyCategory>("5-10")
   const faculty = facultyData[activeCategory]
