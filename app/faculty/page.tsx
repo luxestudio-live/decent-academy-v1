@@ -155,28 +155,6 @@ export default function FacultyPage() {
 												{member.qualification}
 											</span>
 										</div>
-										<div className="flex items-start gap-2">
-											<Star className="w-4 h-4 text-secondary mt-1 flex-shrink-0" />
-											<span className="text-sm text-foreground/80">
-												{member.specialization}
-											</span>
-										</div>
-									</div>
-									{/* Achievements */}
-									<div className="pt-4 border-t border-border/50">
-										<h4 className="text-xs font-semibold text-muted-foreground uppercase mb-3">
-											Key Achievements
-										</h4>
-										<div className="space-y-2">
-											{member.achievements.map((achievement, idx) => (
-												<div key={idx} className="flex items-start gap-2">
-													<div className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0" />
-													<span className="text-sm text-foreground/80">
-														{achievement}
-													</span>
-												</div>
-											))}
-										</div>
 									</div>
 								</div>
 							</div>
