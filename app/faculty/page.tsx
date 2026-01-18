@@ -2,9 +2,21 @@
 
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { Award, BookOpen, GraduationCap, Star, Users } from "lucide-react"
+import React from "react"
+import { Award, GraduationCap, Star, Users } from "lucide-react"
 
-const facultyList = [
+type FacultyMember = {
+	name: string;
+	subject: string;
+	qualification: string;
+	experience: string;
+	specialization: string;
+	achievements: string[];
+	image: string;
+	color: string;
+};
+
+const facultyList: FacultyMember[] = [
 	// 5-10 faculty
 	{
 		name: "Dr. Rajesh Kumar",
@@ -191,7 +203,6 @@ const facultyList = [
 ]
 
 export default function FacultyPage() {
-	const faculty = facultyList
 	return (
 		<main className="min-h-screen">
 			<Navbar />
@@ -225,7 +236,7 @@ export default function FacultyPage() {
 			<section className="py-16 lg:py-20">
 				<div className="container mx-auto px-4 lg:px-8">
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-						{faculty.map((member, index) => (
+						{facultyList.map((member, index) => (
 							<div
 								key={index}
 								className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 animate-scale-in"
