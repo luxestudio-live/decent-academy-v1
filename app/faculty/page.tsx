@@ -98,16 +98,6 @@ const facultyList: FacultyMember[] = [
 		color: "from-primary to-accent",
 	},
 ]
-	{
-		name: "Jayant Pawar",
-		subject: "Counsellor",
-		qualification: "",
-		experience: "",
-		specialization: "",
-		achievements: [],
-		image: "jayant.jpeg",
-		color: "from-primary to-accent",
-	},
 
 export default function FacultyPage() {
 	return (
