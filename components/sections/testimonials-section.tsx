@@ -5,30 +5,30 @@ import { Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
+    name: "Veena Pednekar",
+    course: "Student",
+    rank: "",
+    image: "/decent-academy-v1/placeholder-user.jpg",
+    content:
+      "My classes at Decent Academy was an incredibly positive experience, marked by highly knowledgeable teachers who made complex concepts easy to understand and provided ample support through doubt-clearing sessions.",
+    rating: 5,
+  },
+  {
+    name: "Vinay Lalwani",
+    course: "Tally Course",
+    rank: "",
+    image: "/decent-academy-v1/placeholder-user.jpg",
+    content:
+      "My experience after joining tally in decent was awesome. Concepts were taught in detailed and all the doubts were clear.",
+    rating: 5,
+  },
+  {
     name: "Priya Sharma",
-    course: "12th Science (JEE)",
-    rank: "AIR 245 in JEE Mains",
-    image: "/decent-academy-v1/student-success.jpg",
+    course: "Student",
+    rank: "",
+    image: "/decent-academy-v1/placeholder-user.jpg",
     content:
-      "The faculty at Decent Academy transformed my approach to learning. Their personalized attention and innovative teaching methods helped me achieve my dream rank.",
-    rating: 5,
-  },
-  {
-    name: "Rahul Patil",
-    course: "12th Science (CET)",
-    rank: "State Rank 12",
-    image: "/decent-academy-v1/student-cet-topper.jpg",
-    content:
-      "Best decision I made for my career. The structured curriculum and regular assessments kept me on track throughout my preparation journey.",
-    rating: 5,
-  },
-  {
-    name: "Ananya Desai",
-    course: "10th Standard",
-    rank: "98.4% in Boards",
-    image: "/decent-academy-v1/student-10th-ranker.jpg",
-    content:
-      "The teachers make complex topics so easy to understand. I not only improved my grades but also developed a genuine love for learning.",
+      "Very nice tution class techers and their teaching quality is very good they understand every student and solve their every issue",
     rating: 5,
   },
 ]
@@ -93,7 +93,9 @@ export function TestimonialsSection() {
                     <div>
                       <div className="font-bold text-foreground">{testimonial.name}</div>
                       <div className="text-sm text-muted-foreground">{testimonial.course}</div>
-                      <div className="text-sm text-primary font-medium mt-1">{testimonial.rank}</div>
+                      {testimonial.rank && (
+                        <div className="text-sm text-primary font-medium mt-1">{testimonial.rank}</div>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -21,7 +21,7 @@ const courses = [
     icon: Calculator,
     title: "11th & 12th Commerce",
     medium: "Board & Competitive Exams",
-    subjects: ["Accounts", "Economics", "Business Studies", "Maths"],
+    subjects: ["Accounts", "Economics", "O.C.M", "Maths"],
     color: "from-secondary to-primary",
   },
 ]

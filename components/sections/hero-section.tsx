@@ -68,10 +68,10 @@ export function HeroSection() {
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 max-w-4xl mx-auto">
             {[
-              { value: "19+", label: "Years Experience" },
-              { value: "5000+", label: "Students Taught" },
-              { value: "50+", label: "Expert Faculty" },
-              { value: "95%", label: "Success Rate" },
+              { value: "20+", label: "Years Experience" },
+              { value: "10000+", label: "Students Taught" },
+              { value: "30+", label: "Expert Faculty" },
+              { value: "100%", label: "Success Rate" },
             ].map((stat, index) => (
               <div
                 key={index}

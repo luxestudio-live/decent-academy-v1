@@ -432,7 +432,7 @@ export default function ContactPage() {
               },
               {
                 q: "What is the batch size?",
-                a: "We maintain small batch sizes of 20-35 students for personalized attention.",
+                a: "We maintain small batch sizes of 35-40 students for personalized attention.",
               },
               {
                 q: "Do you provide study material?",
