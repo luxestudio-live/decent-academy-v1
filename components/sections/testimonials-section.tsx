@@ -38,9 +38,9 @@ export function TestimonialsSection() {
 
   return (
     <section className="py-20 lg:py-32 bg-muted/decent-academy-v1/30 relative overflow-hidden">
-      {/decent-academy-v1/* Decorative Elements */decent-academy-v1/}
-      <div className="absolute top-10 right-10 w-64 h-64 bg-primary/decent-academy-v1/10 rounded-full blur-3xl" /decent-academy-v1/>
-      <div className="absolute bottom-10 left-10 w-64 h-64 bg-accent/decent-academy-v1/10 rounded-full blur-3xl" /decent-academy-v1/>
+      {/* Decorative Elements */}
+      <div className="absolute top-10 right-10 w-64 h-64 bg-primary/decent-academy-v1/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 left-10 w-64 h-64 bg-accent/decent-academy-v1/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -48,12 +48,12 @@ export function TestimonialsSection() {
             Success Stories That
             <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Inspire Excellence
-            </decent-academy-v1/span>
-          </decent-academy-v1/h2>
+            </span>
+          </h2>
           <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
             Hear from our students who achieved their dreams
-          </decent-academy-v1/p>
-        </decent-academy-v1/div>
+          </p>
+        </div>
 
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-8">
@@ -67,43 +67,43 @@ export function TestimonialsSection() {
                     : "border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/30 hover:shadow-xl hover:-translate-y-1"
                 }`}
               >
-                {/decent-academy-v1/* Quote Icon */decent-academy-v1/}
+                {/* Quote Icon */}
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center rotate-12 group-hover:rotate-0 transition-transform duration-500">
-                  <Quote className="w-8 h-8 text-white" /decent-academy-v1/>
-                </decent-academy-v1/div>
+                  <Quote className="w-8 h-8 text-white" />
+                </div>
 
                 <div className="p-8">
-                  {/decent-academy-v1/* Rating */decent-academy-v1/}
+                  {/* Rating */}
                   <div className="flex gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-secondary text-secondary" /decent-academy-v1/>
+                      <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
                     ))}
-                  </decent-academy-v1/div>
+                  </div>
 
-                  {/decent-academy-v1/* Content */decent-academy-v1/}
-                  <p className="text-foreground/decent-academy-v1/90 leading-relaxed mb-6 italic">"{testimonial.content}"</decent-academy-v1/p>
+                  {/* Content */}
+                  <p className="text-foreground/decent-academy-v1/90 leading-relaxed mb-6 italic">"{testimonial.content}"</p>
 
-                  {/decent-academy-v1/* Student Info */decent-academy-v1/}
+                  {/* Student Info */}
                   <div className="flex items-center gap-4 pt-6 border-t border-border/decent-academy-v1/50">
                     <img
                       src={testimonial.image || "/placeholder.svg"}
                       alt={testimonial.name}
                       className="w-14 h-14 rounded-full object-cover border-2 border-primary/decent-academy-v1/20"
-                    /decent-academy-v1/>
+                    />
                     <div>
-                      <div className="font-bold text-foreground">{testimonial.name}</decent-academy-v1/div>
-                      <div className="text-sm text-muted-foreground">{testimonial.course}</decent-academy-v1/div>
+                      <div className="font-bold text-foreground">{testimonial.name}</div>
+                      <div className="text-sm text-muted-foreground">{testimonial.course}</div>
                       {testimonial.rank && (
-                        <div className="text-sm text-primary font-medium mt-1">{testimonial.rank}</decent-academy-v1/div>
+                        <div className="text-sm text-primary font-medium mt-1">{testimonial.rank}</div>
                       )}
-                    </decent-academy-v1/div>
-                  </decent-academy-v1/div>
-                </decent-academy-v1/div>
-              </decent-academy-v1/div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             ))}
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/div>
-    </decent-academy-v1/section>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }

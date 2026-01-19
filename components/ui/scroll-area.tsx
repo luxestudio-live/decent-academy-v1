@@ -21,10 +21,10 @@ function ScrollArea({
         className="focus-visible:ring-ring/decent-academy-v1/50 size-full rounded-[inherit] transition-[color,box-shadow] outline-none focus-visible:ring-[3px] focus-visible:outline-1"
       >
         {children}
-      </decent-academy-v1/ScrollAreaPrimitive.Viewport>
-      <ScrollBar /decent-academy-v1/>
-      <ScrollAreaPrimitive.Corner /decent-academy-v1/>
-    </decent-academy-v1/ScrollAreaPrimitive.Root>
+      </ScrollAreaPrimitive.Viewport>
+      <ScrollBar />
+      <ScrollAreaPrimitive.Corner />
+    </ScrollAreaPrimitive.Root>
   )
 }
 
@@ -50,8 +50,8 @@ function ScrollBar({
       <ScrollAreaPrimitive.ScrollAreaThumb
         data-slot="scroll-area-thumb"
         className="bg-border relative flex-1 rounded-full"
-      /decent-academy-v1/>
-    </decent-academy-v1/ScrollAreaPrimitive.ScrollAreaScrollbar>
+      />
+    </ScrollAreaPrimitive.ScrollAreaScrollbar>
   )
 }
 

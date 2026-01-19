@@ -79,9 +79,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfairDisplay.variable} ${inter.variable} ${bebasNeue.variable} font-sans antialiased`}>
         {children}
-        <FloatingEnquireButton /decent-academy-v1/>
-        <Analytics /decent-academy-v1/>
-      </decent-academy-v1/body>
-    </decent-academy-v1/html>
+        <FloatingEnquireButton />
+        <Analytics />
+      </body>
+    </html>
   )
 }

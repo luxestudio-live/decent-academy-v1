@@ -132,13 +132,13 @@ function Calendar({
               ref={rootRef}
               className={cn(className)}
               {...props}
-            /decent-academy-v1/>
+            />
           )
         },
         Chevron: ({ className, orientation, ...props }) => {
           if (orientation === 'left') {
             return (
-              <ChevronLeftIcon className={cn('size-4', className)} {...props} /decent-academy-v1/>
+              <ChevronLeftIcon className={cn('size-4', className)} {...props} />
             )
           }
 
@@ -147,12 +147,12 @@ function Calendar({
               <ChevronRightIcon
                 className={cn('size-4', className)}
                 {...props}
-              /decent-academy-v1/>
+              />
             )
           }
 
           return (
-            <ChevronDownIcon className={cn('size-4', className)} {...props} /decent-academy-v1/>
+            <ChevronDownIcon className={cn('size-4', className)} {...props} />
           )
         },
         DayButton: CalendarDayButton,
@@ -161,14 +161,14 @@ function Calendar({
             <td {...props}>
               <div className="flex size-(--cell-size) items-center justify-center text-center">
                 {children}
-              </decent-academy-v1/div>
-            </decent-academy-v1/td>
+              </div>
+            </td>
           )
         },
         ...components,
       }}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -206,7 +206,7 @@ function CalendarDayButton({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

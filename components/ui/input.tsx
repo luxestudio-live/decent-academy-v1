@@ -14,7 +14,7 @@ function Input({ className, type, ...props }: React.ComponentProps<'input'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

@@ -31,7 +31,7 @@ function InputGroup({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -74,7 +74,7 @@ function InputGroupAddon({
         e.currentTarget.parentElement?.querySelector('input')?.focus()
       }}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -111,7 +111,7 @@ function InputGroupButton({
       variant={variant}
       className={cn(inputGroupButtonVariants({ size }), className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -123,7 +123,7 @@ function InputGroupText({ className, ...props }: React.ComponentProps<'span'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -139,7 +139,7 @@ function InputGroupInput({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -155,7 +155,7 @@ function InputGroupTextarea({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

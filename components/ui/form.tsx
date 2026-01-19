@@ -37,8 +37,8 @@ const FormField = <
 }: ControllerProps<TFieldValues, TName>) => {
   return (
     <FormFieldContext.Provider value={{ name: props.name }}>
-      <Controller {...props} /decent-academy-v1/>
-    </decent-academy-v1/FormFieldContext.Provider>
+      <Controller {...props} />
+    </FormFieldContext.Provider>
   )
 }
 
@@ -82,8 +82,8 @@ function FormItem({ className, ...props }: React.ComponentProps<'div'>) {
         data-slot="form-item"
         className={cn('grid gap-2', className)}
         {...props}
-      /decent-academy-v1/>
-    </decent-academy-v1/FormItemContext.Provider>
+      />
+    </FormItemContext.Provider>
   )
 }
 
@@ -100,7 +100,7 @@ function FormLabel({
       className={cn('data-[error=true]:text-destructive', className)}
       htmlFor={formItemId}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -118,7 +118,7 @@ function FormControl({ ...props }: React.ComponentProps<typeof Slot>) {
       }
       aria-invalid={!!error}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -131,7 +131,7 @@ function FormDescription({ className, ...props }: React.ComponentProps<'p'>) {
       id={formDescriptionId}
       className={cn('text-muted-foreground text-sm', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -151,7 +151,7 @@ function FormMessage({ className, ...props }: React.ComponentProps<'p'>) {
       {...props}
     >
       {body}
-    </decent-academy-v1/p>
+    </p>
   )
 }
 

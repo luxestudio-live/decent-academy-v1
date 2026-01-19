@@ -36,7 +36,7 @@ function useCarousel() {
   const context = React.useContext(CarouselContext)
 
   if (!context) {
-    throw new Error('useCarousel must be used within a <Carousel /decent-academy-v1/>')
+    throw new Error('useCarousel must be used within a <Carousel />')
   }
 
   return context
@@ -127,8 +127,8 @@ function Carousel({
         {...props}
       >
         {children}
-      </decent-academy-v1/div>
-    </decent-academy-v1/CarouselContext.Provider>
+      </div>
+    </CarouselContext.Provider>
   )
 }
 
@@ -148,8 +148,8 @@ function CarouselContent({ className, ...props }: React.ComponentProps<'div'>) {
           className,
         )}
         {...props}
-      /decent-academy-v1/>
-    </decent-academy-v1/div>
+      />
+    </div>
   )
 }
 
@@ -167,7 +167,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -195,9 +195,9 @@ function CarouselPrevious({
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft /decent-academy-v1/>
-      <span className="sr-only">Previous slide</decent-academy-v1/span>
-    </decent-academy-v1/Button>
+      <ArrowLeft />
+      <span className="sr-only">Previous slide</span>
+    </Button>
   )
 }
 
@@ -225,9 +225,9 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight /decent-academy-v1/>
-      <span className="sr-only">Next slide</decent-academy-v1/span>
-    </decent-academy-v1/Button>
+      <ArrowRight />
+      <span className="sr-only">Next slide</span>
+    </Button>
   )
 }
 

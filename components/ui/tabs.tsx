@@ -14,7 +14,7 @@ function Tabs({
       data-slot="tabs"
       className={cn('flex flex-col gap-2', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -30,7 +30,7 @@ function TabsList({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -46,7 +46,7 @@ function TabsTrigger({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -59,7 +59,7 @@ function TabsContent({
       data-slot="tabs-content"
       className={cn('flex-1 outline-none', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

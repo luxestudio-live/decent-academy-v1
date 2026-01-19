@@ -5,7 +5,7 @@ import * as AspectRatioPrimitive from '@radix-ui/decent-academy-v1/react-aspect-
 function AspectRatio({
   ...props
 }: React.ComponentProps<typeof AspectRatioPrimitive.Root>) {
-  return <AspectRatioPrimitive.Root data-slot="aspect-ratio" {...props} /decent-academy-v1/>
+  return <AspectRatioPrimitive.Root data-slot="aspect-ratio" {...props} />
 }
 
 export { AspectRatio }

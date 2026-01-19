@@ -21,7 +21,7 @@ function Separator({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

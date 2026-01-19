@@ -23,9 +23,9 @@ function Checkbox({
         data-slot="checkbox-indicator"
         className="flex items-center justify-center text-current transition-none"
       >
-        <CheckIcon className="size-3.5" /decent-academy-v1/>
-      </decent-academy-v1/CheckboxPrimitive.Indicator>
-    </decent-academy-v1/CheckboxPrimitive.Root>
+        <CheckIcon className="size-3.5" />
+      </CheckboxPrimitive.Indicator>
+    </CheckboxPrimitive.Root>
   )
 }
 

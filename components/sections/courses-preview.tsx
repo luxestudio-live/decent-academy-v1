@@ -35,12 +35,12 @@ export function CoursesPreview() {
             Comprehensive
             <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Course Offerings
-            </decent-academy-v1/span>
-          </decent-academy-v1/h2>
+            </span>
+          </h2>
           <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
             Tailored programs designed to bring out the best in every student
-          </decent-academy-v1/p>
-        </decent-academy-v1/div>
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {courses.map((course, index) => (
@@ -48,58 +48,58 @@ export function CoursesPreview() {
               key={index}
               className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
             >
-              {/decent-academy-v1/* Gradient Overlay */decent-academy-v1/}
+              {/* Gradient Overlay */}
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${course.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
-              /decent-academy-v1/>
+              />
 
               <div className="relative z-10 p-8">
-                {/decent-academy-v1/* Icon */decent-academy-v1/}
+                {/* Icon */}
                 <div
                   className={`w-16 h-16 bg-gradient-to-br ${course.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500`}
                 >
-                  <course.icon className="w-8 h-8 text-white" /decent-academy-v1/>
-                </decent-academy-v1/div>
+                  <course.icon className="w-8 h-8 text-white" />
+                </div>
 
-                {/decent-academy-v1/* Content */decent-academy-v1/}
+                {/* Content */}
                 <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">
                   {course.title}
-                </decent-academy-v1/h3>
-                <p className="text-muted-foreground mb-6 font-medium">{course.medium}</decent-academy-v1/p>
+                </h3>
+                <p className="text-muted-foreground mb-6 font-medium">{course.medium}</p>
 
-                {/decent-academy-v1/* Subjects */decent-academy-v1/}
+                {/* Subjects */}
                 <div className="space-y-2 mb-6">
                   {course.subjects.map((subject, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-sm text-foreground/decent-academy-v1/80">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full" /decent-academy-v1/>
-                      <span>{subject}</decent-academy-v1/span>
-                    </decent-academy-v1/div>
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full" />
+                      <span>{subject}</span>
+                    </div>
                   ))}
-                </decent-academy-v1/div>
+                </div>
 
-                {/decent-academy-v1/* Button */decent-academy-v1/}
+                {/* Button */}
                 <Button variant="ghost" className="w-full group/decent-academy-v1/btn justify-between hover:bg-primary/decent-academy-v1/10" asChild>
                   <Link href="/courses">
-                    <span>Learn More</decent-academy-v1/span>
-                    <ArrowRight className="w-4 h-4 group-hover/decent-academy-v1/btn:translate-x-1 transition-transform duration-300" /decent-academy-v1/>
-                  </decent-academy-v1/Link>
-                </decent-academy-v1/Button>
-              </decent-academy-v1/div>
-            </decent-academy-v1/div>
+                    <span>Learn More</span>
+                    <ArrowRight className="w-4 h-4 group-hover/decent-academy-v1/btn:translate-x-1 transition-transform duration-300" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
           ))}
-        </decent-academy-v1/div>
+        </div>
 
         <div className="text-center">
           <Button size="lg" className="text-lg px-8 py-6 group" asChild>
             <Link href="/courses">
               <span className="flex items-center gap-2">
                 View All Courses
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" /decent-academy-v1/>
-              </decent-academy-v1/span>
-            </decent-academy-v1/Link>
-          </decent-academy-v1/Button>
-        </decent-academy-v1/div>
-      </decent-academy-v1/div>
-    </decent-academy-v1/section>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </span>
+            </Link>
+          </Button>
+        </div>
+      </div>
+    </section>
   )
 }

@@ -103,38 +103,38 @@ export default function GalleryPage() {
 
   return (
     <main className="min-h-screen">
-      <Navbar /decent-academy-v1/>
+      <Navbar />
 
-      {/decent-academy-v1/* Hero Section */decent-academy-v1/}
+      {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" /decent-academy-v1/>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
           <div
             className="absolute bottom-20 right-10 w-80 h-80 bg-accent/decent-academy-v1/20 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "2s" }}
-          /decent-academy-v1/>
-        </decent-academy-v1/div>
+          />
+        </div>
 
         <div className="container mx-auto px-4 lg:px-8 py-12">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
-              <Camera className="w-4 h-4" /decent-academy-v1/>
-              <span>Capturing Memorable Moments</decent-academy-v1/span>
-            </decent-academy-v1/div>
+              <Camera className="w-4 h-4" />
+              <span>Capturing Memorable Moments</span>
+            </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-tight">
               Photo
-              <span className="block mt-2 text-primary">Gallery</decent-academy-v1/span>
-            </decent-academy-v1/h1>
+              <span className="block mt-2 text-primary">Gallery</span>
+            </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
               A glimpse into the vibrant life at Decent Academy
-            </decent-academy-v1/p>
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* Gallery Grid */decent-academy-v1/}
+      {/* Gallery Grid */}
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -149,21 +149,21 @@ export default function GalleryPage() {
                   src={image.src || "/placeholder.svg?height=400&width=400"}
                   alt={image.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                /decent-academy-v1/>
-                {/decent-academy-v1/* Overlay */decent-academy-v1/}
+                />
+                {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground via-foreground/decent-academy-v1/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-background">
-                    <h3 className="text-lg font-bold mb-1">{image.title}</decent-academy-v1/h3>
-                    <p className="text-sm text-background/decent-academy-v1/80">{image.description}</decent-academy-v1/p>
-                  </decent-academy-v1/div>
-                </decent-academy-v1/div>
-              </decent-academy-v1/div>
+                    <h3 className="text-lg font-bold mb-1">{image.title}</h3>
+                    <p className="text-sm text-background/decent-academy-v1/80">{image.description}</p>
+                  </div>
+                </div>
+              </div>
             ))}
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* Lightbox Modal */decent-academy-v1/}
+      {/* Lightbox Modal */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-foreground/decent-academy-v1/95 z-50 flex items-center justify-center p-4 animate-scale-in"
@@ -173,23 +173,23 @@ export default function GalleryPage() {
             onClick={() => setSelectedImage(null)}
             className="absolute top-4 right-4 w-12 h-12 bg-background/decent-academy-v1/10 hover:bg-background/decent-academy-v1/20 rounded-full flex items-center justify-center transition-colors duration-300 group"
           >
-            <X className="w-6 h-6 text-background group-hover:rotate-90 transition-transform duration-300" /decent-academy-v1/>
-          </decent-academy-v1/button>
+            <X className="w-6 h-6 text-background group-hover:rotate-90 transition-transform duration-300" />
+          </button>
           <div className="max-w-6xl w-full" onClick={(e) => e.stopPropagation()}>
             <img
               src={selectedImage.src || "/placeholder.svg?height=800&width=1200"}
               alt={selectedImage.title}
               className="w-full h-auto rounded-2xl shadow-2xl"
-            /decent-academy-v1/>
+            />
             <div className="mt-6 text-center text-background">
-              <h3 className="text-3xl font-bold mb-2">{selectedImage.title}</decent-academy-v1/h3>
-              <p className="text-xl text-background/decent-academy-v1/80">{selectedImage.description}</decent-academy-v1/p>
-            </decent-academy-v1/div>
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
+              <h3 className="text-3xl font-bold mb-2">{selectedImage.title}</h3>
+              <p className="text-xl text-background/decent-academy-v1/80">{selectedImage.description}</p>
+            </div>
+          </div>
+        </div>
       )}
 
-      <Footer /decent-academy-v1/>
-    </decent-academy-v1/main>
+      <Footer />
+    </main>
   )
 }

@@ -30,7 +30,7 @@ function Alert({
       role="alert"
       className={cn(alertVariants({ variant }), className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -43,7 +43,7 @@ function AlertTitle({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -59,7 +59,7 @@ function AlertDescription({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

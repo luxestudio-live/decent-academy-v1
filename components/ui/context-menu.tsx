@@ -9,14 +9,14 @@ import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 function ContextMenu({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Root>) {
-  return <ContextMenuPrimitive.Root data-slot="context-menu" {...props} /decent-academy-v1/>
+  return <ContextMenuPrimitive.Root data-slot="context-menu" {...props} />
 }
 
 function ContextMenuTrigger({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Trigger>) {
   return (
-    <ContextMenuPrimitive.Trigger data-slot="context-menu-trigger" {...props} /decent-academy-v1/>
+    <ContextMenuPrimitive.Trigger data-slot="context-menu-trigger" {...props} />
   )
 }
 
@@ -24,7 +24,7 @@ function ContextMenuGroup({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Group>) {
   return (
-    <ContextMenuPrimitive.Group data-slot="context-menu-group" {...props} /decent-academy-v1/>
+    <ContextMenuPrimitive.Group data-slot="context-menu-group" {...props} />
   )
 }
 
@@ -32,14 +32,14 @@ function ContextMenuPortal({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Portal>) {
   return (
-    <ContextMenuPrimitive.Portal data-slot="context-menu-portal" {...props} /decent-academy-v1/>
+    <ContextMenuPrimitive.Portal data-slot="context-menu-portal" {...props} />
   )
 }
 
 function ContextMenuSub({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Sub>) {
-  return <ContextMenuPrimitive.Sub data-slot="context-menu-sub" {...props} /decent-academy-v1/>
+  return <ContextMenuPrimitive.Sub data-slot="context-menu-sub" {...props} />
 }
 
 function ContextMenuRadioGroup({
@@ -49,7 +49,7 @@ function ContextMenuRadioGroup({
     <ContextMenuPrimitive.RadioGroup
       data-slot="context-menu-radio-group"
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -72,8 +72,8 @@ function ContextMenuSubTrigger({
       {...props}
     >
       {children}
-      <ChevronRightIcon className="ml-auto" /decent-academy-v1/>
-    </decent-academy-v1/ContextMenuPrimitive.SubTrigger>
+      <ChevronRightIcon className="ml-auto" />
+    </ContextMenuPrimitive.SubTrigger>
   )
 }
 
@@ -89,7 +89,7 @@ function ContextMenuSubContent({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -106,8 +106,8 @@ function ContextMenuContent({
           className,
         )}
         {...props}
-      /decent-academy-v1/>
-    </decent-academy-v1/ContextMenuPrimitive.Portal>
+      />
+    </ContextMenuPrimitive.Portal>
   )
 }
 
@@ -130,7 +130,7 @@ function ContextMenuItem({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -152,11 +152,11 @@ function ContextMenuCheckboxItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <CheckIcon className="size-4" /decent-academy-v1/>
-        </decent-academy-v1/ContextMenuPrimitive.ItemIndicator>
-      </decent-academy-v1/span>
+          <CheckIcon className="size-4" />
+        </ContextMenuPrimitive.ItemIndicator>
+      </span>
       {children}
-    </decent-academy-v1/ContextMenuPrimitive.CheckboxItem>
+    </ContextMenuPrimitive.CheckboxItem>
   )
 }
 
@@ -176,11 +176,11 @@ function ContextMenuRadioItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <CircleIcon className="size-2 fill-current" /decent-academy-v1/>
-        </decent-academy-v1/ContextMenuPrimitive.ItemIndicator>
-      </decent-academy-v1/span>
+          <CircleIcon className="size-2 fill-current" />
+        </ContextMenuPrimitive.ItemIndicator>
+      </span>
       {children}
-    </decent-academy-v1/ContextMenuPrimitive.RadioItem>
+    </ContextMenuPrimitive.RadioItem>
   )
 }
 
@@ -200,7 +200,7 @@ function ContextMenuLabel({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -213,7 +213,7 @@ function ContextMenuSeparator({
       data-slot="context-menu-separator"
       className={cn('bg-border -mx-1 my-1 h-px', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -229,7 +229,7 @@ function ContextMenuShortcut({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

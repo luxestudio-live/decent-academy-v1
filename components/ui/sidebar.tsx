@@ -145,9 +145,9 @@ function SidebarProvider({
           {...props}
         >
           {children}
-        </decent-academy-v1/div>
-      </decent-academy-v1/TooltipProvider>
-    </decent-academy-v1/SidebarContext.Provider>
+        </div>
+      </TooltipProvider>
+    </SidebarContext.Provider>
   )
 }
 
@@ -176,7 +176,7 @@ function Sidebar({
         {...props}
       >
         {children}
-      </decent-academy-v1/div>
+      </div>
     )
   }
 
@@ -196,12 +196,12 @@ function Sidebar({
           side={side}
         >
           <SheetHeader className="sr-only">
-            <SheetTitle>Sidebar</decent-academy-v1/SheetTitle>
-            <SheetDescription>Displays the mobile sidebar.</decent-academy-v1/SheetDescription>
-          </decent-academy-v1/SheetHeader>
-          <div className="flex h-full w-full flex-col">{children}</decent-academy-v1/div>
-        </decent-academy-v1/SheetContent>
-      </decent-academy-v1/Sheet>
+            <SheetTitle>Sidebar</SheetTitle>
+            <SheetDescription>Displays the mobile sidebar.</SheetDescription>
+          </SheetHeader>
+          <div className="flex h-full w-full flex-col">{children}</div>
+        </SheetContent>
+      </Sheet>
     )
   }
 
@@ -214,7 +214,7 @@ function Sidebar({
       data-side={side}
       data-slot="sidebar"
     >
-      {/decent-academy-v1/* This is what handles the sidebar gap on desktop */decent-academy-v1/}
+      {/* This is what handles the sidebar gap on desktop */}
       <div
         data-slot="sidebar-gap"
         className={cn(
@@ -225,7 +225,7 @@ function Sidebar({
             ? 'group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))]'
             : 'group-data-[collapsible=icon]:w-(--sidebar-width-icon)',
         )}
-      /decent-academy-v1/>
+      />
       <div
         data-slot="sidebar-container"
         className={cn(
@@ -247,9 +247,9 @@ function Sidebar({
           className="bg-sidebar group-data-[variant=floating]:border-sidebar-border flex h-full w-full flex-col group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:border group-data-[variant=floating]:shadow-sm"
         >
           {children}
-        </decent-academy-v1/div>
-      </decent-academy-v1/div>
-    </decent-academy-v1/div>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -273,9 +273,9 @@ function SidebarTrigger({
       }}
       {...props}
     >
-      <PanelLeftIcon /decent-academy-v1/>
-      <span className="sr-only">Toggle Sidebar</decent-academy-v1/span>
-    </decent-academy-v1/Button>
+      <PanelLeftIcon />
+      <span className="sr-only">Toggle Sidebar</span>
+    </Button>
   )
 }
 
@@ -300,7 +300,7 @@ function SidebarRail({ className, ...props }: React.ComponentProps<'button'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -314,7 +314,7 @@ function SidebarInset({ className, ...props }: React.ComponentProps<'main'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -328,7 +328,7 @@ function SidebarInput({
       data-sidebar="input"
       className={cn('bg-background h-8 w-full shadow-none', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -339,7 +339,7 @@ function SidebarHeader({ className, ...props }: React.ComponentProps<'div'>) {
       data-sidebar="header"
       className={cn('flex flex-col gap-2 p-2', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -350,7 +350,7 @@ function SidebarFooter({ className, ...props }: React.ComponentProps<'div'>) {
       data-sidebar="footer"
       className={cn('flex flex-col gap-2 p-2', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -364,7 +364,7 @@ function SidebarSeparator({
       data-sidebar="separator"
       className={cn('bg-sidebar-border mx-2 w-auto', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -378,7 +378,7 @@ function SidebarContent({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -389,7 +389,7 @@ function SidebarGroup({ className, ...props }: React.ComponentProps<'div'>) {
       data-sidebar="group"
       className={cn('relative flex w-full min-w-0 flex-col p-2', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -410,7 +410,7 @@ function SidebarGroupLabel({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -433,7 +433,7 @@ function SidebarGroupAction({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -447,7 +447,7 @@ function SidebarGroupContent({
       data-sidebar="group-content"
       className={cn('w-full text-sm', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -458,7 +458,7 @@ function SidebarMenu({ className, ...props }: React.ComponentProps<'ul'>) {
       data-sidebar="menu"
       className={cn('flex w-full min-w-0 flex-col gap-1', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -469,7 +469,7 @@ function SidebarMenuItem({ className, ...props }: React.ComponentProps<'li'>) {
       data-sidebar="menu-item"
       className={cn('group/decent-academy-v1/menu-item relative', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -519,7 +519,7 @@ function SidebarMenuButton({
       data-active={isActive}
       className={cn(sidebarMenuButtonVariants({ variant, size }), className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 
   if (!tooltip) {
@@ -534,14 +534,14 @@ function SidebarMenuButton({
 
   return (
     <Tooltip>
-      <TooltipTrigger asChild>{button}</decent-academy-v1/TooltipTrigger>
+      <TooltipTrigger asChild>{button}</TooltipTrigger>
       <TooltipContent
         side="right"
         align="center"
         hidden={state !== 'collapsed' || isMobile}
         {...tooltip}
-      /decent-academy-v1/>
-    </decent-academy-v1/Tooltip>
+      />
+    </Tooltip>
   )
 }
 
@@ -573,7 +573,7 @@ function SidebarMenuAction({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -595,7 +595,7 @@ function SidebarMenuBadge({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -622,7 +622,7 @@ function SidebarMenuSkeleton({
         <Skeleton
           className="size-4 rounded-md"
           data-sidebar="menu-skeleton-icon"
-        /decent-academy-v1/>
+        />
       )}
       <Skeleton
         className="h-4 max-w-(--skeleton-width) flex-1"
@@ -632,8 +632,8 @@ function SidebarMenuSkeleton({
             '--skeleton-width': width,
           } as React.CSSProperties
         }
-      /decent-academy-v1/>
-    </decent-academy-v1/div>
+      />
+    </div>
   )
 }
 
@@ -648,7 +648,7 @@ function SidebarMenuSub({ className, ...props }: React.ComponentProps<'ul'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -662,7 +662,7 @@ function SidebarMenuSubItem({
       data-sidebar="menu-sub-item"
       className={cn('group/decent-academy-v1/menu-sub-item relative', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -694,7 +694,7 @@ function SidebarMenuSubButton({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

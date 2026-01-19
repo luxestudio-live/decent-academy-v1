@@ -12,7 +12,7 @@ function ItemGroup({ className, ...props }: React.ComponentProps<'div'>) {
       data-slot="item-group"
       className={cn('group/decent-academy-v1/item-group flex flex-col', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -26,7 +26,7 @@ function ItemSeparator({
       orientation="horizontal"
       className={cn('my-0', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -67,7 +67,7 @@ function Item({
       data-size={size}
       className={cn(itemVariants({ variant, size, className }))}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -99,7 +99,7 @@ function ItemMedia({
       data-variant={variant}
       className={cn(itemMediaVariants({ variant, className }))}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -112,7 +112,7 @@ function ItemContent({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -125,7 +125,7 @@ function ItemTitle({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -139,7 +139,7 @@ function ItemDescription({ className, ...props }: React.ComponentProps<'p'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -149,7 +149,7 @@ function ItemActions({ className, ...props }: React.ComponentProps<'div'>) {
       data-slot="item-actions"
       className={cn('flex items-center gap-2', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -162,7 +162,7 @@ function ItemHeader({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -175,7 +175,7 @@ function ItemFooter({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

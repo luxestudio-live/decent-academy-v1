@@ -8,14 +8,14 @@ import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 function HoverCard({
   ...props
 }: React.ComponentProps<typeof HoverCardPrimitive.Root>) {
-  return <HoverCardPrimitive.Root data-slot="hover-card" {...props} /decent-academy-v1/>
+  return <HoverCardPrimitive.Root data-slot="hover-card" {...props} />
 }
 
 function HoverCardTrigger({
   ...props
 }: React.ComponentProps<typeof HoverCardPrimitive.Trigger>) {
   return (
-    <HoverCardPrimitive.Trigger data-slot="hover-card-trigger" {...props} /decent-academy-v1/>
+    <HoverCardPrimitive.Trigger data-slot="hover-card-trigger" {...props} />
   )
 }
 
@@ -36,8 +36,8 @@ function HoverCardContent({
           className,
         )}
         {...props}
-      /decent-academy-v1/>
-    </decent-academy-v1/HoverCardPrimitive.Portal>
+      />
+    </HoverCardPrimitive.Portal>
   )
 }
 

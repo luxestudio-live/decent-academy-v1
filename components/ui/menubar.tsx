@@ -18,33 +18,33 @@ function Menubar({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
 function MenubarMenu({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Menu>) {
-  return <MenubarPrimitive.Menu data-slot="menubar-menu" {...props} /decent-academy-v1/>
+  return <MenubarPrimitive.Menu data-slot="menubar-menu" {...props} />
 }
 
 function MenubarGroup({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Group>) {
-  return <MenubarPrimitive.Group data-slot="menubar-group" {...props} /decent-academy-v1/>
+  return <MenubarPrimitive.Group data-slot="menubar-group" {...props} />
 }
 
 function MenubarPortal({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Portal>) {
-  return <MenubarPrimitive.Portal data-slot="menubar-portal" {...props} /decent-academy-v1/>
+  return <MenubarPrimitive.Portal data-slot="menubar-portal" {...props} />
 }
 
 function MenubarRadioGroup({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.RadioGroup>) {
   return (
-    <MenubarPrimitive.RadioGroup data-slot="menubar-radio-group" {...props} /decent-academy-v1/>
+    <MenubarPrimitive.RadioGroup data-slot="menubar-radio-group" {...props} />
   )
 }
 
@@ -60,7 +60,7 @@ function MenubarTrigger({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -83,8 +83,8 @@ function MenubarContent({
           className,
         )}
         {...props}
-      /decent-academy-v1/>
-    </decent-academy-v1/MenubarPortal>
+      />
+    </MenubarPortal>
   )
 }
 
@@ -107,7 +107,7 @@ function MenubarItem({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -129,11 +129,11 @@ function MenubarCheckboxItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <MenubarPrimitive.ItemIndicator>
-          <CheckIcon className="size-4" /decent-academy-v1/>
-        </decent-academy-v1/MenubarPrimitive.ItemIndicator>
-      </decent-academy-v1/span>
+          <CheckIcon className="size-4" />
+        </MenubarPrimitive.ItemIndicator>
+      </span>
       {children}
-    </decent-academy-v1/MenubarPrimitive.CheckboxItem>
+    </MenubarPrimitive.CheckboxItem>
   )
 }
 
@@ -153,11 +153,11 @@ function MenubarRadioItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <MenubarPrimitive.ItemIndicator>
-          <CircleIcon className="size-2 fill-current" /decent-academy-v1/>
-        </decent-academy-v1/MenubarPrimitive.ItemIndicator>
-      </decent-academy-v1/span>
+          <CircleIcon className="size-2 fill-current" />
+        </MenubarPrimitive.ItemIndicator>
+      </span>
       {children}
-    </decent-academy-v1/MenubarPrimitive.RadioItem>
+    </MenubarPrimitive.RadioItem>
   )
 }
 
@@ -177,7 +177,7 @@ function MenubarLabel({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -190,7 +190,7 @@ function MenubarSeparator({
       data-slot="menubar-separator"
       className={cn('bg-border -mx-1 my-1 h-px', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -206,14 +206,14 @@ function MenubarShortcut({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
 function MenubarSub({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Sub>) {
-  return <MenubarPrimitive.Sub data-slot="menubar-sub" {...props} /decent-academy-v1/>
+  return <MenubarPrimitive.Sub data-slot="menubar-sub" {...props} />
 }
 
 function MenubarSubTrigger({
@@ -235,8 +235,8 @@ function MenubarSubTrigger({
       {...props}
     >
       {children}
-      <ChevronRightIcon className="ml-auto h-4 w-4" /decent-academy-v1/>
-    </decent-academy-v1/MenubarPrimitive.SubTrigger>
+      <ChevronRightIcon className="ml-auto h-4 w-4" />
+    </MenubarPrimitive.SubTrigger>
   )
 }
 
@@ -252,7 +252,7 @@ function MenubarSubContent({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

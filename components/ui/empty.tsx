@@ -11,7 +11,7 @@ function Empty({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -24,7 +24,7 @@ function EmptyHeader({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -54,7 +54,7 @@ function EmptyMedia({
       data-variant={variant}
       className={cn(emptyMediaVariants({ variant, className }))}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -64,7 +64,7 @@ function EmptyTitle({ className, ...props }: React.ComponentProps<'div'>) {
       data-slot="empty-title"
       className={cn('text-lg font-medium tracking-tight', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -77,7 +77,7 @@ function EmptyDescription({ className, ...props }: React.ComponentProps<'p'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -90,7 +90,7 @@ function EmptyContent({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

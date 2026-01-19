@@ -5,7 +5,7 @@ import * as CollapsiblePrimitive from '@radix-ui/decent-academy-v1/react-collaps
 function Collapsible({
   ...props
 }: React.ComponentProps<typeof CollapsiblePrimitive.Root>) {
-  return <CollapsiblePrimitive.Root data-slot="collapsible" {...props} /decent-academy-v1/>
+  return <CollapsiblePrimitive.Root data-slot="collapsible" {...props} />
 }
 
 function CollapsibleTrigger({
@@ -15,7 +15,7 @@ function CollapsibleTrigger({
     <CollapsiblePrimitive.CollapsibleTrigger
       data-slot="collapsible-trigger"
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -26,7 +26,7 @@ function CollapsibleContent({
     <CollapsiblePrimitive.CollapsibleContent
       data-slot="collapsible-content"
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

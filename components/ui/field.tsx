@@ -17,7 +17,7 @@ function FieldSet({ className, ...props }: React.ComponentProps<'fieldset'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -37,7 +37,7 @@ function FieldLegend({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -50,7 +50,7 @@ function FieldGroup({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -90,7 +90,7 @@ function Field({
       data-orientation={orientation}
       className={cn(fieldVariants({ orientation }), className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -103,7 +103,7 @@ function FieldContent({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -121,7 +121,7 @@ function FieldLabel({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -134,7 +134,7 @@ function FieldTitle({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -149,7 +149,7 @@ function FieldDescription({ className, ...props }: React.ComponentProps<'p'>) {
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -170,16 +170,16 @@ function FieldSeparator({
       )}
       {...props}
     >
-      <Separator className="absolute inset-0 top-1/decent-academy-v1/2" /decent-academy-v1/>
+      <Separator className="absolute inset-0 top-1/decent-academy-v1/2" />
       {children && (
         <span
           className="bg-background text-muted-foreground relative mx-auto block w-fit px-2"
           data-slot="field-separator-content"
         >
           {children}
-        </decent-academy-v1/span>
+        </span>
       )}
-    </decent-academy-v1/div>
+    </div>
   )
 }
 
@@ -208,9 +208,9 @@ function FieldError({
       <ul className="ml-4 flex list-disc flex-col gap-1">
         {errors.map(
           (error, index) =>
-            error?.message && <li key={index}>{error.message}</decent-academy-v1/li>,
+            error?.message && <li key={index}>{error.message}</li>,
         )}
-      </decent-academy-v1/ul>
+      </ul>
     )
   }, [children, errors])
 
@@ -226,7 +226,7 @@ function FieldError({
       {...props}
     >
       {content}
-    </decent-academy-v1/div>
+    </div>
   )
 }
 

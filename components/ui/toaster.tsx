@@ -19,17 +19,17 @@ export function Toaster() {
         return (
           <Toast key={id} {...props}>
             <div className="grid gap-1">
-              {title && <ToastTitle>{title}</decent-academy-v1/ToastTitle>}
+              {title && <ToastTitle>{title}</ToastTitle>}
               {description && (
-                <ToastDescription>{description}</decent-academy-v1/ToastDescription>
+                <ToastDescription>{description}</ToastDescription>
               )}
-            </decent-academy-v1/div>
+            </div>
             {action}
-            <ToastClose /decent-academy-v1/>
-          </decent-academy-v1/Toast>
+            <ToastClose />
+          </Toast>
         )
       })}
-      <ToastViewport /decent-academy-v1/>
-    </decent-academy-v1/ToastProvider>
+      <ToastViewport />
+    </ToastProvider>
   )
 }

@@ -33,7 +33,7 @@ function ButtonGroup({
       data-orientation={orientation}
       className={cn(buttonGroupVariants({ orientation }), className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -53,7 +53,7 @@ function ButtonGroupText({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -71,7 +71,7 @@ function ButtonGroupSeparator({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

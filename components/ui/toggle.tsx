@@ -40,7 +40,7 @@ function Toggle({
       data-slot="toggle"
       className={cn(toggleVariants({ variant, size, className }))}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

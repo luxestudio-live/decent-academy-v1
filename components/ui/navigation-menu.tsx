@@ -24,8 +24,8 @@ function NavigationMenu({
       {...props}
     >
       {children}
-      {viewport && <NavigationMenuViewport /decent-academy-v1/>}
-    </decent-academy-v1/NavigationMenuPrimitive.Root>
+      {viewport && <NavigationMenuViewport />}
+    </NavigationMenuPrimitive.Root>
   )
 }
 
@@ -41,7 +41,7 @@ function NavigationMenuList({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -54,7 +54,7 @@ function NavigationMenuItem({
       data-slot="navigation-menu-item"
       className={cn('relative', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -77,8 +77,8 @@ function NavigationMenuTrigger({
       <ChevronDownIcon
         className="relative top-[1px] ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
         aria-hidden="true"
-      /decent-academy-v1/>
-    </decent-academy-v1/NavigationMenuPrimitive.Trigger>
+      />
+    </NavigationMenuPrimitive.Trigger>
   )
 }
 
@@ -95,7 +95,7 @@ function NavigationMenuContent({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -114,8 +114,8 @@ function NavigationMenuViewport({
           className,
         )}
         {...props}
-      /decent-academy-v1/>
-    </decent-academy-v1/div>
+      />
+    </div>
   )
 }
 
@@ -131,7 +131,7 @@ function NavigationMenuLink({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -148,8 +148,8 @@ function NavigationMenuIndicator({
       )}
       {...props}
     >
-      <div className="bg-border relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm shadow-md" /decent-academy-v1/>
-    </decent-academy-v1/NavigationMenuPrimitive.Indicator>
+      <div className="bg-border relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm shadow-md" />
+    </NavigationMenuPrimitive.Indicator>
   )
 }
 

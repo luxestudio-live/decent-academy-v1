@@ -9,19 +9,19 @@ import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 function Select({
   ...props
 }: React.ComponentProps<typeof SelectPrimitive.Root>) {
-  return <SelectPrimitive.Root data-slot="select" {...props} /decent-academy-v1/>
+  return <SelectPrimitive.Root data-slot="select" {...props} />
 }
 
 function SelectGroup({
   ...props
 }: React.ComponentProps<typeof SelectPrimitive.Group>) {
-  return <SelectPrimitive.Group data-slot="select-group" {...props} /decent-academy-v1/>
+  return <SelectPrimitive.Group data-slot="select-group" {...props} />
 }
 
 function SelectValue({
   ...props
 }: React.ComponentProps<typeof SelectPrimitive.Value>) {
-  return <SelectPrimitive.Value data-slot="select-value" {...props} /decent-academy-v1/>
+  return <SelectPrimitive.Value data-slot="select-value" {...props} />
 }
 
 function SelectTrigger({
@@ -44,9 +44,9 @@ function SelectTrigger({
     >
       {children}
       <SelectPrimitive.Icon asChild>
-        <ChevronDownIcon className="size-4 opacity-50" /decent-academy-v1/>
-      </decent-academy-v1/SelectPrimitive.Icon>
-    </decent-academy-v1/SelectPrimitive.Trigger>
+        <ChevronDownIcon className="size-4 opacity-50" />
+      </SelectPrimitive.Icon>
+    </SelectPrimitive.Trigger>
   )
 }
 
@@ -69,7 +69,7 @@ function SelectContent({
         position={position}
         {...props}
       >
-        <SelectScrollUpButton /decent-academy-v1/>
+        <SelectScrollUpButton />
         <SelectPrimitive.Viewport
           className={cn(
             'p-1',
@@ -78,10 +78,10 @@ function SelectContent({
           )}
         >
           {children}
-        </decent-academy-v1/SelectPrimitive.Viewport>
-        <SelectScrollDownButton /decent-academy-v1/>
-      </decent-academy-v1/SelectPrimitive.Content>
-    </decent-academy-v1/SelectPrimitive.Portal>
+        </SelectPrimitive.Viewport>
+        <SelectScrollDownButton />
+      </SelectPrimitive.Content>
+    </SelectPrimitive.Portal>
   )
 }
 
@@ -94,7 +94,7 @@ function SelectLabel({
       data-slot="select-label"
       className={cn('text-muted-foreground px-2 py-1.5 text-xs', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -114,11 +114,11 @@ function SelectItem({
     >
       <span className="absolute right-2 flex size-3.5 items-center justify-center">
         <SelectPrimitive.ItemIndicator>
-          <CheckIcon className="size-4" /decent-academy-v1/>
-        </decent-academy-v1/SelectPrimitive.ItemIndicator>
-      </decent-academy-v1/span>
-      <SelectPrimitive.ItemText>{children}</decent-academy-v1/SelectPrimitive.ItemText>
-    </decent-academy-v1/SelectPrimitive.Item>
+          <CheckIcon className="size-4" />
+        </SelectPrimitive.ItemIndicator>
+      </span>
+      <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
+    </SelectPrimitive.Item>
   )
 }
 
@@ -131,7 +131,7 @@ function SelectSeparator({
       data-slot="select-separator"
       className={cn('bg-border pointer-events-none -mx-1 my-1 h-px', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -148,8 +148,8 @@ function SelectScrollUpButton({
       )}
       {...props}
     >
-      <ChevronUpIcon className="size-4" /decent-academy-v1/>
-    </decent-academy-v1/SelectPrimitive.ScrollUpButton>
+      <ChevronUpIcon className="size-4" />
+    </SelectPrimitive.ScrollUpButton>
   )
 }
 
@@ -166,8 +166,8 @@ function SelectScrollDownButton({
       )}
       {...props}
     >
-      <ChevronDownIcon className="size-4" /decent-academy-v1/>
-    </decent-academy-v1/SelectPrimitive.ScrollDownButton>
+      <ChevronDownIcon className="size-4" />
+    </SelectPrimitive.ScrollDownButton>
   )
 }
 

@@ -17,7 +17,7 @@ function Avatar({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -30,7 +30,7 @@ function AvatarImage({
       data-slot="avatar-image"
       className={cn('aspect-square size-full', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -46,7 +46,7 @@ function AvatarFallback({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

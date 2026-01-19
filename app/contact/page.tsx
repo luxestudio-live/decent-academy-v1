@@ -64,12 +64,12 @@ export default function ContactPage() {
   const [submitSuccess, setSubmitSuccess] = useState(false)
 
   const validateEmail = (email: string) => {
-    const emailRegex = /decent-academy-v1/^[^\s@]+@[^\s@]+\.[^\s@]+$/decent-academy-v1/
+    const emailRegex = ^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return emailRegex.test(email)
   }
 
   const validatePhone = (phone: string) => {
-    const phoneRegex = /decent-academy-v1/^[6-9]\d{9}$/decent-academy-v1/
+    const phoneRegex = ^[6-9]\d{9}$/
     return phoneRegex.test(phone.replace(/decent-academy-v1/\s+/decent-academy-v1/g, ''))
   }
 
@@ -150,33 +150,33 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen">
-      <Navbar /decent-academy-v1/>
-      {/decent-academy-v1/* Hero Section */decent-academy-v1/}
+      <Navbar />
+      {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" /decent-academy-v1/>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
           <div
             className="absolute bottom-20 right-10 w-80 h-80 bg-accent/decent-academy-v1/20 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "2s" }}
-          /decent-academy-v1/>
-        </decent-academy-v1/div>
+          />
+        </div>
         <div className="container mx-auto px-4 lg:px-8 py-20">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
-              <MessageSquare className="w-4 h-4" /decent-academy-v1/>
-              <span>We're Here to Help</decent-academy-v1/span>
-            </decent-academy-v1/div>
+              <MessageSquare className="w-4 h-4" />
+              <span>We're Here to Help</span>
+            </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-tight">
               Get in
-              <span className="block mt-2 text-primary">Touch With Us</decent-academy-v1/span>
-            </decent-academy-v1/h1>
+              <span className="block mt-2 text-primary">Touch With Us</span>
+            </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
               Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
-            </decent-academy-v1/p>
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
-      {/decent-academy-v1/* Contact Info Cards */decent-academy-v1/}
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Contact Info Cards */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-20">
@@ -187,41 +187,41 @@ export default function ContactPage() {
               >
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}
-                /decent-academy-v1/>
+                />
                 <div className="relative z-10">
                   <div
                     className={`w-16 h-16 bg-gradient-to-br ${info.color} rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}
                   >
-                    <info.icon className="w-8 h-8 text-white" /decent-academy-v1/>
-                  </decent-academy-v1/div>
+                    <info.icon className="w-8 h-8 text-white" />
+                  </div>
                   <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors duration-300">
                     {info.title}
-                  </decent-academy-v1/h3>
+                  </h3>
                   <div className="space-y-2">
                     {info.details.map((detail, idx) => (
                       <p key={idx} className="text-sm text-muted-foreground leading-relaxed">
                         {detail}
-                      </decent-academy-v1/p>
+                      </p>
                     ))}
-                  </decent-academy-v1/div>
-                </decent-academy-v1/div>
-              </decent-academy-v1/div>
+                  </div>
+                </div>
+              </div>
             ))}
-          </decent-academy-v1/div>
-          {/decent-academy-v1/* Main Contact Section */decent-academy-v1/}
+          </div>
+          {/* Main Contact Section */}
           <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
-            {/decent-academy-v1/* Contact Form */decent-academy-v1/}
+            {/* Contact Form */}
             <div className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-8 lg:p-12 transition-all duration-500 hover:shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/decent-academy-v1/5 to-accent/decent-academy-v1/5 rounded-3xl" /decent-academy-v1/>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/decent-academy-v1/5 to-accent/decent-academy-v1/5 rounded-3xl" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold mb-6 group-hover:text-primary transition-colors duration-300">
                   Send Us a Message
-                </decent-academy-v1/h2>
+                </h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
                       Full Name *
-                    </decent-academy-v1/label>
+                    </label>
                     <Input
                       id="name"
                       name="name"
@@ -229,16 +229,16 @@ export default function ContactPage() {
                       onChange={handleChange}
                       placeholder="Enter your name"
                       className={`border-2 transition-colors duration-300 ${errors.name ? 'border-red-500 focus:border-red-500' : 'focus:border-primary'}`}
-                    /decent-academy-v1/>
+                    />
                     {errors.name && (
-                      <p className="text-red-500 text-sm mt-1">{errors.name}</decent-academy-v1/p>
+                      <p className="text-red-500 text-sm mt-1">{errors.name}</p>
                     )}
-                  </decent-academy-v1/div>
+                  </div>
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2">
                       Email Address (Optional)
-                    </decent-academy-v1/label>
+                    </label>
                     <Input
                       id="email"
                       name="email"
@@ -247,16 +247,16 @@ export default function ContactPage() {
                       onChange={handleChange}
                       placeholder="your@email.com"
                       className={`border-2 transition-colors duration-300 ${errors.email ? 'border-red-500 focus:border-red-500' : 'focus:border-primary'}`}
-                    /decent-academy-v1/>
+                    />
                     {errors.email && (
-                      <p className="text-red-500 text-sm mt-1">{errors.email}</decent-academy-v1/p>
+                      <p className="text-red-500 text-sm mt-1">{errors.email}</p>
                     )}
-                  </decent-academy-v1/div>
+                  </div>
 
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium mb-2">
                       Phone Number *
-                    </decent-academy-v1/label>
+                    </label>
                     <Input
                       id="phone"
                       name="phone"
@@ -265,16 +265,16 @@ export default function ContactPage() {
                       onChange={handleChange}
                       placeholder="98765 43210"
                       className={`border-2 transition-colors duration-300 ${errors.phone ? 'border-red-500 focus:border-red-500' : 'focus:border-primary'}`}
-                    /decent-academy-v1/>
+                    />
                     {errors.phone && (
-                      <p className="text-red-500 text-sm mt-1">{errors.phone}</decent-academy-v1/p>
+                      <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
                     )}
-                  </decent-academy-v1/div>
+                  </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2">
                       Message
-                    </decent-academy-v1/label>
+                    </label>
                     <Textarea
                       id="message"
                       name="message"
@@ -283,8 +283,8 @@ export default function ContactPage() {
                       placeholder="Tell us more about your requirements..."
                       rows={5}
                       className="border-2 focus:border-primary transition-colors duration-300 resize-none"
-                    /decent-academy-v1/>
-                  </decent-academy-v1/div>
+                    />
+                  </div>
 
                   <Button 
                     type="submit" 
@@ -295,41 +295,41 @@ export default function ContactPage() {
                     {isSubmitting ? (
                       <span className="relative z-10 flex items-center justify-center gap-2">
                         <svg className="animate-spin h-5 w-5" xmlns="http:/decent-academy-v1/www.w3.org/decent-academy-v1/2000/decent-academy-v1/svg" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></decent-academy-v1/circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></decent-academy-v1/path>
-                        </decent-academy-v1/svg>
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
                         Sending...
-                      </decent-academy-v1/span>
+                      </span>
                     ) : submitSuccess ? (
                       <span className="relative z-10 flex items-center justify-center gap-2">
                         <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /decent-academy-v1/>
-                        </decent-academy-v1/svg>
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
                         Sent Successfully!
-                      </decent-academy-v1/span>
+                      </span>
                     ) : (
                       <span className="relative z-10 flex items-center justify-center gap-2">
                         Send Message
-                        <Send className="w-5 h-5 group-hover/decent-academy-v1/btn:translate-x-1 group-hover/decent-academy-v1/btn:-translate-y-1 transition-transform duration-300" /decent-academy-v1/>
-                      </decent-academy-v1/span>
+                        <Send className="w-5 h-5 group-hover/decent-academy-v1/btn:translate-x-1 group-hover/decent-academy-v1/btn:-translate-y-1 transition-transform duration-300" />
+                      </span>
                     )}
-                    <span className="absolute inset-0 bg-accent scale-x-0 group-hover/decent-academy-v1/btn:scale-x-100 transition-transform duration-300 origin-left" /decent-academy-v1/>
-                  </decent-academy-v1/Button>
+                    <span className="absolute inset-0 bg-accent scale-x-0 group-hover/decent-academy-v1/btn:scale-x-100 transition-transform duration-300 origin-left" />
+                  </Button>
 
                   {submitSuccess && (
                     <div className="text-center">
                       <p className="text-green-600 font-medium animate-pulse">
                         ✓ Your message has been sent successfully!
-                      </decent-academy-v1/p>
-                    </decent-academy-v1/div>
+                      </p>
+                    </div>
                   )}
-                </decent-academy-v1/form>
-              </decent-academy-v1/div>
-            </decent-academy-v1/div>
+                </form>
+              </div>
+            </div>
 
-            {/decent-academy-v1/* Map & Social */decent-academy-v1/}
+            {/* Map & Social */}
             <div className="space-y-8">
-              {/decent-academy-v1/* Map */decent-academy-v1/}
+              {/* Map */}
               <div className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl h-[400px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3968574835597!2d72.9373964!3d19.124098999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7ddb6c9c1b7%3A0x9d9c9c9c9c9c9c9c!2sShop%20No%201%2C%20Ground%20Floor%2C%20Sai%20Smruti%20Building%2C%20Near%20Nath%20Pai%20School%2C%20Nardas%20Nagar%2C%20T.%20P.%20Road%2C%20Bhandup%20West%2C%20Mumbai%2C%20Maharashtra%20400078!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
@@ -340,7 +340,7 @@ export default function ContactPage() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="grayscale group-hover:grayscale-0 transition-all duration-500"
-                /decent-academy-v1/>
+                />
                 <a 
                   href="https://share.google/cQLKov5ZlCt0PEJ32"
                   target="_blank"
@@ -349,18 +349,18 @@ export default function ContactPage() {
                 >
                   Get Directions
                 </a>
-              </decent-academy-v1/div>
+              </div>
 
-              {/decent-academy-v1/* Social Media */decent-academy-v1/}
+              {/* Social Media */}
               <div className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/decent-academy-v1/5 to-secondary/decent-academy-v1/5 rounded-3xl" /decent-academy-v1/>
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/decent-academy-v1/5 to-secondary/decent-academy-v1/5 rounded-3xl" />
                 <div className="relative z-10">
                   <h3 className="text-2xl font-bold mb-6 group-hover:text-primary transition-colors duration-300">
                     Connect With Us
-                  </decent-academy-v1/h3>
+                  </h3>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     Follow us on social media for updates, success stories, and educational content
-                  </decent-academy-v1/p>
+                  </p>
                   <div className="grid grid-cols-2 gap-4">
                     {socialMedia.map((social, index) => (
                       <a
@@ -368,15 +368,15 @@ export default function ContactPage() {
                         href={social.href}
                         className={`group/decent-academy-v1/social flex items-center justify-center gap-3 p-4 bg-muted rounded-xl hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-lg ${social.color}`}
                       >
-                        <social.icon className="w-5 h-5" /decent-academy-v1/>
-                        <span className="font-medium">{social.label}</decent-academy-v1/span>
-                      </decent-academy-v1/a>
+                        <social.icon className="w-5 h-5" />
+                        <span className="font-medium">{social.label}</span>
+                      </a>
                     ))}
-                  </decent-academy-v1/div>
-                </decent-academy-v1/div>
-              </decent-academy-v1/div>
+                  </div>
+                </div>
+              </div>
 
-              {/decent-academy-v1/* Quick Contact */decent-academy-v1/}
+              {/* Quick Contact */}
               <div className="group relative bg-gradient-to-br from-primary via-accent to-secondary rounded-3xl p-8 text-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
                 <div className="absolute inset-0 opacity-10">
                   <div
@@ -385,20 +385,20 @@ export default function ContactPage() {
                       backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
                       backgroundSize: "40px 40px",
                     }}
-                  /decent-academy-v1/>
-                </decent-academy-v1/div>
+                  />
+                </div>
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-bold mb-4">Need Immediate Assistance?</decent-academy-v1/h3>
+                  <h3 className="text-2xl font-bold mb-4">Need Immediate Assistance?</h3>
                   <p className="text-white/decent-academy-v1/90 mb-6 leading-relaxed">
                     Call us directly or visit our campus for a personal consultation
-                  </decent-academy-v1/p>
+                  </p>
                   <div className="flex flex-col gap-3">
                     <Button size="lg" className="bg-white text-primary hover:bg-white/decent-academy-v1/90 w-full group/decent-academy-v1/btn" asChild>
                       <a href="tel:+919967397919">
-                        <Phone className="w-5 h-5 mr-2 group-hover/decent-academy-v1/btn:rotate-12 transition-transform duration-300" /decent-academy-v1/>
+                        <Phone className="w-5 h-5 mr-2 group-hover/decent-academy-v1/btn:rotate-12 transition-transform duration-300" />
                         Call Now
-                      </decent-academy-v1/a>
-                    </decent-academy-v1/Button>
+                      </a>
+                    </Button>
                     <Button
                       size="lg"
                       variant="outline"
@@ -406,19 +406,19 @@ export default function ContactPage() {
                       asChild
                     >
                       <a href="https:/decent-academy-v1/wa.me/decent-academy-v1/919967397919" target="_blank" rel="noopener noreferrer">
-                        <MessageSquare className="w-5 h-5 mr-2" /decent-academy-v1/>
+                        <MessageSquare className="w-5 h-5 mr-2" />
                         WhatsApp Us
-                      </decent-academy-v1/a>
-                    </decent-academy-v1/Button>
-                  </decent-academy-v1/div>
-                </decent-academy-v1/div>
-              </decent-academy-v1/div>
-            </decent-academy-v1/div>
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* FAQ Section */decent-academy-v1/}
+      {/* FAQ Section */}
       <section className="py-20 lg:py-32 bg-muted/decent-academy-v1/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -426,9 +426,9 @@ export default function ContactPage() {
               Frequently Asked
               <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Questions
-              </decent-academy-v1/span>
-            </decent-academy-v1/h2>
-          </decent-academy-v1/div>
+              </span>
+            </h2>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {[
@@ -455,15 +455,15 @@ export default function ContactPage() {
               >
                 <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors duration-300">
                   {faq.q}
-                </decent-academy-v1/h3>
-                <p className="text-muted-foreground leading-relaxed">{faq.a}</decent-academy-v1/p>
-              </decent-academy-v1/div>
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
+              </div>
             ))}
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+          </div>
+        </div>
+      </section>
 
-      <Footer /decent-academy-v1/>
-    </decent-academy-v1/main>
+      <Footer />
+    </main>
   )
 }

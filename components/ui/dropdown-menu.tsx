@@ -9,14 +9,14 @@ import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 function DropdownMenu({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Root>) {
-  return <DropdownMenuPrimitive.Root data-slot="dropdown-menu" {...props} /decent-academy-v1/>
+  return <DropdownMenuPrimitive.Root data-slot="dropdown-menu" {...props} />
 }
 
 function DropdownMenuPortal({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Portal>) {
   return (
-    <DropdownMenuPrimitive.Portal data-slot="dropdown-menu-portal" {...props} /decent-academy-v1/>
+    <DropdownMenuPrimitive.Portal data-slot="dropdown-menu-portal" {...props} />
   )
 }
 
@@ -27,7 +27,7 @@ function DropdownMenuTrigger({
     <DropdownMenuPrimitive.Trigger
       data-slot="dropdown-menu-trigger"
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -46,8 +46,8 @@ function DropdownMenuContent({
           className,
         )}
         {...props}
-      /decent-academy-v1/>
-    </decent-academy-v1/DropdownMenuPrimitive.Portal>
+      />
+    </DropdownMenuPrimitive.Portal>
   )
 }
 
@@ -55,7 +55,7 @@ function DropdownMenuGroup({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Group>) {
   return (
-    <DropdownMenuPrimitive.Group data-slot="dropdown-menu-group" {...props} /decent-academy-v1/>
+    <DropdownMenuPrimitive.Group data-slot="dropdown-menu-group" {...props} />
   )
 }
 
@@ -78,7 +78,7 @@ function DropdownMenuItem({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -100,11 +100,11 @@ function DropdownMenuCheckboxItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <DropdownMenuPrimitive.ItemIndicator>
-          <CheckIcon className="size-4" /decent-academy-v1/>
-        </decent-academy-v1/DropdownMenuPrimitive.ItemIndicator>
-      </decent-academy-v1/span>
+          <CheckIcon className="size-4" />
+        </DropdownMenuPrimitive.ItemIndicator>
+      </span>
       {children}
-    </decent-academy-v1/DropdownMenuPrimitive.CheckboxItem>
+    </DropdownMenuPrimitive.CheckboxItem>
   )
 }
 
@@ -115,7 +115,7 @@ function DropdownMenuRadioGroup({
     <DropdownMenuPrimitive.RadioGroup
       data-slot="dropdown-menu-radio-group"
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -135,11 +135,11 @@ function DropdownMenuRadioItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <DropdownMenuPrimitive.ItemIndicator>
-          <CircleIcon className="size-2 fill-current" /decent-academy-v1/>
-        </decent-academy-v1/DropdownMenuPrimitive.ItemIndicator>
-      </decent-academy-v1/span>
+          <CircleIcon className="size-2 fill-current" />
+        </DropdownMenuPrimitive.ItemIndicator>
+      </span>
       {children}
-    </decent-academy-v1/DropdownMenuPrimitive.RadioItem>
+    </DropdownMenuPrimitive.RadioItem>
   )
 }
 
@@ -159,7 +159,7 @@ function DropdownMenuLabel({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -172,7 +172,7 @@ function DropdownMenuSeparator({
       data-slot="dropdown-menu-separator"
       className={cn('bg-border -mx-1 my-1 h-px', className)}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -188,14 +188,14 @@ function DropdownMenuShortcut({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 
 function DropdownMenuSub({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Sub>) {
-  return <DropdownMenuPrimitive.Sub data-slot="dropdown-menu-sub" {...props} /decent-academy-v1/>
+  return <DropdownMenuPrimitive.Sub data-slot="dropdown-menu-sub" {...props} />
 }
 
 function DropdownMenuSubTrigger({
@@ -217,8 +217,8 @@ function DropdownMenuSubTrigger({
       {...props}
     >
       {children}
-      <ChevronRightIcon className="ml-auto size-4" /decent-academy-v1/>
-    </decent-academy-v1/DropdownMenuPrimitive.SubTrigger>
+      <ChevronRightIcon className="ml-auto size-4" />
+    </DropdownMenuPrimitive.SubTrigger>
   )
 }
 
@@ -234,7 +234,7 @@ function DropdownMenuSubContent({
         className,
       )}
       {...props}
-    /decent-academy-v1/>
+    />
   )
 }
 

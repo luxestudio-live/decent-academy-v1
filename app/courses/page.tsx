@@ -111,33 +111,33 @@ export default function CoursesPage() {
 
   return (
     <main className="min-h-screen">
-      <Navbar /decent-academy-v1/>
+      <Navbar />
 
-      {/decent-academy-v1/* Hero Section */decent-academy-v1/}
+      {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" /decent-academy-v1/>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
           <div
             className="absolute bottom-20 right-10 w-80 h-80 bg-accent/decent-academy-v1/20 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "2s" }}
-          /decent-academy-v1/>
-        </decent-academy-v1/div>
+          />
+        </div>
 
         <div className="container mx-auto px-4 lg:px-8 py-12">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-tight">
               Our
-              <span className="block mt-2 text-primary">Course Offerings</decent-academy-v1/span>
-            </decent-academy-v1/h1>
+              <span className="block mt-2 text-primary">Course Offerings</span>
+            </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
               Comprehensive programs designed for academic excellence and competitive success
-            </decent-academy-v1/p>
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* Course Toggle */decent-academy-v1/}
+      {/* Course Toggle */}
       <section className="py-8 bg-background/decent-academy-v1/95 backdrop-blur-lg border-y border-border/decent-academy-v1/50">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-3xl mx-auto">
@@ -155,34 +155,34 @@ export default function CoursesPage() {
                   }`}
                 >
                   <span className="flex items-center justify-center gap-2">
-                    <CourseIcon className="w-5 h-5" /decent-academy-v1/>
-                    <span>{course.title}</decent-academy-v1/span>
-                  </decent-academy-v1/span>
-                </decent-academy-v1/button>
+                    <CourseIcon className="w-5 h-5" />
+                    <span>{course.title}</span>
+                  </span>
+                </button>
               )
             })}
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* Course Details */decent-academy-v1/}
+      {/* Course Details */}
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8">
-          {/decent-academy-v1/* Course Header */decent-academy-v1/}
+          {/* Course Header */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div
               className={`inline-flex w-20 h-20 bg-gradient-to-br ${activeCourse.color} rounded-2xl items-center justify-center mb-6 animate-scale-in`}
             >
-              <Icon className="w-10 h-10 text-white" /decent-academy-v1/>
-            </decent-academy-v1/div>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4">{activeCourse.title}</decent-academy-v1/h2>
-            <p className="text-xl text-primary font-medium mb-6">{activeCourse.subtitle}</decent-academy-v1/p>
+              <Icon className="w-10 h-10 text-white" />
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4">{activeCourse.title}</h2>
+            <p className="text-xl text-primary font-medium mb-6">{activeCourse.subtitle}</p>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               {activeCourse.description}
-            </decent-academy-v1/p>
-          </decent-academy-v1/div>
+            </p>
+          </div>
 
-          {/decent-academy-v1/* Course Cards */decent-academy-v1/}
+          {/* Course Cards */}
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {activeCourse.standards.map((standard, index) => (
               <div
@@ -190,23 +190,23 @@ export default function CoursesPage() {
                 className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 animate-scale-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                {/decent-academy-v1/* Gradient Overlay */decent-academy-v1/}
+                {/* Gradient Overlay */}
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${activeCourse.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
-                /decent-academy-v1/>
+                />
 
                 <div className="relative z-10 p-8">
-                  {/decent-academy-v1/* Standard Name */decent-academy-v1/}
+                  {/* Standard Name */}
                   <h3 className="text-2xl font-bold mb-6 group-hover:text-primary transition-colors duration-300">
                     {standard.name}
-                  </decent-academy-v1/h3>
+                  </h3>
 
-                  {/decent-academy-v1/* Subjects */decent-academy-v1/}
+                  {/* Subjects */}
                   <div className="mb-6">
                     <h4 className="text-sm font-semibold text-muted-foreground uppercase mb-3 flex items-center gap-2">
-                      <BookOpen className="w-4 h-4" /decent-academy-v1/>
+                      <BookOpen className="w-4 h-4" />
                       Subjects Covered
-                    </decent-academy-v1/h4>
+                    </h4>
                     <div className="flex flex-wrap gap-2">
                       {standard.subjects.map((subject, idx) => (
                         <span
@@ -214,53 +214,53 @@ export default function CoursesPage() {
                           className="px-3 py-1.5 bg-primary/decent-academy-v1/10 text-primary rounded-lg text-sm font-medium border border-primary/decent-academy-v1/20"
                         >
                           {subject}
-                        </decent-academy-v1/span>
+                        </span>
                       ))}
-                    </decent-academy-v1/div>
-                  </decent-academy-v1/div>
+                    </div>
+                  </div>
 
-                  {/decent-academy-v1/* Features */decent-academy-v1/}
+                  {/* Features */}
                   <div className="mb-6">
-                    <h4 className="text-sm font-semibold text-muted-foreground uppercase mb-3">Key Features</decent-academy-v1/h4>
+                    <h4 className="text-sm font-semibold text-muted-foreground uppercase mb-3">Key Features</h4>
                     <div className="space-y-2">
                       {standard.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" /decent-academy-v1/>
-                          <span className="text-sm text-foreground/decent-academy-v1/80">{feature}</decent-academy-v1/span>
-                        </decent-academy-v1/div>
+                          <CheckCircle2 className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-foreground/decent-academy-v1/80">{feature}</span>
+                        </div>
                       ))}
-                    </decent-academy-v1/div>
-                  </decent-academy-v1/div>
+                    </div>
+                  </div>
 
-                  {/decent-academy-v1/* Duration & Batch */decent-academy-v1/}
+                  {/* Duration & Batch */}
                   <div className="flex items-center gap-6 pt-6 border-t border-border/decent-academy-v1/50">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Clock className="w-4 h-4 text-primary" /decent-academy-v1/>
-                      <span>{standard.duration}</decent-academy-v1/span>
-                    </decent-academy-v1/div>
+                      <Clock className="w-4 h-4 text-primary" />
+                      <span>{standard.duration}</span>
+                    </div>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Users className="w-4 h-4 text-primary" /decent-academy-v1/>
-                      <span>{standard.batchSize}</decent-academy-v1/span>
-                    </decent-academy-v1/div>
-                  </decent-academy-v1/div>
+                      <Users className="w-4 h-4 text-primary" />
+                      <span>{standard.batchSize}</span>
+                    </div>
+                  </div>
 
-                  {/decent-academy-v1/* Enroll Button */decent-academy-v1/}
+                  {/* Enroll Button */}
                   <Button className="w-full mt-6 group/decent-academy-v1/btn" asChild>
                     <Link href="/contact">
                       <span className="flex items-center justify-center gap-2">
                         Enroll Now
-                        <ArrowRight className="w-4 h-4 group-hover/decent-academy-v1/btn:translate-x-1 transition-transform duration-300" /decent-academy-v1/>
-                      </decent-academy-v1/span>
-                    </decent-academy-v1/Link>
-                  </decent-academy-v1/Button>
-                </decent-academy-v1/div>
-              </decent-academy-v1/div>
+                        <ArrowRight className="w-4 h-4 group-hover/decent-academy-v1/btn:translate-x-1 transition-transform duration-300" />
+                      </span>
+                    </Link>
+                  </Button>
+                </div>
+              </div>
             ))}
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* Additional Features */decent-academy-v1/}
+      {/* Additional Features */}
       <section className="py-16 lg:py-20 bg-muted/decent-academy-v1/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -268,9 +268,9 @@ export default function CoursesPage() {
               What's Included in
               <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Every Course
-              </decent-academy-v1/span>
-            </decent-academy-v1/h2>
-          </decent-academy-v1/div>
+              </span>
+            </h2>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
@@ -285,18 +285,18 @@ export default function CoursesPage() {
                 key={index}
                 className="group bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-6 transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
               >
-                <feature.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" /decent-academy-v1/>
+                <feature.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">
                   {feature.title}
-                </decent-academy-v1/h3>
-                <p className="text-muted-foreground">{feature.desc}</decent-academy-v1/p>
-              </decent-academy-v1/div>
+                </h3>
+                <p className="text-muted-foreground">{feature.desc}</p>
+              </div>
             ))}
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+          </div>
+        </div>
+      </section>
 
-      <Footer /decent-academy-v1/>
-    </decent-academy-v1/main>
+      <Footer />
+    </main>
   )
 }

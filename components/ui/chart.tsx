@@ -28,7 +28,7 @@ function useChart() {
   const context = React.useContext(ChartContext)
 
   if (!context) {
-    throw new Error('useChart must be used within a <ChartContainer /decent-academy-v1/>')
+    throw new Error('useChart must be used within a <ChartContainer />')
   }
 
   return context
@@ -60,12 +60,12 @@ function ChartContainer({
         )}
         {...props}
       >
-        <ChartStyle id={chartId} config={config} /decent-academy-v1/>
+        <ChartStyle id={chartId} config={config} />
         <RechartsPrimitive.ResponsiveContainer>
           {children}
-        </decent-academy-v1/RechartsPrimitive.ResponsiveContainer>
-      </decent-academy-v1/div>
-    </decent-academy-v1/ChartContext.Provider>
+        </RechartsPrimitive.ResponsiveContainer>
+      </div>
+    </ChartContext.Provider>
   )
 }
 
@@ -98,7 +98,7 @@ ${colorConfig
           )
           .join('\n'),
       }}
-    /decent-academy-v1/>
+    />
   )
 }
 
@@ -145,7 +145,7 @@ function ChartTooltipContent({
       return (
         <div className={cn('font-medium', labelClassName)}>
           {labelFormatter(value, payload)}
-        </decent-academy-v1/div>
+        </div>
       )
     }
 
@@ -153,7 +153,7 @@ function ChartTooltipContent({
       return null
     }
 
-    return <div className={cn('font-medium', labelClassName)}>{value}</decent-academy-v1/div>
+    return <div className={cn('font-medium', labelClassName)}>{value}</div>
   }, [
     label,
     labelFormatter,
@@ -197,7 +197,7 @@ function ChartTooltipContent({
               ) : (
                 <>
                   {itemConfig?.icon ? (
-                    <itemConfig.icon /decent-academy-v1/>
+                    <itemConfig.icon />
                   ) : (
                     !hideIndicator && (
                       <div
@@ -217,7 +217,7 @@ function ChartTooltipContent({
                             '--color-border': indicatorColor,
                           } as React.CSSProperties
                         }
-                      /decent-academy-v1/>
+                      />
                     )
                   )}
                   <div
@@ -230,21 +230,21 @@ function ChartTooltipContent({
                       {nestLabel ? tooltipLabel : null}
                       <span className="text-muted-foreground">
                         {itemConfig?.label || item.name}
-                      </decent-academy-v1/span>
-                    </decent-academy-v1/div>
+                      </span>
+                    </div>
                     {item.value && (
                       <span className="text-foreground font-mono font-medium tabular-nums">
                         {item.value.toLocaleString()}
-                      </decent-academy-v1/span>
+                      </span>
                     )}
-                  </decent-academy-v1/div>
-                </decent-academy-v1/>
+                  </div>
+                </>
               )}
-            </decent-academy-v1/div>
+            </div>
           )
         })}
-      </decent-academy-v1/div>
-    </decent-academy-v1/div>
+      </div>
+    </div>
   )
 }
 
@@ -287,20 +287,20 @@ function ChartLegendContent({
             }
           >
             {itemConfig?.icon && !hideIcon ? (
-              <itemConfig.icon /decent-academy-v1/>
+              <itemConfig.icon />
             ) : (
               <div
                 className="h-2 w-2 shrink-0 rounded-[2px]"
                 style={{
                   backgroundColor: item.color,
                 }}
-              /decent-academy-v1/>
+              />
             )}
             {itemConfig?.label}
-          </decent-academy-v1/div>
+          </div>
         )
       })}
-    </decent-academy-v1/div>
+    </div>
   )
 }
 

@@ -36,7 +36,7 @@ const features = [
 export function WhyChooseUs() {
   return (
     <section className="py-20 lg:py-32 relative overflow-hidden">
-      {/decent-academy-v1/* Background Pattern */decent-academy-v1/}
+      {/* Background Pattern */}
       <div className="absolute inset-0 -z-10 opacity-30">
         <div
           className="absolute inset-0"
@@ -44,8 +44,8 @@ export function WhyChooseUs() {
             backgroundImage: `radial-gradient(circle at 2px 2px, rgba(0,0,0,0.05) 1px, transparent 0)`,
             backgroundSize: "40px 40px",
           }}
-        /decent-academy-v1/>
-      </decent-academy-v1/div>
+        />
+      </div>
 
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -53,12 +53,12 @@ export function WhyChooseUs() {
             What Makes Us
             <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Different & Better
-            </decent-academy-v1/span>
-          </decent-academy-v1/h2>
+            </span>
+          </h2>
           <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
             Experience the Decent Academy advantage that sets us apart
-          </decent-academy-v1/p>
-        </decent-academy-v1/div>
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
@@ -67,23 +67,23 @@ export function WhyChooseUs() {
               className="group relative p-8 bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/decent-academy-v1/* Icon */decent-academy-v1/}
+              {/* Icon */}
               <div className="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                <feature.icon className="w-7 h-7 text-white" /decent-academy-v1/>
-              </decent-academy-v1/div>
+                <feature.icon className="w-7 h-7 text-white" />
+              </div>
 
-              {/decent-academy-v1/* Content */decent-academy-v1/}
+              {/* Content */}
               <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
                 {feature.title}
-              </decent-academy-v1/h3>
-              <p className="text-muted-foreground leading-relaxed">{feature.description}</decent-academy-v1/p>
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
 
-              {/decent-academy-v1/* Hover Effect */decent-academy-v1/}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/decent-academy-v1/5 to-accent/decent-academy-v1/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500 -z-10" /decent-academy-v1/>
-            </decent-academy-v1/div>
+              {/* Hover Effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/decent-academy-v1/5 to-accent/decent-academy-v1/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500 -z-10" />
+            </div>
           ))}
-        </decent-academy-v1/div>
-      </decent-academy-v1/div>
-    </decent-academy-v1/section>
+        </div>
+      </div>
+    </section>
   )
 }

@@ -187,34 +187,34 @@ export default function ResultsPage() {
 
   return (
     <main className="min-h-screen">
-      <Navbar /decent-academy-v1/>
+      <Navbar />
 
-      {/decent-academy-v1/* Hero Section with modern gradient */decent-academy-v1/}
+      {/* Hero Section with modern gradient */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-background via-primary/decent-academy-v1/5 to-secondary/decent-academy-v1/5">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(var(--primary-rgb),0.1),transparent_50%)]" /decent-academy-v1/>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(var(--accent-rgb),0.1),transparent_50%)]" /decent-academy-v1/>
-        </decent-academy-v1/div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(var(--primary-rgb),0.1),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(var(--accent-rgb),0.1),transparent_50%)]" />
+        </div>
 
         <div className="container mx-auto px-4 lg:px-8 py-16">
           <div className="max-w-5xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary/decent-academy-v1/10 via-secondary/decent-academy-v1/10 to-accent/decent-academy-v1/10 backdrop-blur-sm rounded-full text-primary text-sm font-semibold border border-primary/decent-academy-v1/20 shadow-lg">
-              <Sparkles className="w-5 h-5 text-secondary" /decent-academy-v1/>
-              <span>Celebrating Excellence Since 2006</decent-academy-v1/span>
-            </decent-academy-v1/div>
+              <Sparkles className="w-5 h-5 text-secondary" />
+              <span>Celebrating Excellence Since 2006</span>
+            </div>
 
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight">
               <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Outstanding
-              </decent-academy-v1/span>
-              <span className="block mt-4 text-foreground">Results 2024-25</decent-academy-v1/span>
-            </decent-academy-v1/h1>
+              </span>
+              <span className="block mt-4 text-foreground">Results 2024-25</span>
+            </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Celebrating success stories that inspire excellence
-            </decent-academy-v1/p>
+            </p>
 
-            {/decent-academy-v1/* Quick Stats */decent-academy-v1/}
+            {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8">
               {results.highlights.map((highlight, index) => (
                 <div
@@ -223,30 +223,30 @@ export default function ResultsPage() {
                 >
                   <div className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent mb-2">
                     {highlight.value}
-                  </decent-academy-v1/div>
-                  <div className="text-sm font-medium text-muted-foreground">{highlight.label}</decent-academy-v1/div>
-                </decent-academy-v1/div>
+                  </div>
+                  <div className="text-sm font-medium text-muted-foreground">{highlight.label}</div>
+                </div>
               ))}
-            </decent-academy-v1/div>
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* Featured Achievers - Premium Design */decent-academy-v1/}
+      {/* Featured Achievers - Premium Design */}
       <section className="py-20 lg:py-32 bg-muted/decent-academy-v1/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-semibold mb-6">
-              <Trophy className="w-4 h-4" /decent-academy-v1/>
-              <span>National & State Ranks</decent-academy-v1/span>
-            </decent-academy-v1/div>
+              <Trophy className="w-4 h-4" />
+              <span>National & State Ranks</span>
+            </div>
             <h2 className="text-5xl lg:text-6xl font-bold mb-4">
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Star Achievers
-              </decent-academy-v1/span>
-            </decent-academy-v1/h2>
-            <p className="text-xl text-muted-foreground">Excellence in NEET, JEE & CET</decent-academy-v1/p>
-          </decent-academy-v1/div>
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground">Excellence in NEET, JEE & CET</p>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {results.featuredToppers?.map((topper, index) => (
@@ -254,72 +254,72 @@ export default function ResultsPage() {
                 key={index}
                 className="group relative"
               >
-                {/decent-academy-v1/* Glow effect on hover */decent-academy-v1/}
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-3xl opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500" /decent-academy-v1/>
+                {/* Glow effect on hover */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-3xl opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500" />
                 
                 <div className="relative h-full bg-card rounded-3xl border-2 border-border hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
-                  {/decent-academy-v1/* Top gradient bar */decent-academy-v1/}
-                  <div className="h-2 bg-gradient-to-r from-primary via-secondary to-accent" /decent-academy-v1/>
+                  {/* Top gradient bar */}
+                  <div className="h-2 bg-gradient-to-r from-primary via-secondary to-accent" />
                   
                   <div className="p-8">
-                    {/decent-academy-v1/* Rank badge */decent-academy-v1/}
+                    {/* Rank badge */}
                     <div className="flex items-center justify-between mb-6">
                       <div className="px-4 py-2 bg-gradient-to-r from-primary/decent-academy-v1/20 to-secondary/decent-academy-v1/20 rounded-xl text-primary text-xs font-bold uppercase tracking-wider">
                         {topper.category}
-                      </decent-academy-v1/div>
+                      </div>
                       <div className="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                         {index + 1}
-                      </decent-academy-v1/div>
-                    </decent-academy-v1/div>
+                      </div>
+                    </div>
 
-                    {/decent-academy-v1/* Score - Large and prominent */decent-academy-v1/}
+                    {/* Score - Large and prominent */}
                     <div className="mb-6 text-center">
                       <div className="text-5xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent mb-2">
                         {topper.score}
-                      </decent-academy-v1/div>
-                      <div className="text-sm font-semibold text-secondary">{topper.rank}</decent-academy-v1/div>
-                    </decent-academy-v1/div>
+                      </div>
+                      <div className="text-sm font-semibold text-secondary">{topper.rank}</div>
+                    </div>
 
-                    {/decent-academy-v1/* Name */decent-academy-v1/}
+                    {/* Name */}
                     <h4 className="text-2xl font-bold mb-2 text-center group-hover:text-primary transition-colors duration-300">
                       {topper.name}
-                    </decent-academy-v1/h4>
+                    </h4>
                     
-                    {/decent-academy-v1/* Standard */decent-academy-v1/}
-                    <p className="text-center text-muted-foreground font-medium mb-4">{topper.standard}</decent-academy-v1/p>
+                    {/* Standard */}
+                    <p className="text-center text-muted-foreground font-medium mb-4">{topper.standard}</p>
 
-                    {/decent-academy-v1/* Details */decent-academy-v1/}
+                    {/* Details */}
                     <div className="pt-4 border-t border-border/decent-academy-v1/50">
                       {topper.subjects.map((subject, idx) => (
                         <div key={idx} className="flex items-center gap-2 text-sm text-foreground/decent-academy-v1/70">
-                          <Award className="w-4 h-4 text-accent flex-shrink-0" /decent-academy-v1/>
-                          <span>{subject}</decent-academy-v1/span>
-                        </decent-academy-v1/div>
+                          <Award className="w-4 h-4 text-accent flex-shrink-0" />
+                          <span>{subject}</span>
+                        </div>
                       ))}
-                    </decent-academy-v1/div>
-                  </decent-academy-v1/div>
-                </decent-academy-v1/div>
-              </decent-academy-v1/div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             ))}
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* SSC Toppers - Modern Grid */decent-academy-v1/}
+      {/* SSC Toppers - Modern Grid */}
       <section className="py-20 lg:py-32 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/decent-academy-v1/10 rounded-full text-secondary text-sm font-semibold mb-6">
-              <Medal className="w-4 h-4" /decent-academy-v1/>
-              <span>SSC Excellence</decent-academy-v1/span>
-            </decent-academy-v1/div>
+              <Medal className="w-4 h-4" />
+              <span>SSC Excellence</span>
+            </div>
             <h2 className="text-5xl lg:text-6xl font-bold mb-4">
               <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
                 SSC Toppers
-              </decent-academy-v1/span>
-            </decent-academy-v1/h2>
-            <p className="text-xl text-muted-foreground">Outstanding performances in 10th Board Exams</decent-academy-v1/p>
-          </decent-academy-v1/div>
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground">Outstanding performances in 10th Board Exams</p>
+          </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {results.sscToppers?.map((topper, index) => (
@@ -327,55 +327,55 @@ export default function ResultsPage() {
                 key={index}
                 className="group relative bg-gradient-to-br from-card to-card/decent-academy-v1/50 rounded-2xl border border-border hover:border-secondary/decent-academy-v1/50 p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
-                {/decent-academy-v1/* Top accent */decent-academy-v1/}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-accent to-secondary rounded-t-2xl" /decent-academy-v1/>
+                {/* Top accent */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-accent to-secondary rounded-t-2xl" />
                 
-                {/decent-academy-v1/* Rank indicator */decent-academy-v1/}
+                {/* Rank indicator */}
                 <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg">
                   {index + 1}
-                </decent-academy-v1/div>
+                </div>
 
                 <div className="pt-2">
-                  {/decent-academy-v1/* Score */decent-academy-v1/}
+                  {/* Score */}
                   <div className="text-center mb-4">
                     <div className="text-4xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-transparent mb-1">
                       {topper.score}
-                    </decent-academy-v1/div>
-                    <div className="text-xs text-muted-foreground font-medium">{topper.rank || "Top Performer"}</decent-academy-v1/div>
-                  </decent-academy-v1/div>
+                    </div>
+                    <div className="text-xs text-muted-foreground font-medium">{topper.rank || "Top Performer"}</div>
+                  </div>
 
-                  {/decent-academy-v1/* Name */decent-academy-v1/}
+                  {/* Name */}
                   <h4 className="text-lg font-bold mb-2 text-center group-hover:text-secondary transition-colors">
                     {topper.name}
-                  </decent-academy-v1/h4>
+                  </h4>
                   
-                  {/decent-academy-v1/* Standard */decent-academy-v1/}
-                  <p className="text-center text-muted-foreground text-sm">{topper.standard}</decent-academy-v1/p>
-                </decent-academy-v1/div>
-              </decent-academy-v1/div>
+                  {/* Standard */}
+                  <p className="text-center text-muted-foreground text-sm">{topper.standard}</p>
+                </div>
+              </div>
             ))}
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* Commerce & Science Toppers - Side by Side */decent-academy-v1/}
+      {/* Commerce & Science Toppers - Side by Side */}
       <section className="py-20 lg:py-32 bg-muted/decent-academy-v1/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
-            {/decent-academy-v1/* Commerce Toppers */decent-academy-v1/}
+            {/* Commerce Toppers */}
             <div>
               <div className="text-center mb-12">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-semibold mb-6">
-                  <TrendingUp className="w-4 h-4" /decent-academy-v1/>
-                  <span>Commerce Stream</decent-academy-v1/span>
-                </decent-academy-v1/div>
+                  <TrendingUp className="w-4 h-4" />
+                  <span>Commerce Stream</span>
+                </div>
                 <h2 className="text-4xl lg:text-5xl font-bold mb-3">
                   <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                     Commerce
-                  </decent-academy-v1/span>
-                </decent-academy-v1/h2>
-                <p className="text-lg text-muted-foreground">HSC Commerce Achievers</decent-academy-v1/p>
-              </decent-academy-v1/div>
+                  </span>
+                </h2>
+                <p className="text-lg text-muted-foreground">HSC Commerce Achievers</p>
+              </div>
 
               <div className="space-y-4">
                 {results.commerceToppers?.map((topper, index) => (
@@ -384,47 +384,47 @@ export default function ResultsPage() {
                     className="group bg-card rounded-xl border border-border hover:border-primary/decent-academy-v1/50 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-x-1"
                   >
                     <div className="flex items-start gap-4">
-                      {/decent-academy-v1/* Rank badge */decent-academy-v1/}
+                      {/* Rank badge */}
                       <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">
                         {index + 1}
-                      </decent-academy-v1/div>
+                      </div>
 
                       <div className="flex-1 min-w-0">
-                        {/decent-academy-v1/* Name & Score */decent-academy-v1/}
+                        {/* Name & Score */}
                         <div className="flex items-start justify-between mb-2">
                           <h4 className="text-xl font-bold group-hover:text-primary transition-colors">
                             {topper.name}
-                          </decent-academy-v1/h4>
+                          </h4>
                           <div className="text-2xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent ml-2">
                             {topper.score}
-                          </decent-academy-v1/div>
-                        </decent-academy-v1/div>
+                          </div>
+                        </div>
                         
-                        {/decent-academy-v1/* Details */decent-academy-v1/}
+                        {/* Details */}
                         <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                          <span>{topper.college}</decent-academy-v1/span>
-                        </decent-academy-v1/div>
-                      </decent-academy-v1/div>
-                    </decent-academy-v1/div>
-                  </decent-academy-v1/div>
+                          <span>{topper.college}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 ))}
-              </decent-academy-v1/div>
-            </decent-academy-v1/div>
+              </div>
+            </div>
 
-            {/decent-academy-v1/* Science Toppers */decent-academy-v1/}
+            {/* Science Toppers */}
             <div>
               <div className="text-center mb-12">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/decent-academy-v1/10 rounded-full text-accent text-sm font-semibold mb-6">
-                  <Sparkles className="w-4 h-4" /decent-academy-v1/>
-                  <span>Science Stream</decent-academy-v1/span>
-                </decent-academy-v1/div>
+                  <Sparkles className="w-4 h-4" />
+                  <span>Science Stream</span>
+                </div>
                 <h2 className="text-4xl lg:text-5xl font-bold mb-3">
                   <span className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
                     Science
-                  </decent-academy-v1/span>
-                </decent-academy-v1/h2>
-                <p className="text-lg text-muted-foreground">HSC Science Achievers</decent-academy-v1/p>
-              </decent-academy-v1/div>
+                  </span>
+                </h2>
+                <p className="text-lg text-muted-foreground">HSC Science Achievers</p>
+              </div>
 
               <div className="space-y-4">
                 {results.scienceToppers?.map((topper, index) => (
@@ -433,37 +433,37 @@ export default function ResultsPage() {
                     className="group bg-card rounded-xl border border-border hover:border-accent/decent-academy-v1/50 p-6 transition-all duration-300 hover:shadow-lg hover:translate-x-1"
                   >
                     <div className="flex items-start gap-4">
-                      {/decent-academy-v1/* Rank badge */decent-academy-v1/}
+                      {/* Rank badge */}
                       <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-accent to-secondary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">
                         {index + 1}
-                      </decent-academy-v1/div>
+                      </div>
 
                       <div className="flex-1 min-w-0">
-                        {/decent-academy-v1/* Name & Score */decent-academy-v1/}
+                        {/* Name & Score */}
                         <div className="flex items-start justify-between mb-2">
                           <h4 className="text-xl font-bold group-hover:text-accent transition-colors">
                             {topper.name}
-                          </decent-academy-v1/h4>
+                          </h4>
                           <div className="text-2xl font-bold bg-gradient-to-br from-accent to-secondary bg-clip-text text-transparent ml-2">
                             {topper.score}
-                          </decent-academy-v1/div>
-                        </decent-academy-v1/div>
+                          </div>
+                        </div>
                         
-                        {/decent-academy-v1/* Details */decent-academy-v1/}
+                        {/* Details */}
                         <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                          <span>{topper.college}</decent-academy-v1/span>
-                        </decent-academy-v1/div>
-                      </decent-academy-v1/div>
-                    </decent-academy-v1/div>
-                  </decent-academy-v1/div>
+                          <span>{topper.college}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 ))}
-              </decent-academy-v1/div>
-            </decent-academy-v1/div>
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/decent-academy-v1/* Statistics Section - Modern Design */decent-academy-v1/}
+      {/* Statistics Section - Modern Design */}
       <section className="py-20 lg:py-32 bg-gradient-to-br from-primary/decent-academy-v1/5 via-background to-accent/decent-academy-v1/5">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
@@ -471,10 +471,10 @@ export default function ResultsPage() {
               <h2 className="text-5xl lg:text-6xl font-bold mb-4">
                 <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                   Performance Overview
-                </decent-academy-v1/span>
-              </decent-academy-v1/h2>
-              <p className="text-xl text-muted-foreground">Excellence across all standards</decent-academy-v1/p>
-            </decent-academy-v1/div>
+                </span>
+              </h2>
+              <p className="text-xl text-muted-foreground">Excellence across all standards</p>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-8">
               {Object.entries(results.statistics).map(([standard, stats], index) => (
@@ -483,104 +483,104 @@ export default function ResultsPage() {
                   className="group relative bg-card/decent-academy-v1/60 backdrop-blur-sm rounded-3xl border-2 border-border hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-[1.02]"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  {/decent-academy-v1/* Gradient overlay on hover */decent-academy-v1/}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/decent-academy-v1/10 via-secondary/decent-academy-v1/10 to-accent/decent-academy-v1/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" /decent-academy-v1/>
+                  {/* Gradient overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/decent-academy-v1/10 via-secondary/decent-academy-v1/10 to-accent/decent-academy-v1/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
-                  {/decent-academy-v1/* Top accent bar */decent-academy-v1/}
-                  <div className="h-2 bg-gradient-to-r from-primary via-secondary to-accent" /decent-academy-v1/>
+                  {/* Top accent bar */}
+                  <div className="h-2 bg-gradient-to-r from-primary via-secondary to-accent" />
                   
                   <div className="relative z-10 p-10">
-                    {/decent-academy-v1/* Header */decent-academy-v1/}
+                    {/* Header */}
                     <div className="text-center mb-8">
                       <h3 className="text-3xl font-bold mb-2 group-hover:text-primary transition-colors">
                         {standard === "10th" ? "10th Standard" : "11th & 12th"}
-                      </decent-academy-v1/h3>
+                      </h3>
                       <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-semibold">
-                        <Trophy className="w-4 h-4" /decent-academy-v1/>
-                        <span>{stats.total} Students</decent-academy-v1/span>
-                      </decent-academy-v1/div>
-                    </decent-academy-v1/div>
+                        <Trophy className="w-4 h-4" />
+                        <span>{stats.total} Students</span>
+                      </div>
+                    </div>
 
-                    {/decent-academy-v1/* Stats */decent-academy-v1/}
+                    {/* Stats */}
                     <div className="space-y-4">
                       <div className="flex items-center justify-between p-4 bg-background/decent-academy-v1/50 rounded-xl">
                         <div className="flex items-center gap-3">
                           <div className="w-10 h-10 bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center">
-                            <Star className="w-5 h-5 text-white" /decent-academy-v1/>
-                          </decent-academy-v1/div>
-                          <span className="text-foreground font-medium">Above 90%</decent-academy-v1/span>
-                        </decent-academy-v1/div>
+                            <Star className="w-5 h-5 text-white" />
+                          </div>
+                          <span className="text-foreground font-medium">Above 90%</span>
+                        </div>
                         <span className="text-3xl font-bold bg-gradient-to-br from-accent to-secondary bg-clip-text text-transparent">
                           {stats.above90}
-                        </decent-academy-v1/span>
-                      </decent-academy-v1/div>
+                        </span>
+                      </div>
 
                       {stats.above85 && (
                         <div className="flex items-center justify-between p-4 bg-background/decent-academy-v1/50 rounded-xl">
                           <div className="flex items-center gap-3">
                             <div className="w-10 h-10 bg-gradient-to-br from-secondary to-primary rounded-lg flex items-center justify-center">
-                              <Medal className="w-5 h-5 text-white" /decent-academy-v1/>
-                            </decent-academy-v1/div>
-                            <span className="text-foreground font-medium">Above 85%</decent-academy-v1/span>
-                          </decent-academy-v1/div>
+                              <Medal className="w-5 h-5 text-white" />
+                            </div>
+                            <span className="text-foreground font-medium">Above 85%</span>
+                          </div>
                           <span className="text-3xl font-bold bg-gradient-to-br from-secondary to-primary bg-clip-text text-transparent">
                             {stats.above85}
-                          </decent-academy-v1/span>
-                        </decent-academy-v1/div>
+                          </span>
+                        </div>
                       )}
 
                       {stats.above80 && (
                         <div className="flex items-center justify-between p-4 bg-background/decent-academy-v1/50 rounded-xl">
                           <div className="flex items-center gap-3">
                             <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                              <Award className="w-5 h-5 text-white" /decent-academy-v1/>
-                            </decent-academy-v1/div>
-                            <span className="text-foreground font-medium">Above 80%</decent-academy-v1/span>
-                          </decent-academy-v1/div>
+                              <Award className="w-5 h-5 text-white" />
+                            </div>
+                            <span className="text-foreground font-medium">Above 80%</span>
+                          </div>
                           <span className="text-3xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent">
                             {stats.above80}
-                          </decent-academy-v1/span>
-                        </decent-academy-v1/div>
+                          </span>
+                        </div>
                       )}
 
                       {stats.above75 && (
                         <div className="flex items-center justify-between p-4 bg-background/decent-academy-v1/50 rounded-xl">
                           <div className="flex items-center gap-3">
                             <div className="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
-                              <TrendingUp className="w-5 h-5 text-white" /decent-academy-v1/>
-                            </decent-academy-v1/div>
-                            <span className="text-foreground font-medium">Above 75%</decent-academy-v1/span>
-                          </decent-academy-v1/div>
+                              <TrendingUp className="w-5 h-5 text-white" />
+                            </div>
+                            <span className="text-foreground font-medium">Above 75%</span>
+                          </div>
                           <span className="text-3xl font-bold bg-gradient-to-br from-secondary to-accent bg-clip-text text-transparent">
                             {stats.above75}
-                          </decent-academy-v1/span>
-                        </decent-academy-v1/div>
+                          </span>
+                        </div>
                       )}
 
-                      {/decent-academy-v1/* Pass Rate - Highlighted */decent-academy-v1/}
+                      {/* Pass Rate - Highlighted */}
                       <div className="mt-6 p-6 bg-gradient-to-br from-primary/decent-academy-v1/20 to-accent/decent-academy-v1/20 rounded-2xl border-2 border-primary/decent-academy-v1/30">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-3">
                             <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
-                              <Sparkles className="w-6 h-6 text-white" /decent-academy-v1/>
-                            </decent-academy-v1/div>
-                            <span className="text-lg font-bold text-foreground">Pass Rate</decent-academy-v1/span>
-                          </decent-academy-v1/div>
+                              <Sparkles className="w-6 h-6 text-white" />
+                            </div>
+                            <span className="text-lg font-bold text-foreground">Pass Rate</span>
+                          </div>
                           <span className="text-4xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent">
                             {stats.passRate}%
-                          </decent-academy-v1/span>
-                        </decent-academy-v1/div>
-                      </decent-academy-v1/div>
-                    </decent-academy-v1/div>
-                  </decent-academy-v1/div>
-                </decent-academy-v1/div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               ))}
-            </decent-academy-v1/div>
-          </decent-academy-v1/div>
-        </decent-academy-v1/div>
-      </decent-academy-v1/section>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <Footer /decent-academy-v1/>
-    </decent-academy-v1/main>
+      <Footer />
+    </main>
   )
 }

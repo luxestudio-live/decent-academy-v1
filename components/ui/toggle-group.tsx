@@ -35,8 +35,8 @@ function ToggleGroup({
     >
       <ToggleGroupContext.Provider value={{ variant, size }}>
         {children}
-      </decent-academy-v1/ToggleGroupContext.Provider>
-    </decent-academy-v1/ToggleGroupPrimitive.Root>
+      </ToggleGroupContext.Provider>
+    </ToggleGroupPrimitive.Root>
   )
 }
 
@@ -66,7 +66,7 @@ function ToggleGroupItem({
       {...props}
     >
       {children}
-    </decent-academy-v1/ToggleGroupPrimitive.Item>
+    </ToggleGroupPrimitive.Item>
   )
 }
 

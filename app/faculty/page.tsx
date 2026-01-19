@@ -102,34 +102,34 @@ const facultyList: FacultyMember[] = [
 export default function FacultyPage() {
 	return (
 		<main className="min-h-screen">
-			<Navbar /decent-academy-v1/>
-			{/decent-academy-v1/* Hero Section */decent-academy-v1/}
+			<Navbar />
+			{/* Hero Section */}
 			<section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-20">
 				<div className="absolute inset-0 -z-10">
-					<div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" /decent-academy-v1/>
+					<div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
 					<div
 						className="absolute bottom-20 right-10 w-80 h-80 bg-accent/decent-academy-v1/20 rounded-full blur-3xl animate-float"
 						style={{ animationDelay: "2s" }}
 					/decent-academy-v1/>
-				</decent-academy-v1/div>
+				</div>
 				<div className="container mx-auto px-4 lg:px-8 py-12">
 					<div className="max-w-4xl mx-auto text-center space-y-6">
 						<div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
-							<Users className="w-4 h-4" /decent-academy-v1/>
-							<span>30+ Expert Educators</decent-academy-v1/span>
-						</decent-academy-v1/div>
+							<Users className="w-4 h-4" />
+							<span>30+ Expert Educators</span>
+						</div>
 						<h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-tight">
 							Meet Our
-							<span className="block mt-2 text-primary">Expert Faculty</decent-academy-v1/span>
-						</decent-academy-v1/h1>
+							<span className="block mt-2 text-primary">Expert Faculty</span>
+						</h1>
 						<p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
 							Experienced educators dedicated to nurturing excellence and shaping
 							futures
-						</decent-academy-v1/p>
-					</decent-academy-v1/div>
-				</decent-academy-v1/div>
-			</decent-academy-v1/section>
-			{/decent-academy-v1/* Faculty Grid */decent-academy-v1/}
+						</p>
+					</div>
+				</div>
+			</section>
+			{/* Faculty Grid */}
 			<section className="py-16 lg:py-20">
 				<div className="container mx-auto px-4 lg:px-8">
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -138,46 +138,46 @@ export default function FacultyPage() {
 								key={index}
 								className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
 							>
-								{/decent-academy-v1/* Image */decent-academy-v1/}
+								{/* Image */}
 								<div className="relative h-80 overflow-hidden bg-muted">
 									<img
 										src={member.image || "/placeholder.svg"}
 										alt={member.name}
 										className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
 									/decent-academy-v1/>
-									<div className="absolute inset-0 bg-gradient-to-t from-card via-card/decent-academy-v1/50 to-transparent" /decent-academy-v1/>
-								</decent-academy-v1/div>
+									<div className="absolute inset-0 bg-gradient-to-t from-card via-card/decent-academy-v1/50 to-transparent" />
+								</div>
 								<div className="relative z-10 p-8 -mt-12">
-									{/decent-academy-v1/* Badge */decent-academy-v1/}
+									{/* Badge */}
 									<div
 										className={`inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r ${member.color} text-white rounded-lg text-sm font-medium mb-4 shadow-lg`}
 									>
-										<Award className="w-4 h-4" /decent-academy-v1/>
-										<span>{member.experience}</decent-academy-v1/span>
-									</decent-academy-v1/div>
-									{/decent-academy-v1/* Name & Subject */decent-academy-v1/}
+										<Award className="w-4 h-4" />
+										<span>{member.experience}</span>
+									</div>
+									{/* Name & Subject */}
 									<h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">
 										{member.name}
-									</decent-academy-v1/h3>
+									</h3>
 									<p className="text-primary font-semibold mb-4">
 										{member.subject}
-									</decent-academy-v1/p>
-									{/decent-academy-v1/* Qualification */decent-academy-v1/}
+									</p>
+									{/* Qualification */}
 									<div className="space-y-3 mb-4">
 										<div className="flex items-start gap-2">
-											<GraduationCap className="w-4 h-4 text-accent mt-1 flex-shrink-0" /decent-academy-v1/>
+											<GraduationCap className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
 											<span className="text-sm text-foreground/decent-academy-v1/80">
 												{member.qualification}
-											</decent-academy-v1/span>
-										</decent-academy-v1/div>
-									</decent-academy-v1/div>
-								</decent-academy-v1/div>
-							</decent-academy-v1/div>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
 						))}
-					</decent-academy-v1/div>
-				</decent-academy-v1/div>
-			</decent-academy-v1/section>
-			<Footer /decent-academy-v1/>
-		</decent-academy-v1/main>
+					</div>
+				</div>
+			</section>
+			<Footer />
+		</main>
 	)
 }
