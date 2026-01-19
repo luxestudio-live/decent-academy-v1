@@ -99,9 +99,7 @@ export default function ContactPage() {
       newErrors.name = "Name must be at least 2 characters"
     }
 
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required"
-    } else if (!validateEmail(formData.email)) {
+    if (formData.email.trim() && !validateEmail(formData.email)) {
       newErrors.email = "Please enter a valid email address"
     }
 
@@ -239,7 +237,7 @@ export default function ContactPage() {
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      Email Address *
+                      Email Address (Optional)
                     </label>
                     <Input
                       id="email"

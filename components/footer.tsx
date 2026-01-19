@@ -64,7 +64,7 @@ export function Footer() {
             <div className="flex gap-3">
               {[
                 { icon: Facebook, href: "#" },
-                { icon: Instagram, href: "#" },
+                { icon: Instagram, href: "https://www.instagram.com/decent_academy78?igsh=emp6Y2lsb2pxOHp6" },
                 { icon: Youtube, href: "#" },
               ].map((social, index) => (
                 <a
