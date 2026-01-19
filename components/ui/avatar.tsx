@@ -1,9 +1,9 @@
 'use client'
 
 import * as React from 'react'
-import * as AvatarPrimitive from '@radix-ui/react-avatar'
+import * as AvatarPrimitive from '@radix-ui/decent-academy-v1/react-avatar'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function Avatar({
   className,
@@ -17,7 +17,7 @@ function Avatar({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -30,7 +30,7 @@ function AvatarImage({
       data-slot="avatar-image"
       className={cn('aspect-square size-full', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -46,7 +46,7 @@ function AvatarFallback({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

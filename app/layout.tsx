@@ -1,9 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Playfair_Display, Inter, Bebas_Neue } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import { FloatingEnquireButton } from "@/components/floating-enquire-button"
-import "./globals.css"
+import { Playfair_Display, Inter, Bebas_Neue } from "next/decent-academy-v1/font/decent-academy-v1/google"
+import { Analytics } from "@vercel/decent-academy-v1/analytics/decent-academy-v1/next"
+import { FloatingEnquireButton } from "@/decent-academy-v1/components/decent-academy-v1/floating-enquire-button"
+import "./decent-academy-v1/globals.css"
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   description:
     "Leading coaching institute for 5th-10th and 11th-12th students. Expert faculty, proven results, comprehensive courses.",
   generator: "v0.app",
-  metadataBase: new URL("https://luxestudio-live.github.io/decent-academy-v1"),
+  metadataBase: new URL("https:/decent-academy-v1/luxestudio-live.github.io/decent-academy-v1/decent-academy-v1"),
   openGraph: {
     title: "Decent Academy - Premium Coaching for Excellence",
     description:
       "Leading coaching institute for 5th-10th and 11th-12th students. Expert faculty, proven results, comprehensive courses.",
-    url: "https://luxestudio-live.github.io/decent-academy-v1",
+    url: "https:/decent-academy-v1/luxestudio-live.github.io/decent-academy-v1/decent-academy-v1",
     siteName: "Decent Academy",
     images: [
       {
@@ -58,11 +58,11 @@ export const metadata: Metadata = {
     icon: [
       {
         url: "/DecentLogo.svg",
-        type: "image/svg+xml",
+        type: "image/decent-academy-v1/svg+xml",
       },
       {
         url: "/DecentLogo.png",
-        type: "image/png",
+        type: "image/decent-academy-v1/png",
       },
     ],
     apple: "/DecentLogo.png",
@@ -79,9 +79,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfairDisplay.variable} ${inter.variable} ${bebasNeue.variable} font-sans antialiased`}>
         {children}
-        <FloatingEnquireButton />
-        <Analytics />
-      </body>
-    </html>
+        <FloatingEnquireButton /decent-academy-v1/>
+        <Analytics /decent-academy-v1/>
+      </decent-academy-v1/body>
+    </decent-academy-v1/html>
   )
 }

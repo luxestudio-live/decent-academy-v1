@@ -1,8 +1,8 @@
 'use client'
 
 import * as React from 'react'
-import * as LabelPrimitive from '@radix-ui/react-label'
-import { Slot } from '@radix-ui/react-slot'
+import * as LabelPrimitive from '@radix-ui/decent-academy-v1/react-label'
+import { Slot } from '@radix-ui/decent-academy-v1/react-slot'
 import {
   Controller,
   FormProvider,
@@ -13,8 +13,8 @@ import {
   type FieldValues,
 } from 'react-hook-form'
 
-import { cn } from '@/lib/utils'
-import { Label } from '@/components/ui/label'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
+import { Label } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/label'
 
 const Form = FormProvider
 
@@ -37,8 +37,8 @@ const FormField = <
 }: ControllerProps<TFieldValues, TName>) => {
   return (
     <FormFieldContext.Provider value={{ name: props.name }}>
-      <Controller {...props} />
-    </FormFieldContext.Provider>
+      <Controller {...props} /decent-academy-v1/>
+    </decent-academy-v1/FormFieldContext.Provider>
   )
 }
 
@@ -82,8 +82,8 @@ function FormItem({ className, ...props }: React.ComponentProps<'div'>) {
         data-slot="form-item"
         className={cn('grid gap-2', className)}
         {...props}
-      />
-    </FormItemContext.Provider>
+      /decent-academy-v1/>
+    </decent-academy-v1/FormItemContext.Provider>
   )
 }
 
@@ -100,7 +100,7 @@ function FormLabel({
       className={cn('data-[error=true]:text-destructive', className)}
       htmlFor={formItemId}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -118,7 +118,7 @@ function FormControl({ ...props }: React.ComponentProps<typeof Slot>) {
       }
       aria-invalid={!!error}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -131,7 +131,7 @@ function FormDescription({ className, ...props }: React.ComponentProps<'p'>) {
       id={formDescriptionId}
       className={cn('text-muted-foreground text-sm', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -151,7 +151,7 @@ function FormMessage({ className, ...props }: React.ComponentProps<'p'>) {
       {...props}
     >
       {body}
-    </p>
+    </decent-academy-v1/p>
   )
 }
 

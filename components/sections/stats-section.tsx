@@ -29,47 +29,47 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="py-20 lg:py-32 bg-muted/30">
+    <section className="py-20 lg:py-32 bg-muted/decent-academy-v1/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-balance">
             Why Students Choose
             <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Decent Academy
-            </span>
-          </h2>
+            </decent-academy-v1/span>
+          </decent-academy-v1/h2>
           <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
             Our commitment to excellence and proven track record make us the preferred choice for thousands of students
-          </p>
-        </div>
+          </decent-academy-v1/p>
+        </decent-academy-v1/div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="group relative p-8 bg-card rounded-2xl border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
+              className="group relative p-8 bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Gradient Background on Hover */}
+              {/decent-academy-v1/* Gradient Background on Hover */decent-academy-v1/}
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}
-              />
+              /decent-academy-v1/>
 
               <div className="relative z-10">
                 <div
                   className={`w-14 h-14 bg-gradient-to-br ${stat.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}
                 >
-                  <stat.icon className="w-7 h-7 text-white" />
-                </div>
+                  <stat.icon className="w-7 h-7 text-white" /decent-academy-v1/>
+                </decent-academy-v1/div>
                 <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
                   {stat.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">{stat.description}</p>
-              </div>
-            </div>
+                </decent-academy-v1/h3>
+                <p className="text-muted-foreground leading-relaxed">{stat.description}</decent-academy-v1/p>
+              </decent-academy-v1/div>
+            </decent-academy-v1/div>
           ))}
-        </div>
-      </div>
-    </section>
+        </decent-academy-v1/div>
+      </decent-academy-v1/div>
+    </decent-academy-v1/section>
   )
 }

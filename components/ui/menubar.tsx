@@ -1,10 +1,10 @@
 'use client'
 
 import * as React from 'react'
-import * as MenubarPrimitive from '@radix-ui/react-menubar'
+import * as MenubarPrimitive from '@radix-ui/decent-academy-v1/react-menubar'
 import { CheckIcon, ChevronRightIcon, CircleIcon } from 'lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function Menubar({
   className,
@@ -18,33 +18,33 @@ function Menubar({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
 function MenubarMenu({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Menu>) {
-  return <MenubarPrimitive.Menu data-slot="menubar-menu" {...props} />
+  return <MenubarPrimitive.Menu data-slot="menubar-menu" {...props} /decent-academy-v1/>
 }
 
 function MenubarGroup({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Group>) {
-  return <MenubarPrimitive.Group data-slot="menubar-group" {...props} />
+  return <MenubarPrimitive.Group data-slot="menubar-group" {...props} /decent-academy-v1/>
 }
 
 function MenubarPortal({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Portal>) {
-  return <MenubarPrimitive.Portal data-slot="menubar-portal" {...props} />
+  return <MenubarPrimitive.Portal data-slot="menubar-portal" {...props} /decent-academy-v1/>
 }
 
 function MenubarRadioGroup({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.RadioGroup>) {
   return (
-    <MenubarPrimitive.RadioGroup data-slot="menubar-radio-group" {...props} />
+    <MenubarPrimitive.RadioGroup data-slot="menubar-radio-group" {...props} /decent-academy-v1/>
   )
 }
 
@@ -60,7 +60,7 @@ function MenubarTrigger({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -83,8 +83,8 @@ function MenubarContent({
           className,
         )}
         {...props}
-      />
-    </MenubarPortal>
+      /decent-academy-v1/>
+    </decent-academy-v1/MenubarPortal>
   )
 }
 
@@ -103,11 +103,11 @@ function MenubarItem({
       data-inset={inset}
       data-variant={variant}
       className={cn(
-        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/decent-academy-v1/10 dark:data-[variant=destructive]:focus:bg-destructive/decent-academy-v1/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -129,11 +129,11 @@ function MenubarCheckboxItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <MenubarPrimitive.ItemIndicator>
-          <CheckIcon className="size-4" />
-        </MenubarPrimitive.ItemIndicator>
-      </span>
+          <CheckIcon className="size-4" /decent-academy-v1/>
+        </decent-academy-v1/MenubarPrimitive.ItemIndicator>
+      </decent-academy-v1/span>
       {children}
-    </MenubarPrimitive.CheckboxItem>
+    </decent-academy-v1/MenubarPrimitive.CheckboxItem>
   )
 }
 
@@ -153,11 +153,11 @@ function MenubarRadioItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <MenubarPrimitive.ItemIndicator>
-          <CircleIcon className="size-2 fill-current" />
-        </MenubarPrimitive.ItemIndicator>
-      </span>
+          <CircleIcon className="size-2 fill-current" /decent-academy-v1/>
+        </decent-academy-v1/MenubarPrimitive.ItemIndicator>
+      </decent-academy-v1/span>
       {children}
-    </MenubarPrimitive.RadioItem>
+    </decent-academy-v1/MenubarPrimitive.RadioItem>
   )
 }
 
@@ -177,7 +177,7 @@ function MenubarLabel({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -190,7 +190,7 @@ function MenubarSeparator({
       data-slot="menubar-separator"
       className={cn('bg-border -mx-1 my-1 h-px', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -206,14 +206,14 @@ function MenubarShortcut({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
 function MenubarSub({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Sub>) {
-  return <MenubarPrimitive.Sub data-slot="menubar-sub" {...props} />
+  return <MenubarPrimitive.Sub data-slot="menubar-sub" {...props} /decent-academy-v1/>
 }
 
 function MenubarSubTrigger({
@@ -235,8 +235,8 @@ function MenubarSubTrigger({
       {...props}
     >
       {children}
-      <ChevronRightIcon className="ml-auto h-4 w-4" />
-    </MenubarPrimitive.SubTrigger>
+      <ChevronRightIcon className="ml-auto h-4 w-4" /decent-academy-v1/>
+    </decent-academy-v1/MenubarPrimitive.SubTrigger>
   )
 }
 
@@ -252,7 +252,7 @@ function MenubarSubContent({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

@@ -1,11 +1,11 @@
 import * as React from 'react'
-import { Slot } from '@radix-ui/react-slot'
+import { Slot } from '@radix-ui/decent-academy-v1/react-slot'
 import { ChevronRight, MoreHorizontal } from 'lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function Breadcrumb({ ...props }: React.ComponentProps<'nav'>) {
-  return <nav aria-label="breadcrumb" data-slot="breadcrumb" {...props} />
+  return <nav aria-label="breadcrumb" data-slot="breadcrumb" {...props} /decent-academy-v1/>
 }
 
 function BreadcrumbList({ className, ...props }: React.ComponentProps<'ol'>) {
@@ -17,7 +17,7 @@ function BreadcrumbList({ className, ...props }: React.ComponentProps<'ol'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -27,7 +27,7 @@ function BreadcrumbItem({ className, ...props }: React.ComponentProps<'li'>) {
       data-slot="breadcrumb-item"
       className={cn('inline-flex items-center gap-1.5', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -45,7 +45,7 @@ function BreadcrumbLink({
       data-slot="breadcrumb-link"
       className={cn('hover:text-foreground transition-colors', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -58,7 +58,7 @@ function BreadcrumbPage({ className, ...props }: React.ComponentProps<'span'>) {
       aria-current="page"
       className={cn('text-foreground font-normal', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -75,8 +75,8 @@ function BreadcrumbSeparator({
       className={cn('[&>svg]:size-3.5', className)}
       {...props}
     >
-      {children ?? <ChevronRight />}
-    </li>
+      {children ?? <ChevronRight /decent-academy-v1/>}
+    </decent-academy-v1/li>
   )
 }
 
@@ -92,9 +92,9 @@ function BreadcrumbEllipsis({
       className={cn('flex size-9 items-center justify-center', className)}
       {...props}
     >
-      <MoreHorizontal className="size-4" />
-      <span className="sr-only">More</span>
-    </span>
+      <MoreHorizontal className="size-4" /decent-academy-v1/>
+      <span className="sr-only">More</decent-academy-v1/span>
+    </decent-academy-v1/span>
   )
 }
 

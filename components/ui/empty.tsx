@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from 'class-variance-authority'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function Empty({ className, ...props }: React.ComponentProps<'div'>) {
   return (
@@ -11,7 +11,7 @@ function Empty({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -24,7 +24,7 @@ function EmptyHeader({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -54,7 +54,7 @@ function EmptyMedia({
       data-variant={variant}
       className={cn(emptyMediaVariants({ variant, className }))}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -64,7 +64,7 @@ function EmptyTitle({ className, ...props }: React.ComponentProps<'div'>) {
       data-slot="empty-title"
       className={cn('text-lg font-medium tracking-tight', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -73,11 +73,11 @@ function EmptyDescription({ className, ...props }: React.ComponentProps<'p'>) {
     <div
       data-slot="empty-description"
       className={cn(
-        'text-muted-foreground [&>a:hover]:text-primary text-sm/relaxed [&>a]:underline [&>a]:underline-offset-4',
+        'text-muted-foreground [&>a:hover]:text-primary text-sm/decent-academy-v1/relaxed [&>a]:underline [&>a]:underline-offset-4',
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -90,7 +90,7 @@ function EmptyContent({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

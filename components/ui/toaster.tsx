@@ -1,6 +1,6 @@
 'use client'
 
-import { useToast } from '@/hooks/use-toast'
+import { useToast } from '@/decent-academy-v1/hooks/decent-academy-v1/use-toast'
 import {
   Toast,
   ToastClose,
@@ -8,7 +8,7 @@ import {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from '@/components/ui/toast'
+} from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/toast'
 
 export function Toaster() {
   const { toasts } = useToast()
@@ -19,17 +19,17 @@ export function Toaster() {
         return (
           <Toast key={id} {...props}>
             <div className="grid gap-1">
-              {title && <ToastTitle>{title}</ToastTitle>}
+              {title && <ToastTitle>{title}</decent-academy-v1/ToastTitle>}
               {description && (
-                <ToastDescription>{description}</ToastDescription>
+                <ToastDescription>{description}</decent-academy-v1/ToastDescription>
               )}
-            </div>
+            </decent-academy-v1/div>
             {action}
-            <ToastClose />
-          </Toast>
+            <ToastClose /decent-academy-v1/>
+          </decent-academy-v1/Toast>
         )
       })}
-      <ToastViewport />
-    </ToastProvider>
+      <ToastViewport /decent-academy-v1/>
+    </decent-academy-v1/ToastProvider>
   )
 }

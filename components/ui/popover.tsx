@@ -1,20 +1,20 @@
 'use client'
 
 import * as React from 'react'
-import * as PopoverPrimitive from '@radix-ui/react-popover'
+import * as PopoverPrimitive from '@radix-ui/decent-academy-v1/react-popover'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function Popover({
   ...props
 }: React.ComponentProps<typeof PopoverPrimitive.Root>) {
-  return <PopoverPrimitive.Root data-slot="popover" {...props} />
+  return <PopoverPrimitive.Root data-slot="popover" {...props} /decent-academy-v1/>
 }
 
 function PopoverTrigger({
   ...props
 }: React.ComponentProps<typeof PopoverPrimitive.Trigger>) {
-  return <PopoverPrimitive.Trigger data-slot="popover-trigger" {...props} />
+  return <PopoverPrimitive.Trigger data-slot="popover-trigger" {...props} /decent-academy-v1/>
 }
 
 function PopoverContent({
@@ -34,15 +34,15 @@ function PopoverContent({
           className,
         )}
         {...props}
-      />
-    </PopoverPrimitive.Portal>
+      /decent-academy-v1/>
+    </decent-academy-v1/PopoverPrimitive.Portal>
   )
 }
 
 function PopoverAnchor({
   ...props
 }: React.ComponentProps<typeof PopoverPrimitive.Anchor>) {
-  return <PopoverPrimitive.Anchor data-slot="popover-anchor" {...props} />
+  return <PopoverPrimitive.Anchor data-slot="popover-anchor" {...props} /decent-academy-v1/>
 }
 
 export { Popover, PopoverTrigger, PopoverContent, PopoverAnchor }

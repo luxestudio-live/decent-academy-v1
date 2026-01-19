@@ -1,18 +1,18 @@
 import * as React from 'react'
-import { Slot } from '@radix-ui/react-slot'
+import { Slot } from '@radix-ui/decent-academy-v1/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
 
-import { cn } from '@/lib/utils'
-import { Separator } from '@/components/ui/separator'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
+import { Separator } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/separator'
 
 function ItemGroup({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
       role="list"
       data-slot="item-group"
-      className={cn('group/item-group flex flex-col', className)}
+      className={cn('group/decent-academy-v1/item-group flex flex-col', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -26,18 +26,18 @@ function ItemSeparator({
       orientation="horizontal"
       className={cn('my-0', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
 const itemVariants = cva(
-  'group/item flex items-center border border-transparent text-sm rounded-md transition-colors [a&]:hover:bg-accent/50 [a&]:transition-colors duration-100 flex-wrap outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]',
+  'group/decent-academy-v1/item flex items-center border border-transparent text-sm rounded-md transition-colors [a&]:hover:bg-accent/decent-academy-v1/50 [a&]:transition-colors duration-100 flex-wrap outline-none focus-visible:border-ring focus-visible:ring-ring/decent-academy-v1/50 focus-visible:ring-[3px]',
   {
     variants: {
       variant: {
         default: 'bg-transparent',
         outline: 'border-border',
-        muted: 'bg-muted/50',
+        muted: 'bg-muted/decent-academy-v1/50',
       },
       size: {
         default: 'p-4 gap-4 ',
@@ -67,12 +67,12 @@ function Item({
       data-size={size}
       className={cn(itemVariants({ variant, size, className }))}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
 const itemMediaVariants = cva(
-  'flex shrink-0 items-center justify-center gap-2 group-has-[[data-slot=item-description]]/item:self-start [&_svg]:pointer-events-none group-has-[[data-slot=item-description]]/item:translate-y-0.5',
+  'flex shrink-0 items-center justify-center gap-2 group-has-[[data-slot=item-description]]/decent-academy-v1/item:self-start [&_svg]:pointer-events-none group-has-[[data-slot=item-description]]/decent-academy-v1/item:translate-y-0.5',
   {
     variants: {
       variant: {
@@ -99,7 +99,7 @@ function ItemMedia({
       data-variant={variant}
       className={cn(itemMediaVariants({ variant, className }))}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -112,7 +112,7 @@ function ItemContent({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -125,7 +125,7 @@ function ItemTitle({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -139,7 +139,7 @@ function ItemDescription({ className, ...props }: React.ComponentProps<'p'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -149,7 +149,7 @@ function ItemActions({ className, ...props }: React.ComponentProps<'div'>) {
       data-slot="item-actions"
       className={cn('flex items-center gap-2', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -162,7 +162,7 @@ function ItemHeader({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -175,7 +175,7 @@ function ItemFooter({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

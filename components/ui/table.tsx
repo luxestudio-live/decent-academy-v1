@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function Table({ className, ...props }: React.ComponentProps<'table'>) {
   return (
@@ -14,8 +14,8 @@ function Table({ className, ...props }: React.ComponentProps<'table'>) {
         data-slot="table"
         className={cn('w-full caption-bottom text-sm', className)}
         {...props}
-      />
-    </div>
+      /decent-academy-v1/>
+    </decent-academy-v1/div>
   )
 }
 
@@ -25,7 +25,7 @@ function TableHeader({ className, ...props }: React.ComponentProps<'thead'>) {
       data-slot="table-header"
       className={cn('[&_tr]:border-b', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -35,7 +35,7 @@ function TableBody({ className, ...props }: React.ComponentProps<'tbody'>) {
       data-slot="table-body"
       className={cn('[&_tr:last-child]:border-0', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -44,11 +44,11 @@ function TableFooter({ className, ...props }: React.ComponentProps<'tfoot'>) {
     <tfoot
       data-slot="table-footer"
       className={cn(
-        'bg-muted/50 border-t font-medium [&>tr]:last:border-b-0',
+        'bg-muted/decent-academy-v1/50 border-t font-medium [&>tr]:last:border-b-0',
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -57,11 +57,11 @@ function TableRow({ className, ...props }: React.ComponentProps<'tr'>) {
     <tr
       data-slot="table-row"
       className={cn(
-        'hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors',
+        'hover:bg-muted/decent-academy-v1/50 data-[state=selected]:bg-muted border-b transition-colors',
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -74,7 +74,7 @@ function TableHead({ className, ...props }: React.ComponentProps<'th'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -87,7 +87,7 @@ function TableCell({ className, ...props }: React.ComponentProps<'td'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -100,7 +100,7 @@ function TableCaption({
       data-slot="table-caption"
       className={cn('text-muted-foreground mt-4 text-sm', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

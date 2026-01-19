@@ -1,22 +1,22 @@
 'use client'
 
 import * as React from 'react'
-import * as ContextMenuPrimitive from '@radix-ui/react-context-menu'
+import * as ContextMenuPrimitive from '@radix-ui/decent-academy-v1/react-context-menu'
 import { CheckIcon, ChevronRightIcon, CircleIcon } from 'lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function ContextMenu({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Root>) {
-  return <ContextMenuPrimitive.Root data-slot="context-menu" {...props} />
+  return <ContextMenuPrimitive.Root data-slot="context-menu" {...props} /decent-academy-v1/>
 }
 
 function ContextMenuTrigger({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Trigger>) {
   return (
-    <ContextMenuPrimitive.Trigger data-slot="context-menu-trigger" {...props} />
+    <ContextMenuPrimitive.Trigger data-slot="context-menu-trigger" {...props} /decent-academy-v1/>
   )
 }
 
@@ -24,7 +24,7 @@ function ContextMenuGroup({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Group>) {
   return (
-    <ContextMenuPrimitive.Group data-slot="context-menu-group" {...props} />
+    <ContextMenuPrimitive.Group data-slot="context-menu-group" {...props} /decent-academy-v1/>
   )
 }
 
@@ -32,14 +32,14 @@ function ContextMenuPortal({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Portal>) {
   return (
-    <ContextMenuPrimitive.Portal data-slot="context-menu-portal" {...props} />
+    <ContextMenuPrimitive.Portal data-slot="context-menu-portal" {...props} /decent-academy-v1/>
   )
 }
 
 function ContextMenuSub({
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Sub>) {
-  return <ContextMenuPrimitive.Sub data-slot="context-menu-sub" {...props} />
+  return <ContextMenuPrimitive.Sub data-slot="context-menu-sub" {...props} /decent-academy-v1/>
 }
 
 function ContextMenuRadioGroup({
@@ -49,7 +49,7 @@ function ContextMenuRadioGroup({
     <ContextMenuPrimitive.RadioGroup
       data-slot="context-menu-radio-group"
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -72,8 +72,8 @@ function ContextMenuSubTrigger({
       {...props}
     >
       {children}
-      <ChevronRightIcon className="ml-auto" />
-    </ContextMenuPrimitive.SubTrigger>
+      <ChevronRightIcon className="ml-auto" /decent-academy-v1/>
+    </decent-academy-v1/ContextMenuPrimitive.SubTrigger>
   )
 }
 
@@ -89,7 +89,7 @@ function ContextMenuSubContent({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -106,8 +106,8 @@ function ContextMenuContent({
           className,
         )}
         {...props}
-      />
-    </ContextMenuPrimitive.Portal>
+      /decent-academy-v1/>
+    </decent-academy-v1/ContextMenuPrimitive.Portal>
   )
 }
 
@@ -126,11 +126,11 @@ function ContextMenuItem({
       data-inset={inset}
       data-variant={variant}
       className={cn(
-        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/decent-academy-v1/10 dark:data-[variant=destructive]:focus:bg-destructive/decent-academy-v1/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -152,11 +152,11 @@ function ContextMenuCheckboxItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <CheckIcon className="size-4" />
-        </ContextMenuPrimitive.ItemIndicator>
-      </span>
+          <CheckIcon className="size-4" /decent-academy-v1/>
+        </decent-academy-v1/ContextMenuPrimitive.ItemIndicator>
+      </decent-academy-v1/span>
       {children}
-    </ContextMenuPrimitive.CheckboxItem>
+    </decent-academy-v1/ContextMenuPrimitive.CheckboxItem>
   )
 }
 
@@ -176,11 +176,11 @@ function ContextMenuRadioItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <CircleIcon className="size-2 fill-current" />
-        </ContextMenuPrimitive.ItemIndicator>
-      </span>
+          <CircleIcon className="size-2 fill-current" /decent-academy-v1/>
+        </decent-academy-v1/ContextMenuPrimitive.ItemIndicator>
+      </decent-academy-v1/span>
       {children}
-    </ContextMenuPrimitive.RadioItem>
+    </decent-academy-v1/ContextMenuPrimitive.RadioItem>
   )
 }
 
@@ -200,7 +200,7 @@ function ContextMenuLabel({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -213,7 +213,7 @@ function ContextMenuSeparator({
       data-slot="context-menu-separator"
       className={cn('bg-border -mx-1 my-1 h-px', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -229,7 +229,7 @@ function ContextMenuShortcut({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

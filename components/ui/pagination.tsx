@@ -5,8 +5,8 @@ import {
   MoreHorizontalIcon,
 } from 'lucide-react'
 
-import { cn } from '@/lib/utils'
-import { Button, buttonVariants } from '@/components/ui/button'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
+import { Button, buttonVariants } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/button'
 
 function Pagination({ className, ...props }: React.ComponentProps<'nav'>) {
   return (
@@ -16,7 +16,7 @@ function Pagination({ className, ...props }: React.ComponentProps<'nav'>) {
       data-slot="pagination"
       className={cn('mx-auto flex w-full justify-center', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -29,12 +29,12 @@ function PaginationContent({
       data-slot="pagination-content"
       className={cn('flex flex-row items-center gap-1', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
 function PaginationItem({ ...props }: React.ComponentProps<'li'>) {
-  return <li data-slot="pagination-item" {...props} />
+  return <li data-slot="pagination-item" {...props} /decent-academy-v1/>
 }
 
 type PaginationLinkProps = {
@@ -61,7 +61,7 @@ function PaginationLink({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -76,9 +76,9 @@ function PaginationPrevious({
       className={cn('gap-1 px-2.5 sm:pl-2.5', className)}
       {...props}
     >
-      <ChevronLeftIcon />
-      <span className="hidden sm:block">Previous</span>
-    </PaginationLink>
+      <ChevronLeftIcon /decent-academy-v1/>
+      <span className="hidden sm:block">Previous</decent-academy-v1/span>
+    </decent-academy-v1/PaginationLink>
   )
 }
 
@@ -93,9 +93,9 @@ function PaginationNext({
       className={cn('gap-1 px-2.5 sm:pr-2.5', className)}
       {...props}
     >
-      <span className="hidden sm:block">Next</span>
-      <ChevronRightIcon />
-    </PaginationLink>
+      <span className="hidden sm:block">Next</decent-academy-v1/span>
+      <ChevronRightIcon /decent-academy-v1/>
+    </decent-academy-v1/PaginationLink>
   )
 }
 
@@ -110,9 +110,9 @@ function PaginationEllipsis({
       className={cn('flex size-9 items-center justify-center', className)}
       {...props}
     >
-      <MoreHorizontalIcon className="size-4" />
-      <span className="sr-only">More pages</span>
-    </span>
+      <MoreHorizontalIcon className="size-4" /decent-academy-v1/>
+      <span className="sr-only">More pages</decent-academy-v1/span>
+    </decent-academy-v1/span>
   )
 }
 

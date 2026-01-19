@@ -1,9 +1,9 @@
 'use client'
 
 import * as React from 'react'
-import * as SeparatorPrimitive from '@radix-ui/react-separator'
+import * as SeparatorPrimitive from '@radix-ui/decent-academy-v1/react-separator'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function Separator({
   className,
@@ -21,7 +21,7 @@ function Separator({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

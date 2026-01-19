@@ -4,14 +4,14 @@ import * as React from 'react'
 import { Command as CommandPrimitive } from 'cmdk'
 import { SearchIcon } from 'lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog'
+} from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/dialog'
 
 function Command({
   className,
@@ -25,7 +25,7 @@ function Command({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -45,18 +45,18 @@ function CommandDialog({
   return (
     <Dialog {...props}>
       <DialogHeader className="sr-only">
-        <DialogTitle>{title}</DialogTitle>
-        <DialogDescription>{description}</DialogDescription>
-      </DialogHeader>
+        <DialogTitle>{title}</decent-academy-v1/DialogTitle>
+        <DialogDescription>{description}</decent-academy-v1/DialogDescription>
+      </decent-academy-v1/DialogHeader>
       <DialogContent
         className={cn('overflow-hidden p-0', className)}
         showCloseButton={showCloseButton}
       >
         <Command className="[&_[cmdk-group-heading]]:text-muted-foreground **:data-[slot=command-input-wrapper]:h-12 [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group]]:px-2 [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5">
           {children}
-        </Command>
-      </DialogContent>
-    </Dialog>
+        </decent-academy-v1/Command>
+      </decent-academy-v1/DialogContent>
+    </decent-academy-v1/Dialog>
   )
 }
 
@@ -69,7 +69,7 @@ function CommandInput({
       data-slot="command-input-wrapper"
       className="flex h-9 items-center gap-2 border-b px-3"
     >
-      <SearchIcon className="size-4 shrink-0 opacity-50" />
+      <SearchIcon className="size-4 shrink-0 opacity-50" /decent-academy-v1/>
       <CommandPrimitive.Input
         data-slot="command-input"
         className={cn(
@@ -77,8 +77,8 @@ function CommandInput({
           className,
         )}
         {...props}
-      />
-    </div>
+      /decent-academy-v1/>
+    </decent-academy-v1/div>
   )
 }
 
@@ -94,7 +94,7 @@ function CommandList({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -106,7 +106,7 @@ function CommandEmpty({
       data-slot="command-empty"
       className="py-6 text-center text-sm"
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -122,7 +122,7 @@ function CommandGroup({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -135,7 +135,7 @@ function CommandSeparator({
       data-slot="command-separator"
       className={cn('bg-border -mx-1 h-px', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -151,7 +151,7 @@ function CommandItem({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -167,7 +167,7 @@ function CommandShortcut({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

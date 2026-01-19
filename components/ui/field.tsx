@@ -3,9 +3,9 @@
 import { useMemo } from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 
-import { cn } from '@/lib/utils'
-import { Label } from '@/components/ui/label'
-import { Separator } from '@/components/ui/separator'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
+import { Label } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/label'
+import { Separator } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/separator'
 
 function FieldSet({ className, ...props }: React.ComponentProps<'fieldset'>) {
   return (
@@ -17,7 +17,7 @@ function FieldSet({ className, ...props }: React.ComponentProps<'fieldset'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -37,7 +37,7 @@ function FieldLegend({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -46,16 +46,16 @@ function FieldGroup({ className, ...props }: React.ComponentProps<'div'>) {
     <div
       data-slot="field-group"
       className={cn(
-        'group/field-group @container/field-group flex w-full flex-col gap-7 data-[slot=checkbox-group]:gap-3 [&>[data-slot=field-group]]:gap-4',
+        'group/decent-academy-v1/field-group @container/decent-academy-v1/field-group flex w-full flex-col gap-7 data-[slot=checkbox-group]:gap-3 [&>[data-slot=field-group]]:gap-4',
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
 const fieldVariants = cva(
-  'group/field flex w-full gap-3 data-[invalid=true]:text-destructive',
+  'group/decent-academy-v1/field flex w-full gap-3 data-[invalid=true]:text-destructive',
   {
     variants: {
       orientation: {
@@ -66,9 +66,9 @@ const fieldVariants = cva(
           'has-[>[data-slot=field-content]]:items-start has-[>[data-slot=field-content]]:[&>[role=checkbox],[role=radio]]:mt-px',
         ],
         responsive: [
-          'flex-col [&>*]:w-full [&>.sr-only]:w-auto @md/field-group:flex-row @md/field-group:items-center @md/field-group:[&>*]:w-auto',
-          '@md/field-group:[&>[data-slot=field-label]]:flex-auto',
-          '@md/field-group:has-[>[data-slot=field-content]]:items-start @md/field-group:has-[>[data-slot=field-content]]:[&>[role=checkbox],[role=radio]]:mt-px',
+          'flex-col [&>*]:w-full [&>.sr-only]:w-auto @md/decent-academy-v1/field-group:flex-row @md/decent-academy-v1/field-group:items-center @md/decent-academy-v1/field-group:[&>*]:w-auto',
+          '@md/decent-academy-v1/field-group:[&>[data-slot=field-label]]:flex-auto',
+          '@md/decent-academy-v1/field-group:has-[>[data-slot=field-content]]:items-start @md/decent-academy-v1/field-group:has-[>[data-slot=field-content]]:[&>[role=checkbox],[role=radio]]:mt-px',
         ],
       },
     },
@@ -90,7 +90,7 @@ function Field({
       data-orientation={orientation}
       className={cn(fieldVariants({ orientation }), className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -99,11 +99,11 @@ function FieldContent({ className, ...props }: React.ComponentProps<'div'>) {
     <div
       data-slot="field-content"
       className={cn(
-        'group/field-content flex flex-1 flex-col gap-1.5 leading-snug',
+        'group/decent-academy-v1/field-content flex flex-1 flex-col gap-1.5 leading-snug',
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -115,13 +115,13 @@ function FieldLabel({
     <Label
       data-slot="field-label"
       className={cn(
-        'group/field-label peer/field-label flex w-fit gap-2 leading-snug group-data-[disabled=true]/field:opacity-50',
+        'group/decent-academy-v1/field-label peer/decent-academy-v1/field-label flex w-fit gap-2 leading-snug group-data-[disabled=true]/decent-academy-v1/field:opacity-50',
         'has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col has-[>[data-slot=field]]:rounded-md has-[>[data-slot=field]]:border [&>*]:data-[slot=field]:p-4',
-        'has-data-[state=checked]:bg-primary/5 has-data-[state=checked]:border-primary dark:has-data-[state=checked]:bg-primary/10',
+        'has-data-[state=checked]:bg-primary/decent-academy-v1/5 has-data-[state=checked]:border-primary dark:has-data-[state=checked]:bg-primary/decent-academy-v1/10',
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -130,11 +130,11 @@ function FieldTitle({ className, ...props }: React.ComponentProps<'div'>) {
     <div
       data-slot="field-label"
       className={cn(
-        'flex w-fit items-center gap-2 text-sm leading-snug font-medium group-data-[disabled=true]/field:opacity-50',
+        'flex w-fit items-center gap-2 text-sm leading-snug font-medium group-data-[disabled=true]/decent-academy-v1/field:opacity-50',
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -143,13 +143,13 @@ function FieldDescription({ className, ...props }: React.ComponentProps<'p'>) {
     <p
       data-slot="field-description"
       className={cn(
-        'text-muted-foreground text-sm leading-normal font-normal group-has-[[data-orientation=horizontal]]/field:text-balance',
+        'text-muted-foreground text-sm leading-normal font-normal group-has-[[data-orientation=horizontal]]/decent-academy-v1/field:text-balance',
         'last:mt-0 nth-last-2:-mt-1 [[data-variant=legend]+&]:-mt-1.5',
         '[&>a:hover]:text-primary [&>a]:underline [&>a]:underline-offset-4',
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -165,21 +165,21 @@ function FieldSeparator({
       data-slot="field-separator"
       data-content={!!children}
       className={cn(
-        'relative -my-2 h-5 text-sm group-data-[variant=outline]/field-group:-mb-2',
+        'relative -my-2 h-5 text-sm group-data-[variant=outline]/decent-academy-v1/field-group:-mb-2',
         className,
       )}
       {...props}
     >
-      <Separator className="absolute inset-0 top-1/2" />
+      <Separator className="absolute inset-0 top-1/decent-academy-v1/2" /decent-academy-v1/>
       {children && (
         <span
           className="bg-background text-muted-foreground relative mx-auto block w-fit px-2"
           data-slot="field-separator-content"
         >
           {children}
-        </span>
+        </decent-academy-v1/span>
       )}
-    </div>
+    </decent-academy-v1/div>
   )
 }
 
@@ -208,9 +208,9 @@ function FieldError({
       <ul className="ml-4 flex list-disc flex-col gap-1">
         {errors.map(
           (error, index) =>
-            error?.message && <li key={index}>{error.message}</li>,
+            error?.message && <li key={index}>{error.message}</decent-academy-v1/li>,
         )}
-      </ul>
+      </decent-academy-v1/ul>
     )
   }, [children, errors])
 
@@ -226,7 +226,7 @@ function FieldError({
       {...props}
     >
       {content}
-    </div>
+    </decent-academy-v1/div>
   )
 }
 

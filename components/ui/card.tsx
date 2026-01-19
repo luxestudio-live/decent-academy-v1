@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function Card({ className, ...props }: React.ComponentProps<'div'>) {
   return (
@@ -11,7 +11,7 @@ function Card({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -20,11 +20,11 @@ function CardHeader({ className, ...props }: React.ComponentProps<'div'>) {
     <div
       data-slot="card-header"
       className={cn(
-        '@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6',
+        '@container/decent-academy-v1/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6',
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -34,7 +34,7 @@ function CardTitle({ className, ...props }: React.ComponentProps<'div'>) {
       data-slot="card-title"
       className={cn('leading-none font-semibold', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -44,7 +44,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<'div'>) {
       data-slot="card-description"
       className={cn('text-muted-foreground text-sm', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -57,7 +57,7 @@ function CardAction({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -67,7 +67,7 @@ function CardContent({ className, ...props }: React.ComponentProps<'div'>) {
       data-slot="card-content"
       className={cn('px-6', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -77,7 +77,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<'div'>) {
       data-slot="card-footer"
       className={cn('flex items-center px-6 [.border-t]:pt-6', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

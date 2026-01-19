@@ -1,22 +1,22 @@
 'use client'
 
 import * as React from 'react'
-import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu'
+import * as DropdownMenuPrimitive from '@radix-ui/decent-academy-v1/react-dropdown-menu'
 import { CheckIcon, ChevronRightIcon, CircleIcon } from 'lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
 function DropdownMenu({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Root>) {
-  return <DropdownMenuPrimitive.Root data-slot="dropdown-menu" {...props} />
+  return <DropdownMenuPrimitive.Root data-slot="dropdown-menu" {...props} /decent-academy-v1/>
 }
 
 function DropdownMenuPortal({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Portal>) {
   return (
-    <DropdownMenuPrimitive.Portal data-slot="dropdown-menu-portal" {...props} />
+    <DropdownMenuPrimitive.Portal data-slot="dropdown-menu-portal" {...props} /decent-academy-v1/>
   )
 }
 
@@ -27,7 +27,7 @@ function DropdownMenuTrigger({
     <DropdownMenuPrimitive.Trigger
       data-slot="dropdown-menu-trigger"
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -46,8 +46,8 @@ function DropdownMenuContent({
           className,
         )}
         {...props}
-      />
-    </DropdownMenuPrimitive.Portal>
+      /decent-academy-v1/>
+    </decent-academy-v1/DropdownMenuPrimitive.Portal>
   )
 }
 
@@ -55,7 +55,7 @@ function DropdownMenuGroup({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Group>) {
   return (
-    <DropdownMenuPrimitive.Group data-slot="dropdown-menu-group" {...props} />
+    <DropdownMenuPrimitive.Group data-slot="dropdown-menu-group" {...props} /decent-academy-v1/>
   )
 }
 
@@ -74,11 +74,11 @@ function DropdownMenuItem({
       data-inset={inset}
       data-variant={variant}
       className={cn(
-        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/decent-academy-v1/10 dark:data-[variant=destructive]:focus:bg-destructive/decent-academy-v1/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -100,11 +100,11 @@ function DropdownMenuCheckboxItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <DropdownMenuPrimitive.ItemIndicator>
-          <CheckIcon className="size-4" />
-        </DropdownMenuPrimitive.ItemIndicator>
-      </span>
+          <CheckIcon className="size-4" /decent-academy-v1/>
+        </decent-academy-v1/DropdownMenuPrimitive.ItemIndicator>
+      </decent-academy-v1/span>
       {children}
-    </DropdownMenuPrimitive.CheckboxItem>
+    </decent-academy-v1/DropdownMenuPrimitive.CheckboxItem>
   )
 }
 
@@ -115,7 +115,7 @@ function DropdownMenuRadioGroup({
     <DropdownMenuPrimitive.RadioGroup
       data-slot="dropdown-menu-radio-group"
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -135,11 +135,11 @@ function DropdownMenuRadioItem({
     >
       <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
         <DropdownMenuPrimitive.ItemIndicator>
-          <CircleIcon className="size-2 fill-current" />
-        </DropdownMenuPrimitive.ItemIndicator>
-      </span>
+          <CircleIcon className="size-2 fill-current" /decent-academy-v1/>
+        </decent-academy-v1/DropdownMenuPrimitive.ItemIndicator>
+      </decent-academy-v1/span>
       {children}
-    </DropdownMenuPrimitive.RadioItem>
+    </decent-academy-v1/DropdownMenuPrimitive.RadioItem>
   )
 }
 
@@ -159,7 +159,7 @@ function DropdownMenuLabel({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -172,7 +172,7 @@ function DropdownMenuSeparator({
       data-slot="dropdown-menu-separator"
       className={cn('bg-border -mx-1 my-1 h-px', className)}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -188,14 +188,14 @@ function DropdownMenuShortcut({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
 function DropdownMenuSub({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Sub>) {
-  return <DropdownMenuPrimitive.Sub data-slot="dropdown-menu-sub" {...props} />
+  return <DropdownMenuPrimitive.Sub data-slot="dropdown-menu-sub" {...props} /decent-academy-v1/>
 }
 
 function DropdownMenuSubTrigger({
@@ -217,8 +217,8 @@ function DropdownMenuSubTrigger({
       {...props}
     >
       {children}
-      <ChevronRightIcon className="ml-auto size-4" />
-    </DropdownMenuPrimitive.SubTrigger>
+      <ChevronRightIcon className="ml-auto size-4" /decent-academy-v1/>
+    </decent-academy-v1/DropdownMenuPrimitive.SubTrigger>
   )
 }
 
@@ -234,7 +234,7 @@ function DropdownMenuSubContent({
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

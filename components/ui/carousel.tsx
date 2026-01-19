@@ -6,8 +6,8 @@ import useEmblaCarousel, {
 } from 'embla-carousel-react'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
-import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/button'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
+import { Button } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/button'
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
@@ -36,7 +36,7 @@ function useCarousel() {
   const context = React.useContext(CarouselContext)
 
   if (!context) {
-    throw new Error('useCarousel must be used within a <Carousel />')
+    throw new Error('useCarousel must be used within a <Carousel /decent-academy-v1/>')
   }
 
   return context
@@ -127,8 +127,8 @@ function Carousel({
         {...props}
       >
         {children}
-      </div>
-    </CarouselContext.Provider>
+      </decent-academy-v1/div>
+    </decent-academy-v1/CarouselContext.Provider>
   )
 }
 
@@ -148,8 +148,8 @@ function CarouselContent({ className, ...props }: React.ComponentProps<'div'>) {
           className,
         )}
         {...props}
-      />
-    </div>
+      /decent-academy-v1/>
+    </decent-academy-v1/div>
   )
 }
 
@@ -167,7 +167,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<'div'>) {
         className,
       )}
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -187,17 +187,17 @@ function CarouselPrevious({
       className={cn(
         'absolute size-8 rounded-full',
         orientation === 'horizontal'
-          ? 'top-1/2 -left-12 -translate-y-1/2'
-          : '-top-12 left-1/2 -translate-x-1/2 rotate-90',
+          ? 'top-1/decent-academy-v1/2 -left-12 -translate-y-1/decent-academy-v1/2'
+          : '-top-12 left-1/decent-academy-v1/2 -translate-x-1/decent-academy-v1/2 rotate-90',
         className,
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft />
-      <span className="sr-only">Previous slide</span>
-    </Button>
+      <ArrowLeft /decent-academy-v1/>
+      <span className="sr-only">Previous slide</decent-academy-v1/span>
+    </decent-academy-v1/Button>
   )
 }
 
@@ -217,17 +217,17 @@ function CarouselNext({
       className={cn(
         'absolute size-8 rounded-full',
         orientation === 'horizontal'
-          ? 'top-1/2 -right-12 -translate-y-1/2'
-          : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90',
+          ? 'top-1/decent-academy-v1/2 -right-12 -translate-y-1/decent-academy-v1/2'
+          : '-bottom-12 left-1/decent-academy-v1/2 -translate-x-1/decent-academy-v1/2 rotate-90',
         className,
       )}
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight />
-      <span className="sr-only">Next slide</span>
-    </Button>
+      <ArrowRight /decent-academy-v1/>
+      <span className="sr-only">Next slide</decent-academy-v1/span>
+    </decent-academy-v1/Button>
   )
 }
 

@@ -18,7 +18,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
         } as React.CSSProperties
       }
       {...props}
-    />
+    /decent-academy-v1/>
   )
 }
 

@@ -1,11 +1,11 @@
 'use client'
 
 import * as React from 'react'
-import * as ToggleGroupPrimitive from '@radix-ui/react-toggle-group'
+import * as ToggleGroupPrimitive from '@radix-ui/decent-academy-v1/react-toggle-group'
 import { type VariantProps } from 'class-variance-authority'
 
-import { cn } from '@/lib/utils'
-import { toggleVariants } from '@/components/ui/toggle'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
+import { toggleVariants } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/toggle'
 
 const ToggleGroupContext = React.createContext<
   VariantProps<typeof toggleVariants>
@@ -28,15 +28,15 @@ function ToggleGroup({
       data-variant={variant}
       data-size={size}
       className={cn(
-        'group/toggle-group flex w-fit items-center rounded-md data-[variant=outline]:shadow-xs',
+        'group/decent-academy-v1/toggle-group flex w-fit items-center rounded-md data-[variant=outline]:shadow-xs',
         className,
       )}
       {...props}
     >
       <ToggleGroupContext.Provider value={{ variant, size }}>
         {children}
-      </ToggleGroupContext.Provider>
-    </ToggleGroupPrimitive.Root>
+      </decent-academy-v1/ToggleGroupContext.Provider>
+    </decent-academy-v1/ToggleGroupPrimitive.Root>
   )
 }
 
@@ -66,7 +66,7 @@ function ToggleGroupItem({
       {...props}
     >
       {children}
-    </ToggleGroupPrimitive.Item>
+    </decent-academy-v1/ToggleGroupPrimitive.Item>
   )
 }
 

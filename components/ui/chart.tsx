@@ -3,9 +3,9 @@
 import * as React from 'react'
 import * as RechartsPrimitive from 'recharts'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
-// Format: { THEME_NAME: CSS_SELECTOR }
+/decent-academy-v1/ Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: '', dark: '.dark' } as const
 
 export type ChartConfig = {
@@ -28,7 +28,7 @@ function useChart() {
   const context = React.useContext(ChartContext)
 
   if (!context) {
-    throw new Error('useChart must be used within a <ChartContainer />')
+    throw new Error('useChart must be used within a <ChartContainer /decent-academy-v1/>')
   }
 
   return context
@@ -47,7 +47,7 @@ function ChartContainer({
   >['children']
 }) {
   const uniqueId = React.useId()
-  const chartId = `chart-${id || uniqueId.replace(/:/g, '')}`
+  const chartId = `chart-${id || uniqueId.replace(/decent-academy-v1/:/decent-academy-v1/g, '')}`
 
   return (
     <ChartContext.Provider value={{ config }}>
@@ -55,17 +55,17 @@ function ChartContainer({
         data-slot="chart"
         data-chart={chartId}
         className={cn(
-          "[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-sector]:outline-hidden [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-surface]:outline-hidden",
+          "[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/decent-academy-v1/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border flex aspect-video justify-center text-xs [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-sector]:outline-hidden [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-surface]:outline-hidden",
           className,
         )}
         {...props}
       >
-        <ChartStyle id={chartId} config={config} />
+        <ChartStyle id={chartId} config={config} /decent-academy-v1/>
         <RechartsPrimitive.ResponsiveContainer>
           {children}
-        </RechartsPrimitive.ResponsiveContainer>
-      </div>
-    </ChartContext.Provider>
+        </decent-academy-v1/RechartsPrimitive.ResponsiveContainer>
+      </decent-academy-v1/div>
+    </decent-academy-v1/ChartContext.Provider>
   )
 }
 
@@ -98,7 +98,7 @@ ${colorConfig
           )
           .join('\n'),
       }}
-    />
+    /decent-academy-v1/>
   )
 }
 
@@ -145,7 +145,7 @@ function ChartTooltipContent({
       return (
         <div className={cn('font-medium', labelClassName)}>
           {labelFormatter(value, payload)}
-        </div>
+        </decent-academy-v1/div>
       )
     }
 
@@ -153,7 +153,7 @@ function ChartTooltipContent({
       return null
     }
 
-    return <div className={cn('font-medium', labelClassName)}>{value}</div>
+    return <div className={cn('font-medium', labelClassName)}>{value}</decent-academy-v1/div>
   }, [
     label,
     labelFormatter,
@@ -173,7 +173,7 @@ function ChartTooltipContent({
   return (
     <div
       className={cn(
-        'border-border/50 bg-background grid min-w-[8rem] items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl',
+        'border-border/decent-academy-v1/50 bg-background grid min-w-[8rem] items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl',
         className,
       )}
     >
@@ -197,7 +197,7 @@ function ChartTooltipContent({
               ) : (
                 <>
                   {itemConfig?.icon ? (
-                    <itemConfig.icon />
+                    <itemConfig.icon /decent-academy-v1/>
                   ) : (
                     !hideIndicator && (
                       <div
@@ -217,7 +217,7 @@ function ChartTooltipContent({
                             '--color-border': indicatorColor,
                           } as React.CSSProperties
                         }
-                      />
+                      /decent-academy-v1/>
                     )
                   )}
                   <div
@@ -230,21 +230,21 @@ function ChartTooltipContent({
                       {nestLabel ? tooltipLabel : null}
                       <span className="text-muted-foreground">
                         {itemConfig?.label || item.name}
-                      </span>
-                    </div>
+                      </decent-academy-v1/span>
+                    </decent-academy-v1/div>
                     {item.value && (
                       <span className="text-foreground font-mono font-medium tabular-nums">
                         {item.value.toLocaleString()}
-                      </span>
+                      </decent-academy-v1/span>
                     )}
-                  </div>
-                </>
+                  </decent-academy-v1/div>
+                </decent-academy-v1/>
               )}
-            </div>
+            </decent-academy-v1/div>
           )
         })}
-      </div>
-    </div>
+      </decent-academy-v1/div>
+    </decent-academy-v1/div>
   )
 }
 
@@ -287,24 +287,24 @@ function ChartLegendContent({
             }
           >
             {itemConfig?.icon && !hideIcon ? (
-              <itemConfig.icon />
+              <itemConfig.icon /decent-academy-v1/>
             ) : (
               <div
                 className="h-2 w-2 shrink-0 rounded-[2px]"
                 style={{
                   backgroundColor: item.color,
                 }}
-              />
+              /decent-academy-v1/>
             )}
             {itemConfig?.label}
-          </div>
+          </decent-academy-v1/div>
         )
       })}
-    </div>
+    </decent-academy-v1/div>
   )
 }
 
-// Helper to extract item config from a payload.
+/decent-academy-v1/ Helper to extract item config from a payload.
 function getPayloadConfigFromPayload(
   config: ChartConfig,
   payload: unknown,
