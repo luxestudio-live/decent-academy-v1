@@ -54,14 +54,100 @@ export default function ContactPage() {
     message: "",
   })
 
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  })
+
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitSuccess, setSubmitSuccess] = useState(false)
+
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailRegex.test(email)
+  }
+
+  const validatePhone = (phone: string) => {
+    const phoneRegex = /^[6-9]\d{9}$/
+    return phoneRegex.test(phone.replace(/\s+/g, ''))
+  }
+
   const handleChange = (e: any) => {
     const { name, value } = e.target
     setFormData((prev: any) => ({ ...prev, [name]: value }))
+    
+    // Clear error when user starts typing
+    if (errors[name as keyof typeof errors]) {
+      setErrors((prev: any) => ({ ...prev, [name]: "" }))
+    }
   }
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault()
-    console.log(formData)
+    
+    // Validate fields
+    const newErrors = {
+      name: "",
+      email: "",
+      phone: "",
+    }
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required"
+    } else if (formData.name.trim().length < 2) {
+      newErrors.name = "Name must be at least 2 characters"
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required"
+    } else if (!validateEmail(formData.email)) {
+      newErrors.email = "Please enter a valid email address"
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required"
+    } else if (!validatePhone(formData.phone)) {
+      newErrors.phone = "Please enter a valid 10-digit phone number"
+    }
+
+    // Check if there are any errors
+    if (newErrors.name || newErrors.email || newErrors.phone) {
+      setErrors(newErrors)
+      return
+    }
+
+    setIsSubmitting(true)
+
+    try {
+      // Submit to Formspree
+      const response = await fetch("https://formspree.io/f/xlggbbbk", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitSuccess(true)
+        
+        // Reset form after 2 seconds
+        setTimeout(() => {
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          })
+          setSubmitSuccess(false)
+        }, 2000)
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -144,10 +230,13 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Enter your name"
-                      required
-                      className="border-2 focus:border-primary transition-colors duration-300"
+                      className={`border-2 transition-colors duration-300 ${errors.name ? 'border-red-500 focus:border-red-500' : 'focus:border-primary'}`}
                     />
+                    {errors.name && (
+                      <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                    )}
                   </div>
+
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2">
                       Email Address *
@@ -159,10 +248,13 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="your@email.com"
-                      required
-                      className="border-2 focus:border-primary transition-colors duration-300"
+                      className={`border-2 transition-colors duration-300 ${errors.email ? 'border-red-500 focus:border-red-500' : 'focus:border-primary'}`}
                     />
+                    {errors.email && (
+                      <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                    )}
                   </div>
+
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium mb-2">
                       Phone Number *
@@ -173,11 +265,14 @@ export default function ContactPage() {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="Enter your phone number"
-                      required
-                      className="border-2 focus:border-primary transition-colors duration-300"
+                      placeholder="98765 43210"
+                      className={`border-2 transition-colors duration-300 ${errors.phone ? 'border-red-500 focus:border-red-500' : 'focus:border-primary'}`}
                     />
+                    {errors.phone && (
+                      <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+                    )}
                   </div>
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2">
                       Message
@@ -187,14 +282,49 @@ export default function ContactPage() {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Type your message here..."
+                      placeholder="Tell us more about your requirements..."
                       rows={5}
-                      className="border-2 focus:border-primary transition-colors duration-300"
+                      className="border-2 focus:border-primary transition-colors duration-300 resize-none"
                     />
                   </div>
-                  <Button type="submit" className="w-full py-3 text-lg font-semibold">
-                    <Send className="w-5 h-5 mr-2" /> Send Message
+
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    disabled={isSubmitting || submitSuccess}
+                    className="w-full group/btn relative overflow-hidden disabled:opacity-50"
+                  >
+                    {isSubmitting ? (
+                      <span className="relative z-10 flex items-center justify-center gap-2">
+                        <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Sending...
+                      </span>
+                    ) : submitSuccess ? (
+                      <span className="relative z-10 flex items-center justify-center gap-2">
+                        <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        Sent Successfully!
+                      </span>
+                    ) : (
+                      <span className="relative z-10 flex items-center justify-center gap-2">
+                        Send Message
+                        <Send className="w-5 h-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
+                      </span>
+                    )}
+                    <span className="absolute inset-0 bg-accent scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 origin-left" />
                   </Button>
+
+                  {submitSuccess && (
+                    <div className="text-center">
+                      <p className="text-green-600 font-medium animate-pulse">
+                        ✓ Your message has been sent successfully!
+                      </p>
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
