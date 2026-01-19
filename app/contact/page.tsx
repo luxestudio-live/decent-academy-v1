@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useState } from "react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
@@ -9,7 +7,6 @@ import { MapPin, Phone, Mail, Clock, Send, Facebook, Instagram, Youtube, Message
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 const contactInfo = [
   {
@@ -56,7 +53,17 @@ export default function ContactPage() {
     phone: "",
     message: "",
   })
-// ...existing code...
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target
+    setFormData((prev: any) => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault()
+    console.log(formData)
+  }
+
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -187,124 +194,6 @@ export default function ContactPage() {
                   </div>
                   <Button type="submit" className="w-full py-3 text-lg font-semibold">
                     <Send className="w-5 h-5 mr-2" /> Send Message
-                  </Button>
-                </form>
-              </div>
-            </div>
-            {/* ...existing code... */}
-
-      {/* Contact Info Cards */}
-      <section className="py-20 lg:py-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-20">
-            {contactInfo.map((info, index) => (
-              <div
-                key={index}
-                className="group relative bg-card rounded-2xl border border-border/50 hover:border-primary/50 p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 text-center"
-              >
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}
-                />
-                <div className="relative z-10">
-                  <div
-                    className={`w-16 h-16 bg-gradient-to-br ${info.color} rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}
-                  >
-                    <info.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors duration-300">
-                    {info.title}
-                  </h3>
-                  <div className="space-y-2">
-                    {info.details.map((detail, idx) => (
-                      <p key={idx} className="text-sm text-muted-foreground leading-relaxed">
-                        {detail}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Main Contact Section */}
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
-            {/* Contact Form */}
-            <div className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/50 p-8 lg:p-12 transition-all duration-500 hover:shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl" />
-              <div className="relative z-10">
-                <h2 className="text-3xl font-bold mb-6 group-hover:text-primary transition-colors duration-300">
-                  Send Us a Message
-                </h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Full Name *
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Enter your name"
-                      required
-                      className="border-2 focus:border-primary transition-colors duration-300"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      Email Address *
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="your@email.com"
-                      required
-                      className="border-2 focus:border-primary transition-colors duration-300"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                      Phone Number *
-                    </label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="+91 98765 43210"
-                      required
-                      className="border-2 focus:border-primary transition-colors duration-300"
-                    />
-                  </div>
-
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Tell us more about your requirements..."
-                      rows={4}
-                      className="border-2 focus:border-primary transition-colors duration-300 resize-none"
-                    />
-                  </div>
-
-                  <Button type="submit" size="lg" className="w-full group/btn relative overflow-hidden">
-                    <span className="relative z-10 flex items-center justify-center gap-2">
-                      Send Message
-                      <Send className="w-5 h-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
-                    </span>
-                    <span className="absolute inset-0 bg-accent scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 origin-left" />
                   </Button>
                 </form>
               </div>

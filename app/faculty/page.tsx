@@ -77,6 +77,16 @@ const facultyList: FacultyMember[] = [
 		image: "arun-saheb-gauda.jpg",
 		color: "from-primary to-accent",
 	},
+	{
+		name: "Pankaj Vasant Rane",
+		subject: "English",
+		qualification: "B.A., B.Ed. (Eng.), TET & CTET qualified",
+		experience: "21 Years",
+		specialization: "",
+		achievements: [],
+		image: "pankaj.jpeg",
+		color: "from-accent to-secondary",
+	},
 ]
 
 export default function FacultyPage() {
