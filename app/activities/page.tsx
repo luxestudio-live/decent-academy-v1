@@ -1,5 +1,5 @@
-import { Navbar } from "@/decent-academy-v1/components/decent-academy-v1/navbar"
-import { Footer } from "@/decent-academy-v1/components/decent-academy-v1/footer"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 import { PartyPopper, BookOpen, Trophy, Music, Users, FlaskConical, Palette, Mic } from "lucide-react"
 
 const activities = [

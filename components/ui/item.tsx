@@ -3,7 +3,7 @@ import { Slot } from '@radix-ui/decent-academy-v1/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { Separator } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/separator'
+import { Separator } from '@/components/ui/decent-academy-v1/separator'
 
 function ItemGroup({ className, ...props }: React.ComponentProps<'div'>) {
   return (

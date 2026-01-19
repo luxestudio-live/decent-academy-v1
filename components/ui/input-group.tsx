@@ -3,9 +3,9 @@
 import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { Button } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/button'
-import { Input } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/input'
-import { Textarea } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/textarea'
+import { Button } from '@/components/ui/decent-academy-v1/button'
+import { Input } from '@/components/ui/decent-academy-v1/input'
+import { Textarea } from '@/components/ui/decent-academy-v1/textarea'
 
 function InputGroup({ className, ...props }: React.ComponentProps<'div'>) {
   return (

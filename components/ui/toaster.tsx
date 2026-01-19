@@ -8,7 +8,7 @@ import {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/toast'
+} from '@/components/ui/decent-academy-v1/toast'
 
 export function Toaster() {
   const { toasts } = useToast()

@@ -1,6 +1,6 @@
 "use client"
 
-import Link from "next/decent-academy-v1/link"
+import Link from "next/link"
 import { MessageCircle } from "lucide-react"
 
 export function FloatingEnquireButton() {

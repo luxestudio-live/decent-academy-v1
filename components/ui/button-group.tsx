@@ -2,7 +2,7 @@ import { Slot } from '@radix-ui/decent-academy-v1/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { Separator } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/separator'
+import { Separator } from '@/components/ui/decent-academy-v1/separator'
 
 const buttonGroupVariants = cva(
   "flex w-fit items-stretch [&>*]:focus-visible:z-10 [&>*]:focus-visible:relative [&>[data-slot=select-trigger]:not([class*='w-'])]:w-fit [&>input]:flex-1 has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-r-md has-[>[data-slot=button-group]]:gap-2",

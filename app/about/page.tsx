@@ -1,8 +1,8 @@
-import { Navbar } from "@/decent-academy-v1/components/decent-academy-v1/navbar"
-import { Footer } from "@/decent-academy-v1/components/decent-academy-v1/footer"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 import { Target, Eye, Award, Users, BookOpen, Heart, Lightbulb } from "lucide-react"
-import { Button } from "@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/button"
-import Link from "next/decent-academy-v1/link"
+import { Button } from "@/components/ui/decent-academy-v1/button"
+import Link from "next/link"
 
 const values = [
   {

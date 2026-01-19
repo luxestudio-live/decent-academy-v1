@@ -4,8 +4,8 @@ import { useMemo } from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { Label } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/label'
-import { Separator } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/separator'
+import { Label } from '@/components/ui/decent-academy-v1/label'
+import { Separator } from '@/components/ui/decent-academy-v1/separator'
 
 function FieldSet({ className, ...props }: React.ComponentProps<'fieldset'>) {
   return (

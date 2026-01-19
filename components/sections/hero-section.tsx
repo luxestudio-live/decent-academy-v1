@@ -1,6 +1,6 @@
-import { Button } from "@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/button"
+import { Button } from "@/components/ui/decent-academy-v1/button"
 import { ArrowRight, Sparkles } from "lucide-react"
-import Link from "next/decent-academy-v1/link"
+import Link from "next/link"
 
 export function HeroSection() {
   return (

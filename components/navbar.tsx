@@ -1,10 +1,10 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Link from "next/decent-academy-v1/link"
-import { usePathname } from "next/decent-academy-v1/navigation"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/button"
+import { Button } from "@/components/ui/decent-academy-v1/button"
 
 const navLinks = [
   { name: "Home", href: "/" },

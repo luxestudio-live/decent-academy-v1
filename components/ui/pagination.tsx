@@ -6,7 +6,7 @@ import {
 } from 'lucide-react'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { Button, buttonVariants } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/button'
+import { Button, buttonVariants } from '@/components/ui/decent-academy-v1/button'
 
 function Pagination({ className, ...props }: React.ComponentProps<'nav'>) {
   return (

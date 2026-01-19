@@ -1,9 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Playfair_Display, Inter, Bebas_Neue } from "next/decent-academy-v1/font/decent-academy-v1/google"
-import { Analytics } from "@vercel/decent-academy-v1/analytics/decent-academy-v1/next"
-import { FloatingEnquireButton } from "@/decent-academy-v1/components/decent-academy-v1/floating-enquire-button"
-import "./decent-academy-v1/globals.css"
+import { Playfair_Display, Inter, Bebas_Neue } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
+import { FloatingEnquireButton } from "@/components/floating-enquire-button"
+import "./globals.css"
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],

@@ -3,7 +3,7 @@
 /decent-academy-v1/ Inspired by react-hot-toast library
 import * as React from 'react'
 
-import type { ToastActionElement, ToastProps } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/toast'
+import type { ToastActionElement, ToastProps } from '@/components/ui/decent-academy-v1/toast'
 
 const TOAST_LIMIT = 1
 const TOAST_REMOVE_DELAY = 1000000

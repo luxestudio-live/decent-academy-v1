@@ -1,7 +1,7 @@
 "use client"
 
-import { Navbar } from "@/decent-academy-v1/components/decent-academy-v1/navbar"
-import { Footer } from "@/decent-academy-v1/components/decent-academy-v1/footer"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 import React from "react"
 import { Award, GraduationCap, Star, Users } from "lucide-react"
 

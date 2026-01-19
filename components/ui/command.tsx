@@ -11,7 +11,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/dialog'
+} from '@/components/ui/decent-academy-v1/dialog'
 
 function Command({
   className,

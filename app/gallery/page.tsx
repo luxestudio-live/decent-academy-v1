@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Navbar } from "@/decent-academy-v1/components/decent-academy-v1/navbar"
-import { Footer } from "@/decent-academy-v1/components/decent-academy-v1/footer"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 import { Camera, X } from "lucide-react"
 
 const galleryImages = [

@@ -1,12 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import { Navbar } from "@/decent-academy-v1/components/decent-academy-v1/navbar"
-import { Footer } from "@/decent-academy-v1/components/decent-academy-v1/footer"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 import { MapPin, Phone, Mail, Clock, Send, Facebook, Instagram, Youtube, MessageSquare } from "lucide-react"
-import { Button } from "@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/button"
-import { Input } from "@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/input"
-import { Textarea } from "@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/textarea"
+import { Button } from "@/components/ui/decent-academy-v1/button"
+import { Input } from "@/components/ui/decent-academy-v1/input"
+import { Textarea } from "@/components/ui/decent-academy-v1/textarea"
 
 const contactInfo = [
   {
@@ -64,7 +64,7 @@ export default function ContactPage() {
   const [submitSuccess, setSubmitSuccess] = useState(false)
 
   const validateEmail = (email: string) => {
-    const emailRegex = ^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return emailRegex.test(email)
   }
 

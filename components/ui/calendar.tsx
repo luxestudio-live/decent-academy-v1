@@ -9,7 +9,7 @@ import {
 import { DayButton, DayPicker, getDefaultClassNames } from 'react-day-picker'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { Button, buttonVariants } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/button'
+import { Button, buttonVariants } from '@/components/ui/decent-academy-v1/button'
 
 function Calendar({
   className,

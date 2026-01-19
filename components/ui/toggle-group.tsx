@@ -5,7 +5,7 @@ import * as ToggleGroupPrimitive from '@radix-ui/decent-academy-v1/react-toggle-
 import { type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { toggleVariants } from '@/decent-academy-v1/components/decent-academy-v1/ui/decent-academy-v1/toggle'
+import { toggleVariants } from '@/components/ui/decent-academy-v1/toggle'
 
 const ToggleGroupContext = React.createContext<
   VariantProps<typeof toggleVariants>
