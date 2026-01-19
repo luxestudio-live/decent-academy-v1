@@ -87,6 +87,16 @@ const facultyList: FacultyMember[] = [
 		image: "pankaj.jpeg",
 		color: "from-accent to-secondary",
 	},
+	{
+		name: "Jayant Pawar",
+		subject: "Counsellor",
+		qualification: "",
+		experience: "",
+		specialization: "",
+		achievements: [],
+		image: "jayant.jpeg",
+		color: "from-primary to-accent",
+	},
 ]
 	{
 		name: "Jayant Pawar",
@@ -134,17 +144,16 @@ export default function FacultyPage() {
 				<div className="container mx-auto px-4 lg:px-8">
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 						{facultyList.map((member, index) => (
-							<div
-								key={index}
-								className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 animate-scale-in"
-								style={{ animationDelay: `${index * 100}ms` }}
-							>
-								{/* Gradient Overlay */}
-								<div
-									className={`absolute inset-0 bg-gradient-to-br ${member.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
-								/>
-								{/* Image */}
-								<div className="relative h-64 overflow-hidden bg-muted">
+							{
+								name: "Jayant Pawar",
+								subject: "Counsellor",
+								qualification: "",
+								experience: "",
+								specialization: "",
+								achievements: [],
+								image: "jayant.jpeg",
+								color: "from-primary to-accent",
+							},
 									<img
 										src={member.image || "/placeholder.svg"}
 										alt={member.name}
