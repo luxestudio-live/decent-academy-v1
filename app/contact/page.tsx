@@ -283,26 +283,6 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <div>
-                    <label htmlFor="course" className="block text-sm font-medium mb-2">
-                      Course Interested In *
-                    </label>
-                    <Select
-                      value={formData.course}
-                      onValueChange={(value) => setFormData({ ...formData, course: value })}
-                    >
-                      <SelectTrigger className="border-2 focus:border-primary transition-colors duration-300">
-                        <SelectValue placeholder="Select a course" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="5-10-marathi">5th to 10th - Marathi Medium</SelectItem>
-                        <SelectItem value="5-10-english">5th to 10th - Semi English Medium</SelectItem>
-                        <SelectItem value="11-12-science-pcm">11th-12th Science PCM (JEE/CET)</SelectItem>
-                        <SelectItem value="11-12-science-pcb">11th-12th Science PCB (NEET/CET)</SelectItem>
-                        <SelectItem value="11-12-commerce">11th-12th Commerce</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2">
