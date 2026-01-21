@@ -21,7 +21,7 @@ const courses = [
     icon: Calculator,
     title: "11th & 12th Commerce",
     medium: "Board & Competitive Exams",
-    subjects: ["Accounts", "Economics", "Business Studies", "Maths"],
+    subjects: ["Accounts", "Economics", "O.C.M", "Maths"],
     color: "from-secondary to-primary",
   },
 ]
@@ -81,7 +81,7 @@ export function CoursesPreview() {
                 <Button variant="ghost" className="w-full group/btn justify-between hover:bg-primary/10" asChild>
                   <Link href="/courses">
                     <span>Learn More</span>
-                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                    <ArrowRight className="w-4 h-4 group-hover/decent-academy-v1/btn:translate-x-1 transition-transform duration-300" />
                   </Link>
                 </Button>
               </div>

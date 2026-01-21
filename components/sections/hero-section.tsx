@@ -13,7 +13,7 @@ export function HeroSection() {
         {/* Logo Background */}
         <div className="absolute inset-0 flex items-center justify-center opacity-10">
           <img 
-            src="/decent-academy-v1/DecentLogo.png" 
+            src="/DecentLogo.png" 
             alt="" 
             className="w-[400px] md:w-[600px] h-auto object-contain"
           />
@@ -68,10 +68,10 @@ export function HeroSection() {
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 max-w-4xl mx-auto">
             {[
-              { value: "19+", label: "Years Experience" },
-              { value: "5000+", label: "Students Taught" },
-              { value: "50+", label: "Expert Faculty" },
-              { value: "95%", label: "Success Rate" },
+              { value: "20+", label: "Years Experience" },
+              { value: "10000+", label: "Students Taught" },
+              { value: "30+", label: "Expert Faculty" },
+              { value: "100%", label: "Success Rate" },
             ].map((stat, index) => (
               <div
                 key={index}

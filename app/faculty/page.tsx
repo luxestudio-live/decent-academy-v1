@@ -38,13 +38,23 @@ const facultyList: FacultyMember[] = [
 			color: "from-accent to-secondary",
 		},
 	{
+		name: "Virendra Kumar Badgujar",
+		subject: "",
+		qualification: "",
+		experience: "",
+		specialization: "",
+		achievements: [],
+		image: "/Virendra Kumar Badgujar.jpeg",
+		color: "from-primary to-accent",
+	},
+	{
 		name: "Ramkrishna Badgujar",
 		subject: "English",
 		qualification: "MA B.Ed - English",
 		experience: "",
 		specialization: "",
 		achievements: [],
-		image: "ramkrishna-badgujar.jpeg",
+		image: "/ramkrishna-badgujar.jpeg",
 		color: "from-secondary to-primary",
 	},
 	{
@@ -54,28 +64,38 @@ const facultyList: FacultyMember[] = [
 		experience: "",
 		specialization: "",
 		achievements: [],
-		image: "sujeet-patil.png",
+		image: "/sujeet-patil.png",
 		color: "from-accent to-secondary",
 	},
 	{
-		name: "Pratik Sawant",
-		subject: "English, S.S",
-		qualification: "D.Ed",
+		name: "Jayant Pawar",
+		subject: "Counsellor",
+		qualification: "",
 		experience: "",
 		specialization: "",
 		achievements: [],
-		image: "pratik-sawant.jpeg",
-		color: "from-accent to-secondary",
+		image: "/jayant.jpeg",
+		color: "from-primary to-accent",
 	},
 	{
-		name: "Pravin Devidas Thorat",
-		subject: "Commerce Teacher",
-		qualification: "M.Com, B.Ed, MBA, LLB",
-		experience: "16 Years",
-		specialization: "O.CM. / S.P",
+		name: "Rupesh Santosh Pawar",
+		subject: "Administration Head",
+		qualification: "M.Com (Management)",
+		experience: "12 Years",
+		specialization: "",
 		achievements: [],
-		image: "pravin-devidas-thorat.jpeg",
-		color: "from-primary to-accent",
+		image: "/rupesh.jpeg",
+		color: "from-secondary to-primary",
+	},
+	{
+		name: "Akshay Ramchandra Bhilare",
+		subject: "Administration Head",
+		qualification: "Bachelor in Accounting & Finance",
+		experience: "12 Years",
+		specialization: "",
+		achievements: [],
+		image: "/akshay.jpeg",
+		color: "from-accent to-secondary",
 	},
 	{
 		name: "Santosh Gopal Sawant",
@@ -84,8 +104,38 @@ const facultyList: FacultyMember[] = [
 		experience: "",
 		specialization: "",
 		achievements: [],
-		image: "santosh-gopal-sawant.jpeg",
+		image: "/santosh-gopal-sawant.jpeg",
 		color: "from-secondary to-primary",
+	},
+	{
+		name: "Pratik Sawant",
+		subject: "English, S.S",
+		qualification: "D.Ed",
+		experience: "",
+		specialization: "",
+		achievements: [],
+		image: "/pratik-sawant.jpeg",
+		color: "from-accent to-secondary",
+	},
+	{
+		name: "Pankaj Vasant Rane",
+		subject: "English",
+		qualification: "B.A., B.Ed. (Eng.), TET & CTET qualified",
+		experience: "21 Years",
+		specialization: "",
+		achievements: [],
+		image: "/pankaj.jpeg",
+		color: "from-accent to-secondary",
+	},
+	{
+		name: "Pravin Devidas Thorat",
+		subject: "Commerce Teacher",
+		qualification: "M.Com, B.Ed, MBA, LLB",
+		experience: "16 Years",
+		specialization: "O.CM. // S.P",
+		achievements: [],
+		image: "/pravin-devidas-thorat.jpeg",
+		color: "from-primary to-accent",
 	},
 	{
 		name: "Arun Saheb Gauda",
@@ -94,8 +144,28 @@ const facultyList: FacultyMember[] = [
 		experience: "11 Years",
 		specialization: "",
 		achievements: [],
-		image: "arun-saheb-gauda.jpg",
+		image: "/arun-saheb-gauda.jpeg",
 		color: "from-primary to-accent",
+	},
+	{
+		name: "Ganesh Tulsiram Rathod",
+		subject: "Maths",
+		qualification: "BSc IT, MSc Math, MSc IT - Pursuing",
+		experience: "9 Years",
+		specialization: "",
+		achievements: [],
+		image: "/ganesh.jpeg",
+		color: "from-primary to-accent",
+	},
+	{
+		name: "Praveena Gelot",
+		subject: "History",
+		qualification: "D.El.Ed, B.A, B.Ed, M.A",
+		experience: "6 Years",
+		specialization: "",
+		achievements: [],
+		image: "/praveena.jpeg",
+		color: "from-secondary to-primary",
 	},
 ]
 
@@ -116,7 +186,7 @@ export default function FacultyPage() {
 					<div className="max-w-4xl mx-auto text-center space-y-6">
 						<div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium border border-primary/20">
 							<Users className="w-4 h-4" />
-							<span>50+ Expert Educators</span>
+							<span>30+ Expert Educators</span>
 						</div>
 						<h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-tight">
 							Meet Our
@@ -136,21 +206,17 @@ export default function FacultyPage() {
 						{facultyList.map((member, index) => (
 							<div
 								key={index}
-								className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 animate-scale-in"
-								style={{ animationDelay: `${index * 100}ms` }}
+								className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
 							>
-								{/* Gradient Overlay */}
-								<div
-									className={`absolute inset-0 bg-gradient-to-br ${member.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
-								/>
 								{/* Image */}
-								<div className="relative h-64 overflow-hidden bg-muted">
+								<div className="relative h-80 overflow-hidden bg-muted">
 									<img
 										src={member.image || "/placeholder.svg"}
 										alt={member.name}
-										className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+										className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ${
+											member.name === "Sujeet Patil" ? "object-center" : "object-top"
+										}`}
 									/>
-									<div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
 								</div>
 								<div className="relative z-10 p-8 -mt-12">
 									{/* Badge */}

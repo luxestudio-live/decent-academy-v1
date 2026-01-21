@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import * as TabsPrimitive from '@radix-ui/react-tabs'
+import * as TabsPrimitive from '@radix-ui/decent-academy-v1/react-tabs'
 
 import { cn } from '@/lib/utils'
 

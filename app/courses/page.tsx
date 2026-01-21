@@ -30,14 +30,14 @@ const courseData = {
         subjects: ["Mathematics", "Science", "English", "Marathi", "History", "Geography"],
         features: ["Concept Building", "Problem Solving", "Mock Tests", "Individual Attention"],
         duration: "Full Academic Year",
-        batchSize: "25-30 Students",
+        batchSize: "35-40 Students",
       },
       {
         name: "9th & 10th Standard",
         subjects: ["Mathematics", "Science (Physics, Chemistry, Biology)", "English", "Marathi", "Social Sciences"],
         features: ["Board Exam Focus", "Previous Year Papers", "Intensive Revision", "Doubt Clearing Sessions"],
         duration: "Full Academic Year",
-        batchSize: "20-25 Students",
+        batchSize: "35-40 Students",
       },
     ],
   },
@@ -65,14 +65,14 @@ const courseData = {
       },
       {
         name: "12th Science - PCM",
-        subjects: ["Physics", "Chemistry", "Mathematics", "JEE/CET"],
+        subjects: ["Physics", "Chemistry", "Mathematics", "JEE/decent-academy-v1/CET"],
         features: ["Intensive JEE Training", "CET Mock Tests", "Board Excellence", "All India Test Series"],
         duration: "Full Academic Year + Crash Courses",
         batchSize: "30-35 Students",
       },
       {
         name: "12th Science - PCB",
-        subjects: ["Physics", "Chemistry", "Biology", "NEET/CET"],
+        subjects: ["Physics", "Chemistry", "Biology", "NEET/decent-academy-v1/CET"],
         features: ["NEET Preparation", "CET Coaching", "Board Excellence", "Medical Entrance Tests"],
         duration: "Full Academic Year + Crash Courses",
         batchSize: "30-35 Students",
@@ -88,14 +88,14 @@ const courseData = {
     standards: [
       {
         name: "11th Commerce",
-        subjects: ["Accountancy", "Economics", "Business Studies", "Mathematics/Statistics"],
+        subjects: ["Accountancy", "Economics", "Business Studies", "Mathematics/decent-academy-v1/Statistics"],
         features: ["Practical Approach", "Case Studies", "Project Guidance", "Regular Practice"],
         duration: "Full Academic Year",
         batchSize: "30-35 Students",
       },
       {
         name: "12th Commerce",
-        subjects: ["Accountancy", "Economics", "Business Studies", "Mathematics/Statistics"],
+        subjects: ["Accountancy", "Economics", "Business Studies", "Mathematics/decent-academy-v1/Statistics"],
         features: ["Board Exam Focus", "Entrance Exam Prep", "CA Foundation Support", "Career Counseling"],
         duration: "Full Academic Year",
         batchSize: "30-35 Students",
@@ -249,7 +249,7 @@ export default function CoursesPage() {
                     <Link href="/contact">
                       <span className="flex items-center justify-center gap-2">
                         Enroll Now
-                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                        <ArrowRight className="w-4 h-4 group-hover/decent-academy-v1/btn:translate-x-1 transition-transform duration-300" />
                       </span>
                     </Link>
                   </Button>

@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import * as ToggleGroupPrimitive from '@radix-ui/react-toggle-group'
+import * as ToggleGroupPrimitive from '@radix-ui/decent-academy-v1/react-toggle-group'
 import { type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/lib/utils'
@@ -28,7 +28,7 @@ function ToggleGroup({
       data-variant={variant}
       data-size={size}
       className={cn(
-        'group/toggle-group flex w-fit items-center rounded-md data-[variant=outline]:shadow-xs',
+        'group/decent-academy-v1/toggle-group flex w-fit items-center rounded-md data-[variant=outline]:shadow-xs',
         className,
       )}
       {...props}

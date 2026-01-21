@@ -34,7 +34,7 @@ export function Footer() {
       {/* Large Logo Watermark */}
       <div className="absolute inset-0 flex items-center justify-center py-8 opacity-8">
         <img 
-          src="/decent-academy-v1/DecentLogo.png" 
+          src="/DecentLogo.png" 
           alt="" 
           className="w-[500px] md:w-[700px] h-auto object-contain max-h-[90%]"
         />
@@ -64,7 +64,7 @@ export function Footer() {
             <div className="flex gap-3">
               {[
                 { icon: Facebook, href: "#" },
-                { icon: Instagram, href: "#" },
+                { icon: Instagram, href: "https://www.instagram.com/decent_academy78?igsh=emp6Y2lsb2pxOHp6" },
                 { icon: Youtube, href: "#" },
               ].map((social, index) => (
                 <a
@@ -138,7 +138,7 @@ export function Footer() {
               <div>
                 <div className="font-medium mb-1">Visit Us</div>
                 <div className="text-background/80 text-sm leading-relaxed">
-                  Shop no 1, Bus Stop, Tembipada Road, near Shiv Darshan Path, Bhandup West, Mumbai, Maharashtra 400078
+                  Shop No 1, Ground Floor, Sai Smruti Building, Near Nath Pai School, Nardas Nagar, T. P. Road, Bhandup West, Mumbai - 400078
                 </div>
               </div>
             </div>
@@ -172,6 +172,22 @@ export function Footer() {
               Terms of Service
             </Link>
           </div>
+        </div>
+
+        {/* Credit */}
+        <div className="mt-6 pt-6 border-t border-background/20 text-center">
+          <p className="text-background/60 text-sm italic">
+            Dreamed, designed, and brought to life by{" "}
+            <a 
+              href="https://www.luxestudio.live" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-accent hover:text-secondary transition-colors duration-300 font-medium"
+            >
+              LuxeStudio
+            </a>
+            {" "}— where ideas find their elegance.
+          </p>
         </div>
       </div>
     </footer>

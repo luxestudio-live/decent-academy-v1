@@ -16,13 +16,13 @@ const stats = [
   {
     icon: Users,
     title: "Expert Faculty",
-    description: "50+ experienced and dedicated teachers",
+    description: "30+ experienced and dedicated teachers",
     color: "from-secondary to-primary",
   },
   {
     icon: TrendingUp,
     title: "Proven Results",
-    description: "95% students achieve their target scores",
+    description: "100% students achieve their target scores",
     color: "from-primary to-accent",
   },
 ]
