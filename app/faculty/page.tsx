@@ -158,9 +158,9 @@ export default function FacultyPage() {
 				<div className="absolute inset-0 -z-10">
 					<div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
 					<div
-						className="absolute bottom-20 right-10 w-80 h-80 bg-accent/decent-academy-v1/20 rounded-full blur-3xl animate-float"
+						className="absolute bottom-20 right-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float"
 						style={{ animationDelay: "2s" }}
-					/decent-academy-v1/>
+					/>
 				</div>
 				<div className="container mx-auto px-4 lg:px-8 py-12">
 					<div className="max-w-4xl mx-auto text-center space-y-6">
