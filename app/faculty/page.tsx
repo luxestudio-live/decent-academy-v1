@@ -32,7 +32,7 @@ const facultyList: FacultyMember[] = [
 	},
 	{
 		name: "Jayant B. Pawar",
-		subject: "Administration Head, Counsellor",
+		subject: "Administration Head",
 		qualification: "B.Com",
 		experience: "21 Years",
 		specialization: "Student Counselling, Administration",
