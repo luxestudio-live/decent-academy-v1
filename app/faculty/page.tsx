@@ -17,35 +17,31 @@ type FacultyMember = {
 };
 
 const facultyList: FacultyMember[] = [
-		{
-			name: "Virendra Kumar Badgujar",
-			subject: "Science",
-			qualification: "M.A. B.Ed",
-			experience: "23 Years",
-			specialization: "",
-			achievements: [],
-			image: "virendra-kumar-badgujar.jpeg",
-			color: "from-primary to-accent",
-		},
-		{
-			name: "Jayant B. Pawar",
-			subject: "Administration Head",
-			qualification: "B.Com",
-			experience: "21 Years",
-			specialization: "",
-			achievements: [],
-			image: "", // Add image filename if available
-			color: "from-accent to-secondary",
-		},
 	{
 		name: "Virendra Kumar Badgujar",
-		subject: "",
-		qualification: "",
-		experience: "",
-		specialization: "",
-		achievements: [],
-		image: "/Virendra Kumar Badgujar.jpeg",
+		subject: "Science",
+		qualification: "M.A. B.Ed",
+		experience: "23 Years",
+		specialization: "Physics, Chemistry, Biology",
+		achievements: [
+			"Produced 100+ distinction holders",
+			"State-level Science Exhibition mentor"
+		],
+		image: "/virendra-kumar-badgujar.jpeg",
 		color: "from-primary to-accent",
+	},
+	{
+		name: "Jayant B. Pawar",
+		subject: "Administration Head, Counsellor",
+		qualification: "B.Com",
+		experience: "21 Years",
+		specialization: "Student Counselling, Administration",
+		achievements: [
+			"Guided 1000+ students",
+			"Awarded Best Counsellor 2022"
+		],
+		image: "/jayant.jpeg",
+		color: "from-accent to-secondary",
 	},
 	{
 		name: "Ramkrishna Badgujar",
@@ -67,16 +63,7 @@ const facultyList: FacultyMember[] = [
 		image: "/sujeet-patil.png",
 		color: "from-accent to-secondary",
 	},
-	{
-		name: "Jayant Pawar",
-		subject: "Counsellor",
-		qualification: "",
-		experience: "",
-		specialization: "",
-		achievements: [],
-		image: "/jayant.jpeg",
-		color: "from-primary to-accent",
-	},
+		// ...existing code...
 	{
 		name: "Rupesh Santosh Pawar",
 		subject: "Administration Head",
