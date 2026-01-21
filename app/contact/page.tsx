@@ -118,8 +118,8 @@ export default function ContactPage() {
     setIsSubmitting(true)
 
     try {
-      /decent-academy-v1/ Submit to Formspree
-      const response = await fetch("https:/decent-academy-v1/formspree.io/decent-academy-v1/f/decent-academy-v1/xlggbbbk", {
+      // Submit to Formspree
+      const response = await fetch("https://formspree.io/f/xlggbbbk", {
         method: "POST",
         headers: {
           "Content-Type": "application/decent-academy-v1/json",
