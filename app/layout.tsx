@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   description:
     "Leading coaching institute for 5th-10th and 11th-12th students. Expert faculty, proven results, comprehensive courses.",
   generator: "v0.app",
-  metadataBase: new URL("https:/decent-academy-v1/luxestudio-live.github.io/decent-academy-v1/decent-academy-v1"),
+  metadataBase: new URL("https://www.decentacademy.in"),
   openGraph: {
     title: "Decent Academy - Premium Coaching for Excellence",
     description:
       "Leading coaching institute for 5th-10th and 11th-12th students. Expert faculty, proven results, comprehensive courses.",
-    url: "https:/decent-academy-v1/luxestudio-live.github.io/decent-academy-v1/decent-academy-v1",
+    url: "https://www.decentacademy.in",
     siteName: "Decent Academy",
     images: [
       {

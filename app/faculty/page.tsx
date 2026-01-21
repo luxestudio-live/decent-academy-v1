@@ -164,7 +164,7 @@ export default function FacultyPage() {
 				</div>
 				<div className="container mx-auto px-4 lg:px-8 py-12">
 					<div className="max-w-4xl mx-auto text-center space-y-6">
-						<div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
+						<div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium border border-primary/20">
 							<Users className="w-4 h-4" />
 							<span>30+ Expert Educators</span>
 						</div>
@@ -186,7 +186,7 @@ export default function FacultyPage() {
 						{facultyList.map((member, index) => (
 							<div
 								key={index}
-								className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
+								className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
 							>
 								{/* Image */}
 								<div className="relative h-80 overflow-hidden bg-muted">
