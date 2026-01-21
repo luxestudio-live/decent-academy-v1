@@ -27,7 +27,7 @@ const facultyList: FacultyMember[] = [
 			"Produced 100+ distinction holders",
 			"State-level Science Exhibition mentor"
 		],
-		image: "/Virendra%20Kumar%20Badgujar.jpeg",
+		image: "/virendra-kumar-badgujar.jpeg",
 		color: "from-primary to-accent",
 	},
 	{
