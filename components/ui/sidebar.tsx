@@ -7,23 +7,23 @@ import { PanelLeftIcon } from 'lucide-react'
 
 import { useIsMobile } from '@/decent-academy-v1/hooks/decent-academy-v1/use-mobile'
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { Button } from '@/components/ui/decent-academy-v1/button'
-import { Input } from '@/components/ui/decent-academy-v1/input'
-import { Separator } from '@/components/ui/decent-academy-v1/separator'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Separator } from '@/components/ui/separator'
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
-} from '@/components/ui/decent-academy-v1/sheet'
-import { Skeleton } from '@/components/ui/decent-academy-v1/skeleton'
+} from '@/components/ui/sheet'
+import { Skeleton } from '@/components/ui/skeleton'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/decent-academy-v1/tooltip'
+} from '@/components/ui/tooltip'
 
 const SIDEBAR_COOKIE_NAME = 'sidebar_state'
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7

@@ -4,9 +4,9 @@ import { useState } from "react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { MapPin, Phone, Mail, Clock, Send, Facebook, Instagram, Youtube, MessageSquare } from "lucide-react"
-import { Button } from "@/components/ui/decent-academy-v1/button"
-import { Input } from "@/components/ui/decent-academy-v1/input"
-import { Textarea } from "@/components/ui/decent-academy-v1/textarea"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 
 const contactInfo = [
   {

@@ -14,7 +14,7 @@ import {
 } from 'react-hook-form'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { Label } from '@/components/ui/decent-academy-v1/label'
+import { Label } from '@/components/ui/label'
 
 const Form = FormProvider
 

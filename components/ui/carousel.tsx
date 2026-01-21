@@ -7,7 +7,7 @@ import useEmblaCarousel, {
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { Button } from '@/components/ui/decent-academy-v1/button'
+import { Button } from '@/components/ui/button'
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>

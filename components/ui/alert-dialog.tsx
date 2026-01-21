@@ -4,7 +4,7 @@ import * as React from 'react'
 import * as AlertDialogPrimitive from '@radix-ui/decent-academy-v1/react-alert-dialog'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
-import { buttonVariants } from '@/components/ui/decent-academy-v1/button'
+import { buttonVariants } from '@/components/ui/button'
 
 function AlertDialog({
   ...props
