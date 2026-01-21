@@ -57,7 +57,7 @@ export function Footer() {
               </span>
               <span className="text-accent ml-2">ACADEMY</span>
             </h3>
-            <p className="text-background/decent-academy-v1/80 leading-relaxed mb-6 max-w-md">
+            <p className="text-background/80 leading-relaxed mb-6 max-w-md">
               Empowering students to achieve academic excellence through innovative teaching methods and personalized
               attention.
             </p>
@@ -86,7 +86,7 @@ export function Footer() {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-background/decent-academy-v1/80 hover:text-accent transition-colors duration-300 hover:translate-x-1 inline-block"
+                    className="text-background/80 hover:text-accent transition-colors duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -103,7 +103,7 @@ export function Footer() {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-background/decent-academy-v1/80 hover:text-accent transition-colors duration-300 hover:translate-x-1 inline-block"
+                    className="text-background/80 hover:text-accent transition-colors duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -120,7 +120,7 @@ export function Footer() {
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-background/decent-academy-v1/80 hover:text-accent transition-colors duration-300 hover:translate-x-1 inline-block"
+                    className="text-background/80 hover:text-accent transition-colors duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -131,13 +131,13 @@ export function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div className="border-t border-background/decent-academy-v1/20 pt-8 mb-8">
+        <div className="border-t border-background/20 pt-8 mb-8">
           <div className="grid md:grid-cols-3 gap-6">
             <div className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
               <div>
                 <div className="font-medium mb-1">Visit Us</div>
-                <div className="text-background/decent-academy-v1/80 text-sm leading-relaxed">
+                <div className="text-background/80 text-sm leading-relaxed">
                   Shop No 1, Ground Floor, Sai Smruti Building, Near Nath Pai School, Nardas Nagar, T. P. Road, Bhandup West, Mumbai - 400078
                 </div>
               </div>
@@ -146,29 +146,29 @@ export function Footer() {
               <Phone className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
               <div>
                 <div className="font-medium mb-1">Call Us</div>
-                <div className="text-background/decent-academy-v1/80 text-sm">+91 99673 97919</div>
+                <div className="text-background/80 text-sm">+91 99673 97919</div>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Mail className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
               <div>
                 <div className="font-medium mb-1">Email Us</div>
-                <div className="text-background/decent-academy-v1/80 text-sm">info@decentacademy.com</div>
+                <div className="text-background/80 text-sm">info@decentacademy.com</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-background/decent-academy-v1/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-background/decent-academy-v1/70 text-sm text-center md:text-left">
             © 2025 Decent Academy. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <Link href="#" className="text-background/decent-academy-v1/80 hover:text-accent transition-colors duration-300">
+            <Link href="#" className="text-background/80 hover:text-accent transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-background/decent-academy-v1/80 hover:text-accent transition-colors duration-300">
+            <Link href="#" className="text-background/80 hover:text-accent transition-colors duration-300">
               Terms of Service
             </Link>
           </div>

@@ -190,7 +190,7 @@ export default function ResultsPage() {
       <Navbar />
 
       {/* Hero Section with modern gradient */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-background via-primary/decent-academy-v1/5 to-secondary/decent-academy-v1/5">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-background via-primary/decent-academy-v1/5 to-secondary/5">
         <div className="absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(var(--primary-rgb),0.1),transparent_50%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(var(--accent-rgb),0.1),transparent_50%)]" />
@@ -219,7 +219,7 @@ export default function ResultsPage() {
               {results.highlights.map((highlight, index) => (
                 <div
                   key={index}
-                  className="group p-6 bg-card/decent-academy-v1/60 backdrop-blur-md rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="group p-6 bg-card/decent-academy-v1/60 backdrop-blur-md rounded-2xl border border-border/50 hover:border-primary/decent-academy-v1/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <div className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent mb-2">
                     {highlight.value}
@@ -236,7 +236,7 @@ export default function ResultsPage() {
       <section className="py-20 lg:py-32 bg-muted/decent-academy-v1/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-semibold mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-semibold mb-6">
               <Trophy className="w-4 h-4" />
               <span>National & State Ranks</span>
             </div>
@@ -289,7 +289,7 @@ export default function ResultsPage() {
                     <p className="text-center text-muted-foreground font-medium mb-4">{topper.standard}</p>
 
                     {/* Details */}
-                    <div className="pt-4 border-t border-border/decent-academy-v1/50">
+                    <div className="pt-4 border-t border-border/50">
                       {topper.subjects.map((subject, idx) => (
                         <div key={idx} className="flex items-center gap-2 text-sm text-foreground/decent-academy-v1/70">
                           <Award className="w-4 h-4 text-accent flex-shrink-0" />
@@ -365,7 +365,7 @@ export default function ResultsPage() {
             {/* Commerce Toppers */}
             <div>
               <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-semibold mb-6">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-semibold mb-6">
                   <TrendingUp className="w-4 h-4" />
                   <span>Commerce Stream</span>
                 </div>
@@ -495,7 +495,7 @@ export default function ResultsPage() {
                       <h3 className="text-3xl font-bold mb-2 group-hover:text-primary transition-colors">
                         {standard === "10th" ? "10th Standard" : "11th & 12th"}
                       </h3>
-                      <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-semibold">
+                      <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-semibold">
                         <Trophy className="w-4 h-4" />
                         <span>{stats.total} Students</span>
                       </div>

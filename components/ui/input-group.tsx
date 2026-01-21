@@ -16,16 +16,16 @@ function InputGroup({ className, ...props }: React.ComponentProps<'div'>) {
         'group/decent-academy-v1/input-group border-input dark:bg-input/decent-academy-v1/30 relative flex w-full items-center rounded-md border shadow-xs transition-[color,box-shadow] outline-none',
         'h-9 has-[>textarea]:h-auto',
 
-        /decent-academy-v1/ Variants based on alignment.
+        // Variants based on alignment.
         'has-[>[data-align=inline-start]]:[&>input]:pl-2',
         'has-[>[data-align=inline-end]]:[&>input]:pr-2',
         'has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:[&>input]:pb-3',
         'has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3',
 
-        /decent-academy-v1/ Focus state.
+        // Focus state.
         'has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-ring/decent-academy-v1/50 has-[[data-slot=input-group-control]:focus-visible]:ring-[3px]',
 
-        /decent-academy-v1/ Error state.
+        // Error state.
         'has-[[data-slot][aria-invalid=true]]:ring-destructive/decent-academy-v1/20 has-[[data-slot][aria-invalid=true]]:border-destructive dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/decent-academy-v1/40',
 
         className,

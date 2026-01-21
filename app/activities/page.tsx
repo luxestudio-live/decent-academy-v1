@@ -104,16 +104,16 @@ export default function ActivitiesPage() {
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
           <div
-            className="absolute bottom-20 right-10 w-80 h-80 bg-accent/decent-academy-v1/20 rounded-full blur-3xl animate-float"
+            className="absolute bottom-20 right-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "2s" }}
           />
         </div>
 
         <div className="container mx-auto px-4 lg:px-8 py-12">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
               <PartyPopper className="w-4 h-4" />
               <span>Beyond Academics</span>
             </div>
@@ -149,7 +149,7 @@ export default function ActivitiesPage() {
             {activities.map((activity, index) => (
               <div
                 key={index}
-                className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
+                className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Image */}
@@ -181,7 +181,7 @@ export default function ActivitiesPage() {
                     {activity.highlights.map((highlight, idx) => (
                       <div key={idx} className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                        <span className="text-sm text-foreground/decent-academy-v1/80">{highlight}</span>
+                        <span className="text-sm text-foreground/80">{highlight}</span>
                       </div>
                     ))}
                   </div>
@@ -211,7 +211,7 @@ export default function ActivitiesPage() {
             {upcomingEvents.map((event, index) => (
               <div
                 key={index}
-                className="group bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-6 transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
+                className="group bg-card rounded-2xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-6 transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
               >
                 {/* Date Badge */}
                 <div className="inline-flex flex-col items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl text-white mb-4 group-hover:scale-110 transition-transform duration-300">

@@ -45,16 +45,16 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
           <div
-            className="absolute bottom-20 right-10 w-80 h-80 bg-accent/decent-academy-v1/20 rounded-full blur-3xl animate-float"
+            className="absolute bottom-20 right-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "2s" }}
           />
         </div>
 
         <div className="container mx-auto px-4 lg:px-8 py-12">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
               <Award className="w-4 h-4" />
               <span>20 Years of Educational Excellence</span>
             </div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Mission */}
-            <div className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-12 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+            <div className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-12 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500" />
               <div className="relative z-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
@@ -94,7 +94,7 @@ export default function AboutPage() {
             </div>
 
             {/* Vision */}
-            <div className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-12 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+            <div className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-12 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/decent-academy-v1/10 to-secondary/decent-academy-v1/10 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500" />
               <div className="relative z-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-accent to-secondary rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
@@ -133,7 +133,7 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="group relative bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
+                className="group relative bg-card rounded-2xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
               >
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${value.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}
@@ -187,7 +187,7 @@ export default function AboutPage() {
                     {/* Content */}
                     <div className="flex-1">
                       <div
-                        className={`group bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 ${
+                        className={`group bg-card rounded-2xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 ${
                           index % 2 === 0 ? "lg:text-right" : "lg:text-left"
                         }`}
                       >

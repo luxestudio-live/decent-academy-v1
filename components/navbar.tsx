@@ -37,7 +37,7 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/decent-academy-v1/95 backdrop-blur-lg shadow-lg" : "bg-transparent"
+        scrolled ? "bg-background/95 backdrop-blur-lg shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 lg:px-6">
@@ -64,11 +64,11 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative px-4 py-2 text-sm font-medium text-foreground/decent-academy-v1/80 transition-all duration-300 hover:text-primary group overflow-hidden"
+                className="relative px-4 py-2 text-sm font-medium text-foreground/80 transition-all duration-300 hover:text-primary group overflow-hidden"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 <span className="relative z-10">{link.name}</span>
-                <span className="absolute inset-0 bg-primary/decent-academy-v1/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-lg" />
+                <span className="absolute inset-0 bg-primary/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-lg" />
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
@@ -91,14 +91,14 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden py-6 bg-background/decent-academy-v1/98 backdrop-blur-xl border-t border-border/decent-academy-v1/50 shadow-2xl rounded-b-2xl animate-scale-in">
+          <div className="lg:hidden py-6 bg-background/decent-academy-v1/98 backdrop-blur-xl border-t border-border/50 shadow-2xl rounded-b-2xl animate-scale-in">
             <div className="flex flex-col gap-2">
               {navLinks.map((link, index) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-3 text-base font-medium text-foreground/decent-academy-v1/80 hover:text-primary hover:bg-primary/decent-academy-v1/10 rounded-lg transition-all duration-300 transform hover:translate-x-2"
+                  className="px-4 py-3 text-base font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-300 transform hover:translate-x-2"
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
                   {link.name}

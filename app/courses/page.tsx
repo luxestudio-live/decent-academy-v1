@@ -116,9 +116,9 @@ export default function CoursesPage() {
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
           <div
-            className="absolute bottom-20 right-10 w-80 h-80 bg-accent/decent-academy-v1/20 rounded-full blur-3xl animate-float"
+            className="absolute bottom-20 right-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "2s" }}
           />
         </div>
@@ -138,7 +138,7 @@ export default function CoursesPage() {
       </section>
 
       {/* Course Toggle */}
-      <section className="py-8 bg-background/decent-academy-v1/95 backdrop-blur-lg border-y border-border/decent-academy-v1/50">
+      <section className="py-8 bg-background/95 backdrop-blur-lg border-y border-border/50">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-3xl mx-auto">
             {(Object.keys(courseData) as CourseCategory[]).map((category) => {
@@ -151,7 +151,7 @@ export default function CoursesPage() {
                   className={`group relative px-6 py-4 rounded-xl font-medium transition-all duration-300 w-full sm:w-auto ${
                     activeCategory === category
                       ? "bg-gradient-to-r from-primary to-accent text-white shadow-xl scale-105"
-                      : "bg-card border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 hover:shadow-lg hover:-translate-y-1"
+                      : "bg-card border border-border/50 hover:border-primary/decent-academy-v1/50 hover:shadow-lg hover:-translate-y-1"
                   }`}
                 >
                   <span className="flex items-center justify-center gap-2">
@@ -187,7 +187,7 @@ export default function CoursesPage() {
             {activeCourse.standards.map((standard, index) => (
               <div
                 key={index}
-                className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 animate-scale-in"
+                className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 animate-scale-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Gradient Overlay */}
@@ -211,7 +211,7 @@ export default function CoursesPage() {
                       {standard.subjects.map((subject, idx) => (
                         <span
                           key={idx}
-                          className="px-3 py-1.5 bg-primary/decent-academy-v1/10 text-primary rounded-lg text-sm font-medium border border-primary/decent-academy-v1/20"
+                          className="px-3 py-1.5 bg-primary/10 text-primary rounded-lg text-sm font-medium border border-primary/decent-academy-v1/20"
                         >
                           {subject}
                         </span>
@@ -226,14 +226,14 @@ export default function CoursesPage() {
                       {standard.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start gap-2">
                           <CheckCircle2 className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-foreground/decent-academy-v1/80">{feature}</span>
+                          <span className="text-sm text-foreground/80">{feature}</span>
                         </div>
                       ))}
                     </div>
                   </div>
 
                   {/* Duration & Batch */}
-                  <div className="flex items-center gap-6 pt-6 border-t border-border/decent-academy-v1/50">
+                  <div className="flex items-center gap-6 pt-6 border-t border-border/50">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Clock className="w-4 h-4 text-primary" />
                       <span>{standard.duration}</span>
@@ -283,7 +283,7 @@ export default function CoursesPage() {
             ].map((feature, index) => (
               <div
                 key={index}
-                className="group bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-6 transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
+                className="group bg-card rounded-2xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-6 transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
               >
                 <feature.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">

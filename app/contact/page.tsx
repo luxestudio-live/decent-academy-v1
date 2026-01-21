@@ -21,7 +21,7 @@ const contactInfo = [
   },
   {
     icon: Phone,
-    title: "Call /decent-academy-v1/ WhatsApp",
+    title: "Call // WhatsApp",
     details: ["+91 99673 97919", "+91 99673 97919 (WhatsApp)", "Mon-Sun: 9 AM - 9 PM"],
     color: "from-accent to-secondary",
   },
@@ -130,7 +130,7 @@ export default function ContactPage() {
       if (response.ok) {
         setSubmitSuccess(true)
         
-        /decent-academy-v1/ Reset form after 2 seconds
+        // Reset form after 2 seconds
         setTimeout(() => {
           setFormData({
             name: "",
@@ -154,15 +154,15 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
           <div
-            className="absolute bottom-20 right-10 w-80 h-80 bg-accent/decent-academy-v1/20 rounded-full blur-3xl animate-float"
+            className="absolute bottom-20 right-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "2s" }}
           />
         </div>
         <div className="container mx-auto px-4 lg:px-8 py-20">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
               <MessageSquare className="w-4 h-4" />
               <span>We're Here to Help</span>
             </div>
@@ -183,7 +183,7 @@ export default function ContactPage() {
             {contactInfo.map((info, index) => (
               <div
                 key={index}
-                className="group relative bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 text-center"
+                className="group relative bg-card rounded-2xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 text-center"
               >
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}
@@ -211,7 +211,7 @@ export default function ContactPage() {
           {/* Main Contact Section */}
           <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
             {/* Contact Form */}
-            <div className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-8 lg:p-12 transition-all duration-500 hover:shadow-2xl">
+            <div className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-8 lg:p-12 transition-all duration-500 hover:shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/decent-academy-v1/5 to-accent/decent-academy-v1/5 rounded-3xl" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold mb-6 group-hover:text-primary transition-colors duration-300">
@@ -330,7 +330,7 @@ export default function ContactPage() {
             {/* Map & Social */}
             <div className="space-y-8">
               {/* Map */}
-              <div className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl h-[400px]">
+              <div className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl h-[400px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3968574835597!2d72.9373964!3d19.124098999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7ddb6c9c1b7%3A0x9d9c9c9c9c9c9c9c!2sShop%20No%201%2C%20Ground%20Floor%2C%20Sai%20Smruti%20Building%2C%20Near%20Nath%20Pai%20School%2C%20Nardas%20Nagar%2C%20T.%20P.%20Road%2C%20Bhandup%20West%2C%20Mumbai%2C%20Maharashtra%20400078!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
                   width="100%"
@@ -352,8 +352,8 @@ export default function ContactPage() {
               </div>
 
               {/* Social Media */}
-              <div className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/decent-academy-v1/5 to-secondary/decent-academy-v1/5 rounded-3xl" />
+              <div className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-secondary/5 rounded-3xl" />
                 <div className="relative z-10">
                   <h3 className="text-2xl font-bold mb-6 group-hover:text-primary transition-colors duration-300">
                     Connect With Us
@@ -451,7 +451,7 @@ export default function ContactPage() {
             ].map((faq, index) => (
               <div
                 key={index}
-                className="group bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
+                className="group bg-card rounded-2xl border border-border/50 hover:border-primary/decent-academy-v1/50 p-8 transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
               >
                 <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors duration-300">
                   {faq.q}

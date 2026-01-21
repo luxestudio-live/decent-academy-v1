@@ -5,7 +5,7 @@ import * as RechartsPrimitive from 'recharts'
 
 import { cn } from '@/decent-academy-v1/lib/decent-academy-v1/utils'
 
-/decent-academy-v1/ Format: { THEME_NAME: CSS_SELECTOR }
+// Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: '', dark: '.dark' } as const
 
 export type ChartConfig = {
@@ -173,7 +173,7 @@ function ChartTooltipContent({
   return (
     <div
       className={cn(
-        'border-border/decent-academy-v1/50 bg-background grid min-w-[8rem] items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl',
+        'border-border/50 bg-background grid min-w-[8rem] items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl',
         className,
       )}
     >
@@ -304,7 +304,7 @@ function ChartLegendContent({
   )
 }
 
-/decent-academy-v1/ Helper to extract item config from a payload.
+// Helper to extract item config from a payload.
 function getPayloadConfigFromPayload(
   config: ChartConfig,
   payload: unknown,

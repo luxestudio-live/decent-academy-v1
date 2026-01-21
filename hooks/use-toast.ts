@@ -1,6 +1,6 @@
 'use client'
 
-/decent-academy-v1/ Inspired by react-hot-toast library
+// Inspired by react-hot-toast library
 import * as React from 'react'
 
 import type { ToastActionElement, ToastProps } from '@/components/ui/decent-academy-v1/toast'
@@ -90,8 +90,8 @@ export const reducer = (state: State, action: Action): State => {
     case 'DISMISS_TOAST': {
       const { toastId } = action
 
-      /decent-academy-v1/ ! Side effects ! - This could be extracted into a dismissToast() action,
-      /decent-academy-v1/ but I'll keep it here for simplicity
+      // ! Side effects ! - This could be extracted into a dismissToast() action,
+      // but I'll keep it here for simplicity
       if (toastId) {
         addToRemoveQueue(toastId)
       } else {

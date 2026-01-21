@@ -117,7 +117,7 @@ function FieldLabel({
       className={cn(
         'group/decent-academy-v1/field-label peer/decent-academy-v1/field-label flex w-fit gap-2 leading-snug group-data-[disabled=true]/decent-academy-v1/field:opacity-50',
         'has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col has-[>[data-slot=field]]:rounded-md has-[>[data-slot=field]]:border [&>*]:data-[slot=field]:p-4',
-        'has-data-[state=checked]:bg-primary/decent-academy-v1/5 has-data-[state=checked]:border-primary dark:has-data-[state=checked]:bg-primary/decent-academy-v1/10',
+        'has-data-[state=checked]:bg-primary/decent-academy-v1/5 has-data-[state=checked]:border-primary dark:has-data-[state=checked]:bg-primary/10',
         className,
       )}
       {...props}

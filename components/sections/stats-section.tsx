@@ -47,7 +47,7 @@ export function StatsSection() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="group relative p-8 bg-card rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
+              className="group relative p-8 bg-card rounded-2xl border border-border/50 hover:border-primary/decent-academy-v1/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Gradient Background on Hover */}

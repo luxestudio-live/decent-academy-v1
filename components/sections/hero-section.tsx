@@ -23,7 +23,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 lg:px-8 py-20">
         <div className="max-w-5xl mx-auto text-center space-y-8">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-medium animate-scale-in border border-primary/decent-academy-v1/20 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium animate-scale-in border border-primary/decent-academy-v1/20 backdrop-blur-sm">
             <Sparkles className="w-4 h-4" />
             <span>Leading Coaching Institute Since 2006</span>
           </div>
@@ -75,7 +75,7 @@ export function HeroSection() {
             ].map((stat, index) => (
               <div
                 key={index}
-                className="p-6 bg-card/decent-academy-v1/90 backdrop-blur-sm rounded-2xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
+                className="p-6 bg-card/decent-academy-v1/90 backdrop-blur-sm rounded-2xl border border-border/50 hover:border-primary/decent-academy-v1/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
               >
                 <div className="text-3xl md:text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
                   {stat.value}

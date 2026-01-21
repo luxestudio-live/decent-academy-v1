@@ -112,7 +112,7 @@ const facultyList: FacultyMember[] = [
 		subject: "Commerce Teacher",
 		qualification: "M.Com, B.Ed, MBA, LLB",
 		experience: "16 Years",
-		specialization: "O.CM. /decent-academy-v1/ S.P",
+		specialization: "O.CM. // S.P",
 		achievements: [],
 		image: "/pravin-devidas-thorat.jpeg",
 		color: "from-primary to-accent",
@@ -156,7 +156,7 @@ export default function FacultyPage() {
 			{/* Hero Section */}
 			<section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-20">
 				<div className="absolute inset-0 -z-10">
-					<div className="absolute top-20 left-10 w-96 h-96 bg-primary/decent-academy-v1/20 rounded-full blur-3xl animate-float" />
+					<div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
 					<div
 						className="absolute bottom-20 right-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float"
 						style={{ animationDelay: "2s" }}
@@ -164,7 +164,7 @@ export default function FacultyPage() {
 				</div>
 				<div className="container mx-auto px-4 lg:px-8 py-12">
 					<div className="max-w-4xl mx-auto text-center space-y-6">
-						<div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/decent-academy-v1/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
+						<div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium border border-primary/decent-academy-v1/20">
 							<Users className="w-4 h-4" />
 							<span>30+ Expert Educators</span>
 						</div>
@@ -186,7 +186,7 @@ export default function FacultyPage() {
 						{facultyList.map((member, index) => (
 							<div
 								key={index}
-								className="group relative bg-card rounded-3xl border border-border/decent-academy-v1/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
+								className="group relative bg-card rounded-3xl border border-border/50 hover:border-primary/decent-academy-v1/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
 							>
 								{/* Image */}
 								<div className="relative h-80 overflow-hidden bg-muted">
@@ -216,7 +216,7 @@ export default function FacultyPage() {
 									<div className="space-y-3 mb-4">
 										<div className="flex items-start gap-2">
 											<GraduationCap className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
-											<span className="text-sm text-foreground/decent-academy-v1/80">
+											<span className="text-sm text-foreground/80">
 												{member.qualification}
 											</span>
 										</div>
