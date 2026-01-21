@@ -69,8 +69,8 @@ export default function ContactPage() {
   }
 
   const validatePhone = (phone: string) => {
-    const phoneRegex = ^[6-9]\d{9}$/
-    return phoneRegex.test(phone.replace(/decent-academy-v1/\s+/decent-academy-v1/g, ''))
+    const phoneRegex = /^[6-9]\d{9}$/
+    return phoneRegex.test(phone.replace(/\s+/g, ''))
   }
 
   const handleChange = (e: any) => {

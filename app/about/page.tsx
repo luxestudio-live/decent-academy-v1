@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Target, Eye, Award, Users, BookOpen, Heart, Lightbulb } from "lucide-react"
-import { Button } from "@/components/ui/decent-academy-v1/button"
+import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const values = [

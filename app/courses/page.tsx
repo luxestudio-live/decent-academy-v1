@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { GraduationCap, Calculator, Beaker, BookOpen, CheckCircle2, Clock, Users, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/decent-academy-v1/button"
+import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 type CourseCategory = "5-10" | "science" | "commerce"

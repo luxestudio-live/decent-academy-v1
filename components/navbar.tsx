@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/decent-academy-v1/button"
+import { Button } from "@/components/ui/button"
 
 const navLinks = [
   { name: "Home", href: "/" },
