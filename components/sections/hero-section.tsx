@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/decent-academy-v1/button"
+import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles } from "lucide-react"
 import Link from "next/link"
 

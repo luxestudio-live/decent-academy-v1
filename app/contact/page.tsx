@@ -77,7 +77,7 @@ export default function ContactPage() {
     const { name, value } = e.target
     setFormData((prev: any) => ({ ...prev, [name]: value }))
     
-    /decent-academy-v1/ Clear error when user starts typing
+    // Clear error when user starts typing
     if (errors[name as keyof typeof errors]) {
       setErrors((prev: any) => ({ ...prev, [name]: "" }))
     }
