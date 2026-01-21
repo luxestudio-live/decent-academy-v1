@@ -86,7 +86,7 @@ export default function ContactPage() {
   const handleSubmit = async (e: any) => {
     e.preventDefault()
     
-    /decent-academy-v1/ Validate fields
+    // Validate fields
     const newErrors = {
       name: "",
       email: "",
