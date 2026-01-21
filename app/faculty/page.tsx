@@ -17,6 +17,26 @@ type FacultyMember = {
 };
 
 const facultyList: FacultyMember[] = [
+		{
+			name: "Virendra Kumar Badgujar",
+			subject: "Science",
+			qualification: "M.A. B.Ed",
+			experience: "23 Years",
+			specialization: "",
+			achievements: [],
+			image: "virendra-kumar-badgujar.jpeg",
+			color: "from-primary to-accent",
+		},
+		{
+			name: "Jayant B. Pawar",
+			subject: "Administration Head",
+			qualification: "B.Com",
+			experience: "21 Years",
+			specialization: "",
+			achievements: [],
+			image: "", // Add image filename if available
+			color: "from-accent to-secondary",
+		},
 	{
 		name: "Ramkrishna Badgujar",
 		subject: "English",
