@@ -31,19 +31,6 @@ const facultyList: FacultyMember[] = [
 		color: "from-primary to-accent",
 	},
 	{
-		name: "Jayant B. Pawar",
-		subject: "Administration Head",
-		qualification: "B.Com",
-		experience: "21 Years",
-		specialization: "Student Counselling, Administration",
-		achievements: [
-			"Guided 1000+ students",
-			"Awarded Best Counsellor 2022"
-		],
-		image: "/jayant.jpeg",
-		color: "from-accent to-secondary",
-	},
-	{
 		name: "Ramkrishna Badgujar",
 		subject: "English",
 		qualification: "MA B.Ed - English",
@@ -63,6 +50,20 @@ const facultyList: FacultyMember[] = [
 		image: "/sujeet-patil.png",
 		color: "from-accent to-secondary",
 	},
+	{
+		name: "Jayant B. Pawar",
+		subject: "Administration Head",
+		qualification: "B.Com",
+		experience: "21 Years",
+		specialization: "Student Counselling, Administration",
+		achievements: [
+			"Guided 1000+ students",
+			"Awarded Best Counsellor 2022"
+		],
+		image: "/jayant.jpeg",
+		color: "from-accent to-secondary",
+	},
+	// ...existing code...
 		// ...existing code...
 	{
 		name: "Rupesh Santosh Pawar",
